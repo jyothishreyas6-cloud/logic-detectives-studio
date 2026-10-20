@@ -29,44 +29,42 @@ GREEN = "#6E8460"
 LINES = [
     Line("B", "Case open!", gap=0.4),                                                    # 0
     Line("O", "Hey! That's not fair! The cricket box is locked!", gap=0.6),              # 1
-    Line("I", "The lock needs a code with four digits.", gap=1.0),                       # 2
+    Line("I", "The lock needs four digits. Digits are zero to nine.", gap=1.0),          # 2
     Line("N", "Today's case: a code hidden in thousands, hundreds, tens and ones.", gap=1.0),  # 3
-    Line("N", "Digits are the numbers zero to nine.", gap=0.8),                          # 4
-    Line("N", "Place value means a digit's place shows its size.", gap=1.5),             # 5
-    Line("N", "Like at the canteen. Ten one-dollar coins make one ten-dollar note.", gap=1.5),  # 6
-    Line("N", "Mabel left a clue made of number blocks.", gap=0.8),                      # 7
-    Line("N", "Big cubes are thousands. Flats are hundreds.", gap=0.8),                  # 8
-    Line("N", "Long sticks are tens. Little cubes are ones.", gap=1.5),                  # 9
-    Line("O", "Three cubes, five sticks, two little cubes. It's three, five, two!", gap=0.8),  # 10
-    Line("I", "But the lock has four dials.", gap=1.0),                                  # 11
-    Line("B", "Let's not guess. Let's test.", gap=0.8),                                  # 12
-    Line("B", "Can you find the hundreds? Point to them.", gap=4.0),                     # 13
-    Line("N", "There are no flats. So there are no hundreds.", gap=1.5),                 # 14
-    Line("B", "Which code opens the lock?", gap=0.8),                                    # 15
-    Line("N", "A. Three, five, two, zero.", gap=0.6),                                    # 16
-    Line("N", "B. Three, zero, five, two.", gap=0.6),                                    # 17
-    Line("N", "Pause and think.", gap=5.0),                                              # 18
-    Line("N", "Put each block in its place. Three thousands.", gap=0.8),                 # 19
-    Line("N", "No hundreds, so we write zero.", gap=0.8),                                # 20
-    Line("N", "Five tens. Two ones.", gap=1.0),                                          # 21
-    Line("N", "Zero holds the hundreds place. It's B!", gap=0.8),                        # 22
-    Line("O", "Oh! The zero was hiding!", gap=1.0),                                      # 23
-    Line("N", "Let's count the blocks to check.", gap=0.6),                    # 24
-    Line("N", "Three thousand. Three thousand and fifty. Three thousand and fifty-two.", gap=1.5),  # 25
-    Line("O", "Three, zero, five, two.", gap=0.8),                                       # 26
-    Line("B", "Case solved!", gap=2.0),                                                  # 27
-    Line("I", "Look! A real cricket!", gap=0.6),                                         # 28
-    Line("O", "Not that kind of cricket!", gap=1.5),                                     # 29
-    Line("N", "Remember. Zero holds a place when there are none.", gap=1.0),             # 30
-    Line("N", "Say it with me. Zero holds the place.", gap=2.2),                         # 31
-    Line("N", "Try it at home. Make a secret code with a zero.", gap=1.2),               # 32
-    Line("N", "Next case: counting to ten, one acorn at a time.", gap=0.6),              # 33
+    Line("N", "Place value means a digit's place shows its size.", gap=1.5),             # 4
+    Line("N", "Like at the canteen. Ten one-dollar coins make one ten-dollar note.", gap=1.5),  # 5
+    Line("N", "Mabel left a clue made of number blocks.", gap=0.8),                      # 6
+    Line("N", "Big cubes are thousands. Flats are hundreds.", gap=0.8),                  # 7
+    Line("N", "Long sticks are tens. Little cubes are ones.", gap=1.5),                  # 8
+    Line("O", "Three cubes, five sticks, two little cubes. It's three, five, two!", gap=0.8),  # 9
+    Line("I", "But the lock has four dials.", gap=1.0),                                  # 10
+    Line("B", "Let's not guess. Let's test.", gap=0.8),                                  # 11
+    Line("B", "Can you find the hundreds? Point to them.", gap=3.6),                     # 12
+    Line("N", "There are no flats. So there are no hundreds.", gap=1.5),                 # 13
+    Line("B", "Which code opens the lock?", gap=0.8),                                    # 14
+    Line("N", "A. Three, five, two, zero.", gap=0.6),                                    # 15
+    Line("N", "B. Three, zero, five, two.", gap=0.6),                                    # 16
+    Line("N", "Pause and think.", gap=5.0),                                              # 17
+    Line("N", "Put each block in its place. Three thousands.", gap=0.8),                 # 18
+    Line("N", "No hundreds, so we write zero.", gap=0.8),                                # 19
+    Line("N", "Five tens. Two ones.", gap=1.0),                                          # 20
+    Line("N", "Zero holds the hundreds place. It's B!", gap=0.8),                        # 21
+    Line("O", "Oh! The zero was hiding!", gap=1.0),                                      # 22
+    Line("N", "Three thousand. Three thousand and fifty. Three thousand and fifty-two.", gap=1.5),  # 23
+    Line("O", "Three, zero, five, two.", gap=0.8),                                       # 24
+    Line("B", "Case solved!", gap=1.9),                                                  # 25
+    Line("I", "Look! A real cricket!", gap=0.6),                                         # 26
+    Line("O", "Not that kind of cricket!", gap=1.5),                                     # 27
+    Line("N", "Remember. Zero holds a place when there are none.", gap=1.0),             # 28
+    Line("N", "Say it with me. Zero holds the place.", gap=2.2),                         # 29
+    Line("N", "Try it at home. Make a secret code with a zero.", gap=1.2),               # 30
+    Line("N", "Next case: counting acorns to ten.", gap=0.6),              # 31
 ]
-STRIP_HIDDEN = {3, 27}
-CHILD_TURN = 31
-STAMP_LINE = 27
+STRIP_HIDDEN = {3, 25}
+CHILD_TURN = 29
+STAMP_LINE = 25
 OPEN_LINE = 0
-CUT = [(0, 2), (7, 11), (13, 13), (15, 22), (26, 29), (31, 31), (33, 33)]
+CUT = [(0, 2), (6, 10), (12, 12), (14, 21), (24, 27), (29, 29), (31, 31)]
 
 # ---------------------------------------------------------------- geometry
 BOX_X0, BOX_X1, BOX_Y, BOX_H = 630, 1005, 980, 135        # 25 cm x 9 cm front
@@ -213,8 +211,8 @@ def lockbox(ctx, digits, lid=0.0, roll=None):
         ctx.restore()
         # lid rises from the back edge
         bl, br = (x0 + BOX_DX, yt + BOX_DY), (x1 + BOX_DX, yt + BOX_DY)
-        fl = (lerp(x0, x0 + BOX_DX, lid), lerp(yt, yt + BOX_DY - 190, lid))
-        fr = (lerp(x1, x1 + BOX_DX, lid), lerp(yt, yt + BOX_DY - 190, lid))
+        fl = (lerp(x0, x0 + BOX_DX, lid), lerp(yt, yt + BOX_DY - 140, lid))
+        fr = (lerp(x1, x1 + BOX_DX, lid), lerp(yt, yt + BOX_DY - 140, lid))
         ctx.move_to(*bl)
         ctx.line_to(*br)
         ctx.line_to(*fr)
@@ -353,7 +351,7 @@ def park(ctx):
 
 # ---------------------------------------------------------------- views
 def dial_digits(ep, T):
-    s, e = ep.s(26), ep.e(26)
+    s, e = ep.s(24), ep.e(24)
     out = []
     for i in range(4):
         t0 = s + (i + 0.2) / 4.4 * (e - s)
@@ -364,9 +362,9 @@ def dial_digits(ep, T):
 
 def blocks_at(ep, T):
     """Positions of every block: loose, sliding into the mat columns during lines 19 and 21."""
-    pc = prog(T, ep.s(19) + 1.0, ep.s(19) + 2.4)
-    ps = prog(T, ep.s(21) - 0.1, ep.s(21) + 0.9)
-    po = prog(T, ep.s(21) + 0.6, ep.s(21) + 1.6)
+    pc = prog(T, ep.s(18) + 1.0, ep.s(18) + 2.4)
+    ps = prog(T, ep.s(20) - 0.1, ep.s(20) + 0.9)
+    po = prog(T, ep.s(20) + 0.6, ep.s(20) + 1.6)
     cubes = [(lerp(a[0], b[0], pc), lerp(a[1], b[1], pc)) for a, b in zip(LOOSE_CUBES, MAT_CUBES)]
     sticks = [(lerp(a[0], b[0], ps), lerp(a[1], b[1], ps)) for a, b in zip(LOOSE_STICKS, MAT_STICKS)]
     ones = [(lerp(a[0], b[0], po), lerp(a[1], b[1], po)) for a, b in zip(LOOSE_ONES, MAT_ONES)]
@@ -374,7 +372,7 @@ def blocks_at(ep, T):
 
 
 def count_glow(ep, T):
-    s, e = ep.s(25), ep.e(25)
+    s, e = ep.s(23), ep.e(23)
     d = e - s
     g1 = prog(T, s, s + 0.4) * (1 - prog(T, s + 0.25 * d, s + 0.25 * d + 0.4))
     g2 = prog(T, s + 0.25 * d, s + 0.25 * d + 0.4) * (1 - prog(T, s + 0.62 * d, s + 0.62 * d + 0.4))
@@ -386,7 +384,7 @@ def draw_blocks(ctx, ep, T, a=1.0):
     cubes, sticks, ones = blocks_at(ep, T)
     g1, g2, g3 = count_glow(ep, T)
     # back to front: the stacked cube last so it sits on top
-    order = [1, 0, 2] if T > ep.s(19) + 1.6 else [0, 1, 2]
+    order = [1, 0, 2] if T > ep.s(18) + 1.6 else [0, 1, 2]
     for i in order:
         cube1000(ctx, *cubes[i], a=a, glow=0.5 * g1 if i == 1 else 0.0)
     for i in range(4, -1, -1):
@@ -396,22 +394,22 @@ def draw_blocks(ctx, ep, T, a=1.0):
 
 
 def view_box(ctx, ep, T, end=False):
-    lid = prog(T, ep.e(27) + 1.6, ep.e(27) + 2.3) if end else 0.0
+    lid = prog(T, ep.e(25) + 1.6, ep.e(25) + 2.3) if end else 0.0
     lockbox(ctx, dial_digits(ep, T) if end else (0, 0, 0, 0), lid)
     if not end:
-        pa = 1 - prog(T, ep.s(7) - 0.5, ep.s(7) + 0.1)
+        pa = 1 - prog(T, ep.s(6) - 0.5, ep.s(6) + 0.1)
         pouch(ctx, 300, 1235, pa)
-        ba = prog(T, ep.s(7) - 0.2, ep.s(7) + 0.5)
+        ba = prog(T, ep.s(6) - 0.2, ep.s(6) + 0.5)
         if ba > 0:
             draw_blocks(ctx, ep, T, ba)
-            sparkles(ctx, 360, 1150, 300, ba * (1 - prog(T, ep.s(7) + 1.0, ep.s(7) + 2.0)), 0.4)
+            sparkles(ctx, 360, 1150, 300, ba * (1 - prog(T, ep.s(6) + 1.0, ep.s(6) + 2.0)), 0.4)
     else:
         bug(ctx, ep, T)
 
 
 def bug(ctx, ep, T):
-    t0 = ep.e(27) + 2.0                  # lid is open
-    j1, j2, j3 = t0 + 0.2, ep.s(28) + 0.6, ep.e(29) + 0.4
+    t0 = ep.e(25) + 2.0                  # lid is open
+    j1, j2, j3 = t0 + 0.2, ep.e(26) + 0.25, ep.e(27) + 0.4
     if T < j1:
         return
     if T < j1 + 0.7:                    # first hop: out of the box onto the table
@@ -448,15 +446,15 @@ def view_mat(ctx, ep, T):
     ctx.fill()
     draw_blocks(ctx, ep, T)
     # digits written under each column
-    times = (ep.s(19) + 0.75 * (ep.e(19) - ep.s(19)), ep.s(20) + 0.6 * (ep.e(20) - ep.s(20)),
-             ep.s(21) + 0.3 * (ep.e(21) - ep.s(21)), ep.s(21) + 0.85 * (ep.e(21) - ep.s(21)))
+    times = (ep.s(18) + 0.75 * (ep.e(18) - ep.s(18)), ep.s(19) + 0.6 * (ep.e(19) - ep.s(19)),
+             ep.s(20) + 0.3 * (ep.e(20) - ep.s(20)), ep.s(20) + 0.85 * (ep.e(20) - ep.s(20)))
     for (name, x0, x1), d, t0 in zip(COLS, CODE, times):
         a = prog(T, t0, t0 + 0.4)
         text(ctx, str(d), (x0 + x1) / 2, DIGIT_Y, 96, "#B4473E" if d == 0 else INK, a)
 
 
 def mat_window(ep):
-    return ep.s(19) - 0.8, ep.e(25) + 0.9
+    return ep.s(18) - 0.8, ep.e(23) + 0.9
 
 
 def scene(ctx, ep, T):
@@ -479,26 +477,26 @@ def scene(ctx, ep, T):
 # ---------------------------------------------------------------- cues, poses, foley
 def cues(ep):
     m0, m1 = mat_window(ep)
-    d22 = ep.e(22) - ep.s(22)
+    d22 = ep.e(21) - ep.s(21)
     return [
-        ("ring", ep.s(1) - 0.1, ep.e(2) + 0.6, 838, 880, 260, 150),
-        ("zoom", ep.s(7) + 0.2, ep.e(9) + 0.8, 540, 1650, 1.1),
-        ("lens", ep.s(11) - 0.1, ep.e(11) + 1.0, *DIALS_C, 380, 600, 150, 2.0),
-        ("zoom", ep.s(19) + 0.2, ep.e(21) + 0.6, 540, 1650, 1.08),
-        ("ring", ep.s(22) - 0.1, ep.s(22) + 0.62 * d22, 535, 1030, 120, 260),
-        ("lens", ep.s(26) - 0.2, ep.e(26) + 0.7, *DIALS_C, 380, 600, 150, 2.0),
-        ("zoom", ep.e(27) + 1.7, ep.e(29) + 0.9, 540, 1650, 1.1),
+        ("ring", ep.s(1) - 0.1, ep.e(1) + 0.5, 838, 880, 260, 150),
+        ("zoom", ep.s(6) + 0.2, ep.e(8) + 0.8, 540, 1650, 1.1),
+        ("lens", ep.s(10) - 0.1, ep.e(10) + 1.0, *DIALS_C, 380, 600, 150, 2.0),
+        ("zoom", ep.s(18) + 0.2, ep.e(20) + 0.6, 540, 1650, 1.08),
+        ("ring", ep.s(21) - 0.1, ep.s(21) + 0.62 * d22, 535, 1030, 120, 260),
+        ("lens", ep.s(24) - 0.2, ep.e(24) + 0.7, *DIALS_C, 380, 600, 150, 2.0),
+        ("lens", ep.s(26) - 0.1, ep.e(26) + 0.2, 560, 1150, 300, 760, 140, 2.4),
     ]
 
 
 def foley(ep):
-    out = [("pop", ep.s(7) - 0.1), ("whoosh", mat_window(ep)[0]), ("whoosh", mat_window(ep)[1])]
-    s, e = ep.s(26), ep.e(26)
+    out = [("pop", ep.s(6) - 0.1), ("whoosh", mat_window(ep)[0]), ("whoosh", mat_window(ep)[1])]
+    s, e = ep.s(24), ep.e(24)
     for i in range(4):
         out.append(("snip", s + (i + 0.2) / 4.4 * (e - s) + 0.25))
-    out += [("pop", ep.s(6) + 0.6 * (ep.e(6) - ep.s(6))), ("whoosh", ep.e(27) + 1.6),
-            ("step", ep.e(27) + 2.2), ("step", ep.e(27) + 2.9), ("step", ep.s(28) + 0.6),
-            ("step", ep.s(28) + 1.2)]
+    out += [("pop", ep.s(5) + 0.6 * (ep.e(5) - ep.s(5))), ("whoosh", ep.e(25) + 1.6),
+            ("step", ep.e(25) + 2.2), ("step", ep.e(25) + 2.9), ("step", ep.e(26) + 0.25),
+            ("step", ep.e(27) + 0.4)]
     return out
 
 
@@ -517,44 +515,44 @@ def poses(ep, T):
     if T < S(3):
         O["expr"] = "sad"
         I["expr"] = "think"
-    if during(10, 0.2, 0.3):
-        O.update(expr="happy", point=(330, 1120), amt=ramp(S(10)))
-    if S(11) - 0.2 <= T <= E(12) + 0.4:
+    if during(9, 0.2, 0.3):
+        O.update(expr="happy", point=(330, 1120), amt=ramp(S(9)))
+    if S(10) - 0.2 <= T <= E(11) + 0.4:
         O["expr"] = "think"
         I["expr"] = "think"
-        B.update(point=DIALS_C, amt=ramp(S(11)))
-    if S(13) - 0.2 <= T <= E(14) + 1.0:
-        O["scratch"] = prog(T, S(13), S(13) + 0.6)
+        B.update(point=DIALS_C, amt=ramp(S(10)))
+    if S(12) - 0.2 <= T <= E(13) + 1.0:
+        O["scratch"] = prog(T, S(12), S(12) + 0.6)
         O["expr"] = "think"
-    if during(14):
+    if during(13):
         I.update(expr="surprise")
-    if S(16) <= T <= S(19):
+    if S(15) <= T <= S(18):
         O["expr"] = I["expr"] = "think"
-    if during(22, 0.2, 0.2):
-        I.update(point=(560, 1060), amt=ramp(S(22)))
+    if during(21, 0.2, 0.2):
+        I.update(point=(560, 1060), amt=ramp(S(21)))
         I["expr"] = "happy"
-    if during(23, 0.2, 1.0):
+    if during(22, 0.2, 1.0):
         O["expr"] = "surprise"
-    if S(26) - 0.2 <= T <= E(26) + 0.6:
+    if S(24) - 0.2 <= T <= E(24) + 0.6:
         O["expr"] = "happy"
-        B.update(point=DIALS_C, amt=ramp(S(26) - 0.2))
-    if T >= S(27) - 0.2:
+        B.update(point=DIALS_C, amt=ramp(S(24) - 0.2))
+    if T >= S(25) - 0.2:
         B["expr"] = O["expr"] = I["expr"] = "happy"
-        hop = (T - S(27)) / 0.55
+        hop = (T - S(25)) / 0.55
         if 0 <= hop <= 1:
             O["jump"] = 42 * math.sin(math.pi * hop)
-    if during(28, 0.3, 0.4):
+    if during(26, 0.3, 0.4):
         I["expr"] = O["expr"] = "surprise"
-    if during(29, 0.1, 0.8):
+    if during(27, 0.1, 0.8):
         O["expr"] = "happy"
-        O["scratch"] = prog(T, S(29), S(29) + 0.5) * (1 - prog(T, E(29) + 0.3, E(29) + 0.8))
+        O["scratch"] = prog(T, S(27), S(27) + 0.5) * (1 - prog(T, E(27) + 0.3, E(27) + 0.8))
     return {"B": B, "O": O, "I": I}
 
 
 # ---------------------------------------------------------------- cards
-def card(ctx, x, y, w, h, a, col="#FFFFFF"):
+def card(ctx, x, y, w, h, a, col="#FFFFFF", op=0.95):
     rig.soft_shadow(ctx, x + w / 2, y + h + 6, w * 0.5, 16, 0.18 * a)
-    rrect(ctx, x, y, w, h, 40, col, 0.95 * a)
+    rrect(ctx, x, y, w, h, 40, col, op * a)
 
 
 def window(T, s, e, fin=0.35, fout=0.4):
@@ -611,18 +609,18 @@ def cards(ctx, ep, T):
         for k, s_ in enumerate(("A code hidden in", "thousands, hundreds,", "tens and ones")):
             text(ctx, s_, W / 2, 300 + k * 82, 64, INK, a)
     # digits 0 to 9
-    a = window(T, S(4) - 0.2, E(4) + 0.6)
+    a = window(T, S(2) + 0.45 * (E(2) - S(2)), E(2) + 0.8)
     if a > 0:
         card(ctx, 70, 170, 940, 240, a)
         text(ctx, "Digits", W / 2, 225, 44, "#9C7429", a)
         for d in range(10):
-            text(ctx, str(d), 140 + d * 89, 330, 74, INK, a * prog(T, S(4) + 0.05 * d, S(4) + 0.05 * d + 0.3))
+            text(ctx, str(d), 140 + d * 89, 330, 74, INK, a * prog(T, S(2) + 0.45 * (E(2) - S(2)) + 0.05 * d, S(2) + 0.45 * (E(2) - S(2)) + 0.05 * d + 0.3))
     # place value: the same 7 in different places
-    a = window(T, S(5) - 0.2, E(5) + 1.2)
+    a = window(T, S(4) - 0.2, E(4) + 1.2)
     if a > 0:
         card(ctx, 70, 150, 940, 340, a)
         for k, (num, lab, x) in enumerate((("700", "7 hundreds", 230), ("70", "7 tens", 540), ("7", "7 ones", 850))):
-            ak = a * prog(T, S(5) + 0.4 * k, S(5) + 0.4 * k + 0.4)
+            ak = a * prog(T, S(4) + 0.4 * k, S(4) + 0.4 * k + 0.4)
             ctx.select_font_face(R.FONT, cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_BOLD)
             ctx.set_font_size(110)
             tw = ctx.text_extents(num)[4]
@@ -635,27 +633,27 @@ def cards(ctx, ep, T):
                 xx += cw
             text(ctx, lab, x, 420, 38, "#7A6E62", ak)
     # canteen: ten $1 coins make one $10 note
-    a = window(T, S(6) - 0.2, E(6) + 1.3)
+    a = window(T, S(5) - 0.2, E(5) + 1.3)
     if a > 0:
         card(ctx, 70, 150, 940, 420, a)
         text(ctx, "Canteen", W / 2, 205, 44, "#9C7429", a)
-        merge = prog(T, S(6) + 0.55 * (E(6) - S(6)), S(6) + 0.75 * (E(6) - S(6)))
+        merge = prog(T, S(5) + 0.55 * (E(5) - S(5)), S(5) + 0.75 * (E(5) - S(5)))
         for i in range(10):
-            x0 = 290 + (i - 4.5) * 50
-            cx = lerp(x0, 540 - 230, merge)
+            x0 = 540 + (i - 4.5) * 50
+            cx = lerp(x0, 540, merge)
             coin(ctx, cx, 330, a * (1 - merge))
         if merge > 0:
             note10(ctx, 540, 330, a * merge)
-        text(ctx, "10 ones = 1 ten", W / 2, 490, 50, INK, a * prog(T, E(6) - 0.4, E(6)))
+        text(ctx, "10 ones = 1 ten", W / 2, 490, 50, INK, a * prog(T, E(5) - 0.4, E(5)))
     # number block key
-    a = window(T, S(8) - 0.2, E(9) + 1.0)
+    a = window(T, S(7) - 0.2, E(8) + 1.0)
     if a > 0:
         card(ctx, 70, 120, 940, 520, a)
         sc = 0.62
-        a1 = a * prog(T, S(8), S(8) + 0.4)
-        a2 = a * prog(T, S(8) + 0.5 * (E(8) - S(8)), S(8) + 0.5 * (E(8) - S(8)) + 0.4)
-        a3 = a * prog(T, S(9), S(9) + 0.4)
-        a4 = a * prog(T, S(9) + 0.5 * (E(9) - S(9)), S(9) + 0.5 * (E(9) - S(9)) + 0.4)
+        a1 = a * prog(T, S(7), S(7) + 0.4)
+        a2 = a * prog(T, S(7) + 0.5 * (E(7) - S(7)), S(7) + 0.5 * (E(7) - S(7)) + 0.4)
+        a3 = a * prog(T, S(8), S(8) + 0.4)
+        a4 = a * prog(T, S(8) + 0.5 * (E(8) - S(8)), S(8) + 0.5 * (E(8) - S(8)) + 0.4)
         cube1000(ctx, 130, 330, sc, a1)
         text(ctx, "thousand", 380, 280, 46, INK, a1)
         flat100(ctx, 590, 330, sc, a2)
@@ -665,24 +663,24 @@ def cards(ctx, ep, T):
         one1(ctx, 610, 520, 1.0, a4)
         text(ctx, "one", 850, 505, 46, INK, a4)
     # Otto's guess: three digits for four dials
-    a = window(T, S(10) + 0.6 * (E(10) - S(10)), E(11) + 1.0)
+    a = window(T, S(9) + 0.6 * (E(9) - S(9)), E(10) + 1.0)
     if a > 0:
         card(ctx, 190, 150, 700, 240, a)
         dial_row(ctx, W / 2, 270, (3, 5, 2, None), a)
     # no hundreds
-    a = window(T, S(14) - 0.2, E(14) + 1.0)
+    a = window(T, S(13) - 0.2, E(13) + 1.0)
     if a > 0:
         card(ctx, 190, 150, 700, 260, a)
         flat100(ctx, 270, 330, 0.6, a * 0.35)
         text(ctx, "hundreds:", 620, 250, 50, INK, a)
         text(ctx, "0", 620, 340, 90, "#B4473E", a)
     # A or B
-    aA = window(T, S(16) - 0.2, E(22) + 1.4)
+    aA = window(T, S(15) - 0.2, E(21) + 1.4)
     if aA > 0:
-        aB = aA * prog(T, S(17) - 0.2, S(17) + 0.2)
-        aA2 = aA * prog(T, S(16) - 0.2, S(16) + 0.2)
-        d22 = E(22) - S(22)
-        picked = prog(T, S(22) + 0.7 * d22, S(22) + 0.7 * d22 + 0.4)
+        aB = aA * prog(T, S(16) - 0.2, S(16) + 0.2)
+        aA2 = aA * prog(T, S(15) - 0.2, S(15) + 0.2)
+        d22 = E(21) - S(21)
+        picked = prog(T, S(21) + 0.7 * d22, S(21) + 0.7 * d22 + 0.4)
         for lab, x, digits, aa, pk in (("A", 70, (3, 5, 2, 0), aA2, 0.0), ("B", 560, (3, 0, 5, 2), aB, picked)):
             dim = picked if lab == "A" else 0.0
             ak = aa * (1 - 0.5 * dim)
@@ -711,8 +709,8 @@ def cards(ctx, ep, T):
                 ctx.line_to(x + w - 38, 197)
                 ctx.stroke()
         # think ring fills during the 5 s pause, then a small tick
-        g0, g1 = E(18) + 0.2, E(18) + 4.9
-        ra = aA * window(T, S(18), S(19) + 0.3, 0.3, 0.4)
+        g0, g1 = E(17) + 0.2, E(17) + 4.9
+        ra = aA * window(T, S(17), S(18) + 0.3, 0.3, 0.4)
         if ra > 0:
             cx, cy = W / 2, 520
             ellipse(ctx, cx, cy, 52, 52, "#FFFFFF", 0.95 * ra)
@@ -734,38 +732,38 @@ def cards(ctx, ep, T):
                 ctx.line_to(cx + 18, cy - 14)
                 ctx.stroke()
     # counting on: 3000, 3050, 3052
-    a = window(T, S(25) - 0.3, E(25) + 1.2)
+    a = window(T, S(23) - 0.3, E(23) + 1.2)
     if a > 0:
-        d = E(25) - S(25)
-        n = "3000" if T < S(25) + 0.25 * d else ("3050" if T < S(25) + 0.62 * d else "3052")
+        d = E(23) - S(23)
+        n = "3000" if T < S(23) + 0.25 * d else ("3050" if T < S(23) + 0.62 * d else "3052")
         card(ctx, 290, 170, 500, 230, a)
         text(ctx, n, W / 2, 285, 120, INK, a)
     # recap
-    ra = window(T, S(30) - 0.3, S(33) - 0.1, 0.5, 0.5)
+    ra = window(T, S(28) - 0.3, S(31) - 0.1, 0.5, 0.5)
     if ra > 0:
-        card(ctx, 60, 130, 960, 1010, ra, "#FBF6EC")
+        card(ctx, 60, 130, 960, 1010, ra, "#FBF6EC", 1.0)
         rrect(ctx, 300, 160, 480, 110, 50, OCHRE, ra)
         text(ctx, "Remember", W / 2, 215, 62, "#FFFFFF", ra)
-        r1 = ra * prog(T, S(30) + 0.3, S(30) + 0.9)
+        r1 = ra * prog(T, S(28) + 0.3, S(28) + 0.9)
         rrect(ctx, 100, 320, 880, 330, 36, "#FFFFFF", 0.95 * r1)
         dial_row(ctx, W / 2, 420, CODE, r1, size=0.75, ring_i=1)
         text(ctx, "Zero holds the place", W / 2, 575, 56, INK, r1)
-        r2 = ra * prog(T, S(32), S(32) + 0.6)
+        r2 = ra * prog(T, S(30), S(30) + 0.6)
         rrect(ctx, 100, 700, 880, 380, 36, "#FFFFFF", 0.95 * r2)
         text(ctx, "Try it at home:", W / 2, 770, 50, "#9C7429", r2)
         text(ctx, "make a secret code", W / 2, 850, 56, INK, r2)
         text(ctx, "with a zero", W / 2, 920, 56, INK, r2)
         dial_row(ctx, W / 2, 1010, (None, 0, None, None), r2, size=0.5)
     # teaser
-    ta = window(T, S(33) - 0.1, ep.total - 1.0, 0.4, 0.5)
+    ta = window(T, S(31) - 0.1, ep.total - 1.0, 0.4, 0.5)
     if ta > 0:
-        card(ctx, 140, 200, 800, 470, ta)
-        rrect(ctx, 330, 230, 420, 100, 46, SAGE, ta)
-        text(ctx, "Next case", W / 2, 280, 54, "#FFFFFF", ta)
+        card(ctx, 140, 170, 800, 440, ta)
+        rrect(ctx, 330, 200, 420, 100, 46, SAGE, ta)
+        text(ctx, "Next case", W / 2, 250, 54, "#FFFFFF", ta)
         for k in range(10):
             x = 210 + k * 73
-            y = 440 + (12 if k % 2 else 0)
+            y = 400 + (12 if k % 2 else 0)
             ellipse(ctx, x, y + 12, 22, 27, "#B07A43", ta)
             rrect(ctx, x - 26, y - 22, 52, 22, 10, "#7A5A3A", ta)
             rrect(ctx, x - 3, y - 34, 6, 14, 3, "#5E4630", ta)
-        text(ctx, "Counting to 10", W / 2, 590, 60, INK, ta)
+        text(ctx, "Counting to 10", W / 2, 545, 60, INK, ta)
