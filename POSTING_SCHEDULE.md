@@ -11,6 +11,8 @@ The episode task reads this file every run to pick posting times. The monthly re
 
 Episodes are produced every two days, so YouTube and Instagram alternate and something new goes out every day.
 
+**No clashes:** at most one YouTube post and one Instagram post per day. Before scheduling, check Metricool's scheduled posts; if that day's slot on that platform is already taken, use the same platform's slot on the next free day.
+
 ## Why these times
 - **YouTube 4:00 pm weekdays:** Metricool's best-time data for this account peaks at 4 pm on Wednesday to Friday, which is also Australian after-school time (school finishes about 3 pm), when young children watch with a parent nearby. Kids' content peaks around 8 am, 3 pm and 7 pm, following school hours, and posting just before the 7 pm peak lets YouTube's first small test audience see the Short before the evening rush.
 - **YouTube 8:30 am weekends:** Saturday and Sunday mornings are family viewing time in Australia, and 8:30 am in Sydney is late Friday or Saturday afternoon on the US East Coast (about 5:30 pm in November), so one upload catches Australian families and the largest English-speaking audience abroad.
