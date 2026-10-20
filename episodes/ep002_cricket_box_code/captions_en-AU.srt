@@ -1,0 +1,128 @@
+1
+00:00:00,350 --> 00:00:01,744
+BRAMBLE: Case open!
+
+2
+00:00:01,744 --> 00:00:05,567
+OTTO: Hey! That's not fair! The cricket box is locked!
+
+3
+00:00:05,767 --> 00:00:09,938
+IVY: The lock needs four digits. Digits are zero to nine.
+
+4
+00:00:10,338 --> 00:00:15,153
+Today's case: a code hidden in thousands, hundreds, tens and ones.
+
+5
+00:00:15,553 --> 00:00:19,375
+Place value means a digit's place shows its size.
+
+6
+00:00:20,175 --> 00:00:25,525
+Like at the canteen. Ten one-dollar coins make one ten-dollar note.
+
+7
+00:00:26,325 --> 00:00:29,768
+Mabel left a clue made of number blocks.
+
+8
+00:00:30,168 --> 00:00:33,301
+Big cubes are thousands. Flats are hundreds.
+
+9
+00:00:33,701 --> 00:00:37,212
+Long sticks are tens. Little cubes are ones.
+
+10
+00:00:38,012 --> 00:00:43,329
+OTTO: Three cubes, five sticks, two little cubes. It's three, five, two!
+
+11
+00:00:43,729 --> 00:00:46,413
+IVY: But the lock has four dials.
+
+12
+00:00:46,813 --> 00:00:49,100
+BRAMBLE: Let's not guess. Let's test.
+
+13
+00:00:49,500 --> 00:00:52,948
+BRAMBLE: Can you find the hundreds? Point to them.
+
+14
+00:00:56,148 --> 00:00:59,967
+There are no flats. So there are no hundreds.
+
+15
+00:01:00,867 --> 00:01:03,163
+BRAMBLE: Which code opens the lock?
+
+16
+00:01:03,563 --> 00:01:08,055
+A. Three, five, two, zero.
+
+17
+00:01:08,255 --> 00:01:12,560
+B. Three, zero, five, two.
+
+18
+00:01:12,760 --> 00:01:14,373
+Pause and think.
+
+19
+00:01:18,973 --> 00:01:22,419
+Put each block in its place. Three thousands.
+
+20
+00:01:22,819 --> 00:01:25,675
+No hundreds, so we write zero.
+
+21
+00:01:26,075 --> 00:01:29,142
+Five tens. Two ones.
+
+22
+00:01:29,542 --> 00:01:32,615
+Zero holds the hundreds place. It's B!
+
+23
+00:01:33,015 --> 00:01:35,313
+OTTO: Oh! The zero was hiding!
+
+24
+00:01:35,713 --> 00:01:40,590
+Three thousand. Three thousand and fifty. Three thousand and fifty-two.
+
+25
+00:01:41,390 --> 00:01:44,226
+OTTO: Three, zero, five, two.
+
+26
+00:01:44,626 --> 00:01:46,122
+BRAMBLE: Case solved!
+
+27
+00:01:47,622 --> 00:01:49,572
+IVY: Look! A real cricket!
+
+28
+00:01:49,772 --> 00:01:52,077
+OTTO: Not that kind of cricket!
+
+29
+00:01:52,977 --> 00:01:56,799
+Remember. Zero holds a place when there are none.
+
+30
+00:01:57,199 --> 00:02:00,641
+Say it with me. Zero holds the place.
+
+31
+00:02:02,441 --> 00:02:07,031
+Try it at home. Make a secret code with a zero.
+
+32
+00:02:07,831 --> 00:02:10,808
+Next case: counting acorns to ten.
+

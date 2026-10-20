@@ -1,0 +1,194 @@
+[
+ {
+  "who": "B",
+  "text": "Case open!",
+  "start": 0.35,
+  "end": 1.344
+ },
+ {
+  "who": "O",
+  "text": "Hey! That's not fair! The cricket box is locked!",
+  "start": 1.744,
+  "end": 5.167
+ },
+ {
+  "who": "I",
+  "text": "The lock needs four digits. Digits are zero to nine.",
+  "start": 5.767,
+  "end": 9.538
+ },
+ {
+  "who": "N",
+  "text": "Today's case: a code hidden in thousands, hundreds, tens and ones.",
+  "start": 10.338,
+  "end": 14.753
+ },
+ {
+  "who": "N",
+  "text": "Place value means a digit's place shows its size.",
+  "start": 15.553,
+  "end": 18.975
+ },
+ {
+  "who": "N",
+  "text": "Like at the canteen. Ten one-dollar coins make one ten-dollar note.",
+  "start": 20.175,
+  "end": 25.125
+ },
+ {
+  "who": "N",
+  "text": "Mabel left a clue made of number blocks.",
+  "start": 26.325,
+  "end": 29.368
+ },
+ {
+  "who": "N",
+  "text": "Big cubes are thousands. Flats are hundreds.",
+  "start": 30.168,
+  "end": 32.901
+ },
+ {
+  "who": "N",
+  "text": "Long sticks are tens. Little cubes are ones.",
+  "start": 33.701,
+  "end": 36.812
+ },
+ {
+  "who": "O",
+  "text": "Three cubes, five sticks, two little cubes. It's three, five, two!",
+  "start": 38.012,
+  "end": 42.929
+ },
+ {
+  "who": "I",
+  "text": "But the lock has four dials.",
+  "start": 43.729,
+  "end": 46.013
+ },
+ {
+  "who": "B",
+  "text": "Let's not guess. Let's test.",
+  "start": 46.813,
+  "end": 48.7
+ },
+ {
+  "who": "B",
+  "text": "Can you find the hundreds? Point to them.",
+  "start": 49.5,
+  "end": 52.548
+ },
+ {
+  "who": "N",
+  "text": "There are no flats. So there are no hundreds.",
+  "start": 56.148,
+  "end": 59.567
+ },
+ {
+  "who": "B",
+  "text": "Which code opens the lock?",
+  "start": 60.867,
+  "end": 62.763
+ },
+ {
+  "who": "N",
+  "text": "A. Three, five, two, zero.",
+  "start": 63.563,
+  "end": 67.655
+ },
+ {
+  "who": "N",
+  "text": "B. Three, zero, five, two.",
+  "start": 68.255,
+  "end": 72.16
+ },
+ {
+  "who": "N",
+  "text": "Pause and think.",
+  "start": 72.76,
+  "end": 73.973
+ },
+ {
+  "who": "N",
+  "text": "Put each block in its place. Three thousands.",
+  "start": 78.973,
+  "end": 82.019
+ },
+ {
+  "who": "N",
+  "text": "No hundreds, so we write zero.",
+  "start": 82.819,
+  "end": 85.275
+ },
+ {
+  "who": "N",
+  "text": "Five tens. Two ones.",
+  "start": 86.075,
+  "end": 88.742
+ },
+ {
+  "who": "N",
+  "text": "Zero holds the hundreds place. It's B!",
+  "start": 89.542,
+  "end": 92.215
+ },
+ {
+  "who": "O",
+  "text": "Oh! The zero was hiding!",
+  "start": 93.015,
+  "end": 94.913
+ },
+ {
+  "who": "N",
+  "text": "Three thousand. Three thousand and fifty. Three thousand and fifty-two.",
+  "start": 95.713,
+  "end": 100.19
+ },
+ {
+  "who": "O",
+  "text": "Three, zero, five, two.",
+  "start": 101.39,
+  "end": 103.826
+ },
+ {
+  "who": "B",
+  "text": "Case solved!",
+  "start": 104.626,
+  "end": 105.722
+ },
+ {
+  "who": "I",
+  "text": "Look! A real cricket!",
+  "start": 107.622,
+  "end": 109.172
+ },
+ {
+  "who": "O",
+  "text": "Not that kind of cricket!",
+  "start": 109.772,
+  "end": 111.677
+ },
+ {
+  "who": "N",
+  "text": "Remember. Zero holds a place when there are none.",
+  "start": 112.977,
+  "end": 116.399
+ },
+ {
+  "who": "N",
+  "text": "Say it with me. Zero holds the place.",
+  "start": 117.199,
+  "end": 120.241
+ },
+ {
+  "who": "N",
+  "text": "Try it at home. Make a secret code with a zero.",
+  "start": 122.441,
+  "end": 126.631
+ },
+ {
+  "who": "N",
+  "text": "Next case: counting acorns to ten.",
+  "start": 127.831,
+  "end": 130.408
+ }
+]

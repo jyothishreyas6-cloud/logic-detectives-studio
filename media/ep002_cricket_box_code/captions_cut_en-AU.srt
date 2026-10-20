@@ -1,0 +1,64 @@
+1
+00:00:00,350 --> 00:00:01,744
+BRAMBLE: Case open!
+
+2
+00:00:01,744 --> 00:00:05,567
+OTTO: Hey! That's not fair! The cricket box is locked!
+
+3
+00:00:05,767 --> 00:00:09,938
+IVY: The lock needs four digits. Digits are zero to nine.
+
+4
+00:00:10,338 --> 00:00:15,655
+OTTO: Three cubes, five sticks, two little cubes. It's three, five, two!
+
+5
+00:00:16,055 --> 00:00:18,739
+IVY: But the lock has four dials.
+
+6
+00:00:19,139 --> 00:00:22,585
+Put each block in its place. Three thousands.
+
+7
+00:00:22,985 --> 00:00:25,841
+No hundreds, so we write zero.
+
+8
+00:00:26,241 --> 00:00:29,308
+Five tens. Two ones.
+
+9
+00:00:29,708 --> 00:00:32,781
+Zero holds the hundreds place. It's B!
+
+10
+00:00:33,181 --> 00:00:36,017
+OTTO: Three, zero, five, two.
+
+11
+00:00:36,417 --> 00:00:37,913
+BRAMBLE: Case solved!
+
+12
+00:00:39,413 --> 00:00:41,363
+IVY: Look! A real cricket!
+
+13
+00:00:41,563 --> 00:00:43,868
+OTTO: Not that kind of cricket!
+
+14
+00:00:44,268 --> 00:00:47,710
+Say it with me. Zero holds the place.
+
+15
+00:00:49,510 --> 00:00:54,100
+Try it at home. Make a secret code with a zero.
+
+16
+00:00:54,500 --> 00:00:57,477
+Next case: counting acorns to ten.
+

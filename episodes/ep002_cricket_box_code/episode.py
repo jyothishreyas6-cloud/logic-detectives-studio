@@ -29,33 +29,33 @@ GREEN = "#6E8460"
 LINES = [
     Line("B", "Case open!", gap=0.4),                                                    # 0
     Line("O", "Hey! That's not fair! The cricket box is locked!", gap=0.6),              # 1
-    Line("I", "The lock needs four digits. Digits are zero to nine.", gap=1.0),          # 2
-    Line("N", "Today's case: a code hidden in thousands, hundreds, tens and ones.", gap=1.0),  # 3
-    Line("N", "Place value means a digit's place shows its size.", gap=1.5),             # 4
-    Line("N", "Like at the canteen. Ten one-dollar coins make one ten-dollar note.", gap=1.5),  # 5
+    Line("I", "The lock needs four digits. Digits are zero to nine.", gap=0.8),          # 2
+    Line("N", "Today's case: a code hidden in thousands, hundreds, tens and ones.", gap=0.8),  # 3
+    Line("N", "Place value means a digit's place shows its size.", gap=1.2),             # 4
+    Line("N", "Like at the canteen. Ten one-dollar coins make one ten-dollar note.", gap=1.2),  # 5
     Line("N", "Mabel left a clue made of number blocks.", gap=0.8),                      # 6
     Line("N", "Big cubes are thousands. Flats are hundreds.", gap=0.8),                  # 7
-    Line("N", "Long sticks are tens. Little cubes are ones.", gap=1.5),                  # 8
+    Line("N", "Long sticks are tens. Little cubes are ones.", gap=1.2),                  # 8
     Line("O", "Three cubes, five sticks, two little cubes. It's three, five, two!", gap=0.8),  # 9
-    Line("I", "But the lock has four dials.", gap=1.0),                                  # 10
+    Line("I", "But the lock has four dials.", gap=0.8),                                  # 10
     Line("B", "Let's not guess. Let's test.", gap=0.8),                                  # 11
     Line("B", "Can you find the hundreds? Point to them.", gap=3.6),                     # 12
-    Line("N", "There are no flats. So there are no hundreds.", gap=1.5),                 # 13
+    Line("N", "There are no flats. So there are no hundreds.", gap=1.3),                 # 13
     Line("B", "Which code opens the lock?", gap=0.8),                                    # 14
     Line("N", "A. Three, five, two, zero.", gap=0.6),                                    # 15
     Line("N", "B. Three, zero, five, two.", gap=0.6),                                    # 16
     Line("N", "Pause and think.", gap=5.0),                                              # 17
     Line("N", "Put each block in its place. Three thousands.", gap=0.8),                 # 18
     Line("N", "No hundreds, so we write zero.", gap=0.8),                                # 19
-    Line("N", "Five tens. Two ones.", gap=1.0),                                          # 20
+    Line("N", "Five tens. Two ones.", gap=0.8),                                          # 20
     Line("N", "Zero holds the hundreds place. It's B!", gap=0.8),                        # 21
-    Line("O", "Oh! The zero was hiding!", gap=1.0),                                      # 22
-    Line("N", "Three thousand. Three thousand and fifty. Three thousand and fifty-two.", gap=1.5),  # 23
+    Line("O", "Oh! The zero was hiding!", gap=0.8),                                      # 22
+    Line("N", "Three thousand. Three thousand and fifty. Three thousand and fifty-two.", gap=1.2),  # 23
     Line("O", "Three, zero, five, two.", gap=0.8),                                       # 24
     Line("B", "Case solved!", gap=1.9),                                                  # 25
     Line("I", "Look! A real cricket!", gap=0.6),                                         # 26
-    Line("O", "Not that kind of cricket!", gap=1.5),                                     # 27
-    Line("N", "Remember. Zero holds a place when there are none.", gap=1.0),             # 28
+    Line("O", "Not that kind of cricket!", gap=1.3),                                     # 27
+    Line("N", "Remember. Zero holds a place when there are none.", gap=0.8),             # 28
     Line("N", "Say it with me. Zero holds the place.", gap=2.2),                         # 29
     Line("N", "Try it at home. Make a secret code with a zero.", gap=1.2),               # 30
     Line("N", "Next case: counting acorns to ten.", gap=0.6),              # 31
@@ -64,7 +64,7 @@ STRIP_HIDDEN = {3, 25}
 CHILD_TURN = 29
 STAMP_LINE = 25
 OPEN_LINE = 0
-CUT = [(0, 2), (6, 10), (12, 12), (14, 21), (24, 27), (29, 29), (31, 31)]
+CUT = [(0, 2), (9, 10), (18, 21), (24, 27), (29, 30), (31, 31)]
 
 # ---------------------------------------------------------------- geometry
 BOX_X0, BOX_X1, BOX_Y, BOX_H = 630, 1005, 980, 135        # 25 cm x 9 cm front
@@ -394,7 +394,7 @@ def draw_blocks(ctx, ep, T, a=1.0):
 
 
 def view_box(ctx, ep, T, end=False):
-    lid = prog(T, ep.e(25) + 1.6, ep.e(25) + 2.3) if end else 0.0
+    lid = prog(T, ep.e(25) + 0.9, ep.e(25) + 1.5) if end else 0.0
     lockbox(ctx, dial_digits(ep, T) if end else (0, 0, 0, 0), lid)
     if not end:
         pa = 1 - prog(T, ep.s(6) - 0.5, ep.s(6) + 0.1)
@@ -408,8 +408,8 @@ def view_box(ctx, ep, T, end=False):
 
 
 def bug(ctx, ep, T):
-    t0 = ep.e(25) + 2.0                  # lid is open
-    j1, j2, j3 = t0 + 0.2, ep.e(26) + 0.25, ep.e(27) + 0.4
+    t0 = ep.e(25) + 1.3                  # lid is open
+    j1, j2, j3 = t0 + 0.2, ep.e(26) + 0.7, ep.e(27) + 0.4
     if T < j1:
         return
     if T < j1 + 0.7:                    # first hop: out of the box onto the table
@@ -485,7 +485,7 @@ def cues(ep):
         ("zoom", ep.s(18) + 0.2, ep.e(20) + 0.6, 540, 1650, 1.08),
         ("ring", ep.s(21) - 0.1, ep.s(21) + 0.62 * d22, 535, 1030, 120, 260),
         ("lens", ep.s(24) - 0.2, ep.e(24) + 0.7, *DIALS_C, 380, 600, 150, 2.0),
-        ("lens", ep.s(26) - 0.1, ep.e(26) + 0.2, 560, 1150, 300, 760, 140, 2.4),
+        ("lens", ep.e(25) + 2.25, ep.e(26) + 0.65, 560, 1150, 300, 760, 140, 2.4),
     ]
 
 
@@ -494,8 +494,8 @@ def foley(ep):
     s, e = ep.s(24), ep.e(24)
     for i in range(4):
         out.append(("snip", s + (i + 0.2) / 4.4 * (e - s) + 0.25))
-    out += [("pop", ep.s(5) + 0.6 * (ep.e(5) - ep.s(5))), ("whoosh", ep.e(25) + 1.6),
-            ("step", ep.e(25) + 2.2), ("step", ep.e(25) + 2.9), ("step", ep.e(26) + 0.25),
+    out += [("pop", ep.s(5) + 0.6 * (ep.e(5) - ep.s(5))), ("whoosh", ep.e(25) + 0.9),
+            ("step", ep.e(25) + 1.5), ("step", ep.e(25) + 2.2), ("step", ep.e(26) + 0.7),
             ("step", ep.e(27) + 0.4)]
     return out
 
@@ -741,7 +741,7 @@ def cards(ctx, ep, T):
     # recap
     ra = window(T, S(28) - 0.3, S(31) - 0.1, 0.5, 0.5)
     if ra > 0:
-        card(ctx, 60, 130, 960, 1010, ra, "#FBF6EC", 1.0)
+        card(ctx, 30, 130, 1020, 1010, ra, "#FBF6EC", 1.0)
         rrect(ctx, 300, 160, 480, 110, 50, OCHRE, ra)
         text(ctx, "Remember", W / 2, 215, 62, "#FFFFFF", ra)
         r1 = ra * prog(T, S(28) + 0.3, S(28) + 0.9)
