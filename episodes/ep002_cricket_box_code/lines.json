@@ -1,0 +1,208 @@
+{
+ "lines": [
+  {
+   "i": 0,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case open!"
+  },
+  {
+   "i": 1,
+   "who": "O",
+   "voice": "otto",
+   "text": "Hey! That's not fair! The cricket box is locked!"
+  },
+  {
+   "i": 2,
+   "who": "I",
+   "voice": "ivy",
+   "text": "The lock needs a code with four digits."
+  },
+  {
+   "i": 3,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Today's case: a code hidden in thousands, hundreds, tens and ones."
+  },
+  {
+   "i": 4,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Digits are the numbers zero to nine."
+  },
+  {
+   "i": 5,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Place value means a digit's place shows its size."
+  },
+  {
+   "i": 6,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Like at the canteen. Ten one-dollar coins make one ten-dollar note."
+  },
+  {
+   "i": 7,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Mabel left a clue made of number blocks."
+  },
+  {
+   "i": 8,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Big cubes are thousands. Flats are hundreds."
+  },
+  {
+   "i": 9,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Long sticks are tens. Little cubes are ones."
+  },
+  {
+   "i": 10,
+   "who": "O",
+   "voice": "otto",
+   "text": "Three cubes, five sticks, two little cubes. It's three, five, two!"
+  },
+  {
+   "i": 11,
+   "who": "I",
+   "voice": "ivy",
+   "text": "But the lock has four dials."
+  },
+  {
+   "i": 12,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's not guess. Let's test."
+  },
+  {
+   "i": 13,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Can you find the hundreds? Point to them."
+  },
+  {
+   "i": 14,
+   "who": "N",
+   "voice": "narrator",
+   "text": "There are no flats. So there are no hundreds."
+  },
+  {
+   "i": 15,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Which code opens the lock?"
+  },
+  {
+   "i": 16,
+   "who": "N",
+   "voice": "narrator",
+   "text": "A. Three, five, two, zero."
+  },
+  {
+   "i": 17,
+   "who": "N",
+   "voice": "narrator",
+   "text": "B. Three, zero, five, two."
+  },
+  {
+   "i": 18,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Pause and think."
+  },
+  {
+   "i": 19,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Put each block in its place. Three thousands."
+  },
+  {
+   "i": 20,
+   "who": "N",
+   "voice": "narrator",
+   "text": "No hundreds, so we write zero."
+  },
+  {
+   "i": 21,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Five tens. Two ones."
+  },
+  {
+   "i": 22,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Zero holds the hundreds place. It's B!"
+  },
+  {
+   "i": 23,
+   "who": "O",
+   "voice": "otto",
+   "text": "Oh! The zero was hiding!"
+  },
+  {
+   "i": 24,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Let's count the blocks to check."
+  },
+  {
+   "i": 25,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Three thousand. Three thousand and fifty. Three thousand and fifty-two."
+  },
+  {
+   "i": 26,
+   "who": "O",
+   "voice": "otto",
+   "text": "Three, zero, five, two."
+  },
+  {
+   "i": 27,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case solved!"
+  },
+  {
+   "i": 28,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Look! A real cricket!"
+  },
+  {
+   "i": 29,
+   "who": "O",
+   "voice": "otto",
+   "text": "Not that kind of cricket!"
+  },
+  {
+   "i": 30,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Remember. Zero holds a place when there are none."
+  },
+  {
+   "i": 31,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Say it with me. Zero holds the place."
+  },
+  {
+   "i": 32,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Try it at home. Make a secret code with a zero."
+  },
+  {
+   "i": 33,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Next case: counting to ten, one acorn at a time."
+  }
+ ]
+}
