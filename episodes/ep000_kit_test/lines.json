@@ -1,0 +1,40 @@
+{
+ "lines": [
+  {
+   "i": 0,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case open!"
+  },
+  {
+   "i": 1,
+   "who": "O",
+   "voice": "otto",
+   "text": "Hey! That's not fair!"
+  },
+  {
+   "i": 2,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Is this really half?"
+  },
+  {
+   "i": 3,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Can you point to the middle?"
+  },
+  {
+   "i": 4,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case solved!"
+  },
+  {
+   "i": 5,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Next case: four pieces. Are they fair?"
+  }
+ ]
+}

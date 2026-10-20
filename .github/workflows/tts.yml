@@ -1,0 +1,29 @@
+name: Australian voices (Google TTS)
+on:
+  push:
+    paths: ["episodes/**/lines.json"]
+  workflow_dispatch:
+    inputs:
+      samples:
+        description: "Make cast voice samples only"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+jobs:
+  voices:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make voices
+        env:
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+        run: |
+          if [ "${{ inputs.samples }}" = "true" ]; then python3 tools/tts_google.py --samples; else python3 tools/tts_google.py; fi
+      - name: Commit voice files
+        run: |
+          git config user.name "logic-detectives-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A episodes voice_samples 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Voices: Australian TTS [skip ci]"
+          git push

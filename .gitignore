@@ -1,0 +1,4 @@
+__pycache__/
+episodes/*/stills/
+episodes/*/audio_raw.wav
+episodes/*/cut_part*.mp4
