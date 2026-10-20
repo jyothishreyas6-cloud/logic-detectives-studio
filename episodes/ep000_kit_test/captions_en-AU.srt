@@ -1,0 +1,24 @@
+1
+00:00:00,350 --> 00:00:01,512
+BRAMBLE: Case open!
+
+2
+00:00:01,512 --> 00:00:03,469
+OTTO: Hey! That's not fair!
+
+3
+00:00:03,669 --> 00:00:05,437
+Is this really half?
+
+4
+00:00:06,037 --> 00:00:07,749
+BRAMBLE: Can you point to the middle?
+
+5
+00:00:11,349 --> 00:00:12,573
+BRAMBLE: Case solved!
+
+6
+00:00:13,673 --> 00:00:17,385
+Next case: four pieces. Are they fair?
+
