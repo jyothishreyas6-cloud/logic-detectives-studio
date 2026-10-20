@@ -1,0 +1,214 @@
+{
+ "lines": [
+  {
+   "i": 0,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case open!"
+  },
+  {
+   "i": 1,
+   "who": "O",
+   "voice": "otto",
+   "text": "Hey! That's not fair!"
+  },
+  {
+   "i": 2,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Is this really half?"
+  },
+  {
+   "i": 3,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Today's case: what is a half?"
+  },
+  {
+   "i": 4,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Half means two pieces. Both pieces are the same size."
+  },
+  {
+   "i": 5,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Like a lamington for two friends. Each friend gets the same."
+  },
+  {
+   "i": 6,
+   "who": "O",
+   "voice": "otto",
+   "text": "One ribbon, two kites. I'll cut it right here!"
+  },
+  {
+   "i": 7,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Wait. Is that the middle?"
+  },
+  {
+   "i": 8,
+   "who": "N",
+   "voice": "narrator",
+   "text": "The mark might not be in the middle. Then one piece is longer."
+  },
+  {
+   "i": 9,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's not guess. Let's test."
+  },
+  {
+   "i": 10,
+   "who": "N",
+   "voice": "narrator",
+   "text": "A. At Otto's mark."
+  },
+  {
+   "i": 11,
+   "who": "N",
+   "voice": "narrator",
+   "text": "B. Somewhere else."
+  },
+  {
+   "i": 12,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Pause and think."
+  },
+  {
+   "i": 13,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Can you point to the middle?"
+  },
+  {
+   "i": 14,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Watch the ends. Bring one end to meet the other."
+  },
+  {
+   "i": 15,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Ends together."
+  },
+  {
+   "i": 16,
+   "who": "N",
+   "voice": "narrator",
+   "text": "The two ends match. So both sides are the same length."
+  },
+  {
+   "i": 17,
+   "who": "N",
+   "voice": "narrator",
+   "text": "The fold shows the middle."
+  },
+  {
+   "i": 18,
+   "who": "N",
+   "voice": "narrator",
+   "text": "The middle is here. Otto's mark is over there. It's B!"
+  },
+  {
+   "i": 19,
+   "who": "O",
+   "voice": "otto",
+   "text": "Oops. My mark was too far."
+  },
+  {
+   "i": 20,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Cut at the fold."
+  },
+  {
+   "i": 21,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Line them up."
+  },
+  {
+   "i": 22,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Ten centimetres, and ten centimetres."
+  },
+  {
+   "i": 23,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Same length!"
+  },
+  {
+   "i": 24,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case solved!"
+  },
+  {
+   "i": 25,
+   "who": "I",
+   "voice": "ivy",
+   "text": "They match!"
+  },
+  {
+   "i": 26,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Two equal pieces. Equal means the same. Each one is a half."
+  },
+  {
+   "i": 27,
+   "who": "O",
+   "voice": "otto",
+   "text": "Yay!"
+  },
+  {
+   "i": 28,
+   "who": "O",
+   "voice": "otto",
+   "text": "Oops! Who turned off the lights?"
+  },
+  {
+   "i": 29,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Remember. Say it with me."
+  },
+  {
+   "i": 30,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Half means..."
+  },
+  {
+   "i": 31,
+   "who": "N",
+   "voice": "narrator",
+   "text": "two equal parts!"
+  },
+  {
+   "i": 32,
+   "who": "N",
+   "voice": "narrator",
+   "text": "To find the middle, fold it end to end."
+  },
+  {
+   "i": 33,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Try it at home. Use string or paper."
+  },
+  {
+   "i": 34,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Next case: four pieces. Are they fair?"
+  }
+ ]
+}
