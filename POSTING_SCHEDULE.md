@@ -4,10 +4,10 @@ The episode task reads this file every run to pick posting times. The monthly re
 
 ## Current slots (set 21/10/2026)
 
-| Post | Day the episode is produced (Mon to Fri) | Day the episode is produced (Sat or Sun) |
-|---|---|---|
-| YouTube full Short | Same day, 4:00 pm | Same day, 8:30 am |
-| Instagram Reel (discovery cut) | Next day, 8:00 pm (if the next day is Sat or Sun: 9:30 am) | Next day, 9:30 am (if Sat) or 8:00 pm (if the next day is Mon) |
+| Post | When | Time on a weekday (Mon to Fri) | Time on Sat or Sun |
+|---|---|---|---|
+| YouTube full Short | The day the episode is produced | 4:00 pm | 8:30 am |
+| Instagram Reel (discovery cut) | The next day | 8:00 pm | 9:30 am |
 
 Episodes are produced every two days, so YouTube and Instagram alternate and something new goes out every day.
 
