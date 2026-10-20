@@ -3,36 +3,36 @@
   "who": "B",
   "text": "Case open!",
   "start": 0.35,
-  "end": 1.112
+  "end": 1.297
  },
  {
   "who": "O",
   "text": "Hey! That's not fair!",
-  "start": 1.512,
-  "end": 3.069
+  "start": 1.697,
+  "end": 3.325
  },
  {
   "who": "N",
   "text": "Is this really half?",
-  "start": 3.669,
-  "end": 5.037
+  "start": 3.925,
+  "end": 5.899
  },
  {
   "who": "B",
   "text": "Can you point to the middle?",
-  "start": 6.037,
-  "end": 7.349
+  "start": 6.899,
+  "end": 8.96
  },
  {
   "who": "B",
   "text": "Case solved!",
-  "start": 11.349,
-  "end": 12.173
+  "start": 12.96,
+  "end": 14.162
  },
  {
   "who": "N",
   "text": "Next case: four pieces. Are they fair?",
-  "start": 13.673,
-  "end": 16.985
+  "start": 15.662,
+  "end": 19.23
  }
 ]
