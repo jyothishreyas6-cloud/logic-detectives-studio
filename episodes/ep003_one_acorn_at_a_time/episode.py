@@ -1,0 +1,40 @@
+from kit import Line
+
+LINES = [
+    Line("B", "Case open!", gap=0.4),                                    # 0
+    Line("I", "Hey! That's not fair! Otto got more!", gap=0.6),          # 1
+    Line("O", "I counted eleven acorns. You have ten!", gap=0.8),        # 2
+    Line("N", "Today's case: counting to ten, one acorn at a time.", gap=0.8),  # 3
+    Line("N", "Counting tells us how many.", gap=1.2),                   # 4
+    Line("N", "It's like a sausage sizzle.", gap=0.6),                   # 5
+    Line("N", "One sausage goes on each bread.", gap=0.6),               # 6
+    Line("N", "One number goes with each thing.", gap=1.4),              # 7
+    Line("N", "Watch Otto count again.", gap=0.6),                       # 8
+    Line("O", "One, two, three, four, five, six.", gap=0.3),             # 9
+    Line("O", "Seven, eight, nine, ten, eleven!", gap=0.8),              # 10
+    Line("I", "Hmm. Something looks funny.", gap=0.8),                   # 11
+    Line("B", "Let's not guess. Let's test.", gap=0.8),                  # 12
+    Line("B", "Can you point to each acorn?", gap=5.0),                  # 13
+    Line("B", "Who has more acorns?", gap=0.8),                          # 14
+    Line("N", "A. Otto has more.", gap=0.6),                             # 15
+    Line("N", "B. They have the same.", gap=0.6),                        # 16
+    Line("N", "Pause and think.", gap=5.0),                              # 17
+    Line("N", "A ten frame has ten boxes.", gap=0.8),                    # 18
+    Line("N", "Move each acorn once. Say one number.", gap=0.8),         # 19
+    Line("N", "One, two, three, four, five.", gap=0.6),                  # 20
+    Line("N", "Six, seven, eight, nine, ten.", gap=1.0),                 # 21
+    Line("N", "The last number tells how many. Ten!", gap=1.2),          # 22
+    Line("O", "Oh! I counted one acorn twice!", gap=0.8),                # 23
+    Line("N", "Both have ten. It's B!", gap=0.8),                        # 24
+    Line("B", "Let's check another way. Make pairs.", gap=0.8),          # 25
+    Line("N", "Every acorn has a partner.", gap=0.8),                    # 26
+    Line("I", "Ten and ten. The same!", gap=0.8),                        # 27
+    Line("B", "Case solved!", gap=1.9),                                  # 28
+    Line("O", "Now let's count your spines, Bramble!", gap=0.6),         # 29
+    Line("B", "I have about five thousand.", gap=0.6),                   # 30
+    Line("O", "One, two, three... maybe tomorrow!", gap=1.3),            # 31
+    Line("N", "Remember. The last number tells how many.", gap=0.8),     # 32
+    Line("N", "Say it with me. The last number tells how many.", gap=2.2),  # 33
+    Line("N", "Try it at home. Count ten pegs into a cup.", gap=1.2),    # 34
+    Line("N", "Next case: a missing house number.", gap=0.6),            # 35
+]

@@ -1,0 +1,231 @@
+{
+ "lines": [
+  {
+   "i": 0,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case open!"
+  },
+  {
+   "i": 1,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Hey! That's not fair! Otto got more!",
+   "wpm": 145
+  },
+  {
+   "i": 2,
+   "who": "O",
+   "voice": "otto",
+   "text": "I counted eleven acorns. You have ten!",
+   "wpm": 145
+  },
+  {
+   "i": 3,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Today's case: counting to ten, one acorn at a time."
+  },
+  {
+   "i": 4,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Counting tells us how many."
+  },
+  {
+   "i": 5,
+   "who": "N",
+   "voice": "narrator",
+   "text": "It's like a sausage sizzle."
+  },
+  {
+   "i": 6,
+   "who": "N",
+   "voice": "narrator",
+   "text": "One sausage goes on each bread."
+  },
+  {
+   "i": 7,
+   "who": "N",
+   "voice": "narrator",
+   "text": "One number goes with each thing."
+  },
+  {
+   "i": 8,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Watch Otto count again."
+  },
+  {
+   "i": 9,
+   "who": "O",
+   "voice": "otto",
+   "text": "One, two, three, four, five, six.",
+   "wpm": 125
+  },
+  {
+   "i": 10,
+   "who": "O",
+   "voice": "otto",
+   "text": "Seven, eight, nine, ten, eleven!",
+   "wpm": 125
+  },
+  {
+   "i": 11,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Hmm. Something looks funny.",
+   "wpm": 145
+  },
+  {
+   "i": 12,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's not guess. Let's test."
+  },
+  {
+   "i": 13,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Can you point to each acorn?"
+  },
+  {
+   "i": 14,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Who has more acorns?"
+  },
+  {
+   "i": 15,
+   "who": "N",
+   "voice": "narrator",
+   "text": "A. Otto has more."
+  },
+  {
+   "i": 16,
+   "who": "N",
+   "voice": "narrator",
+   "text": "B. They have the same."
+  },
+  {
+   "i": 17,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Pause and think."
+  },
+  {
+   "i": 18,
+   "who": "N",
+   "voice": "narrator",
+   "text": "A ten frame has ten boxes."
+  },
+  {
+   "i": 19,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Move each acorn once. Say one number."
+  },
+  {
+   "i": 20,
+   "who": "N",
+   "voice": "narrator",
+   "text": "One, two, three, four, five.",
+   "wpm": 125
+  },
+  {
+   "i": 21,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Six, seven, eight, nine, ten.",
+   "wpm": 125
+  },
+  {
+   "i": 22,
+   "who": "N",
+   "voice": "narrator",
+   "text": "The last number tells how many. Ten!"
+  },
+  {
+   "i": 23,
+   "who": "O",
+   "voice": "otto",
+   "text": "Oh! I counted one acorn twice!",
+   "wpm": 145
+  },
+  {
+   "i": 24,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Both have ten. It's B!"
+  },
+  {
+   "i": 25,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's check another way. Make pairs."
+  },
+  {
+   "i": 26,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Every acorn has a partner."
+  },
+  {
+   "i": 27,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Ten and ten. The same!",
+   "wpm": 145
+  },
+  {
+   "i": 28,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case solved!"
+  },
+  {
+   "i": 29,
+   "who": "O",
+   "voice": "otto",
+   "text": "Now let's count your spines, Bramble!",
+   "wpm": 145
+  },
+  {
+   "i": 30,
+   "who": "B",
+   "voice": "bramble",
+   "text": "I have about five thousand."
+  },
+  {
+   "i": 31,
+   "who": "O",
+   "voice": "otto",
+   "text": "One, two, three... maybe tomorrow!",
+   "wpm": 125
+  },
+  {
+   "i": 32,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Remember. The last number tells how many."
+  },
+  {
+   "i": 33,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Say it with me. The last number tells how many."
+  },
+  {
+   "i": 34,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Try it at home. Count ten pegs into a cup."
+  },
+  {
+   "i": 35,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Next case: a missing house number."
+  }
+ ]
+}
