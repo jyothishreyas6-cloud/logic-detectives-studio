@@ -1,0 +1,56 @@
+1
+00:00:00,350 --> 00:00:01,697
+BRAMBLE: Case open!
+
+2
+00:00:01,697 --> 00:00:05,327
+IVY: Hey! That's not fair! Otto got more!
+
+3
+00:00:05,527 --> 00:00:08,982
+OTTO: I counted eleven acorns. You have ten!
+
+4
+00:00:09,382 --> 00:00:15,662
+OTTO: One, two, three, four, five, six.
+
+5
+00:00:15,562 --> 00:00:20,040
+OTTO: Seven, eight, nine, ten, eleven!
+
+6
+00:00:20,440 --> 00:00:24,436
+Six, seven, eight, nine, ten.
+
+7
+00:00:24,836 --> 00:00:28,361
+The last number tells how many. Ten!
+
+8
+00:00:28,761 --> 00:00:31,383
+Both have ten. It's B!
+
+9
+00:00:31,783 --> 00:00:33,279
+BRAMBLE: Case solved!
+
+10
+00:00:34,779 --> 00:00:37,662
+OTTO: Now let's count your spines, Bramble!
+
+11
+00:00:37,862 --> 00:00:40,509
+BRAMBLE: I have about five thousand.
+
+12
+00:00:40,709 --> 00:00:43,749
+OTTO: One, two, three... maybe tomorrow!
+
+13
+00:00:44,149 --> 00:00:49,234
+Say it with me. The last number tells how many.
+
+14
+00:00:49,634 --> 00:00:52,953
+Next case: a missing house number.
+

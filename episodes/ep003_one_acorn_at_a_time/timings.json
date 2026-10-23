@@ -1,0 +1,200 @@
+[
+ {
+  "who": "B",
+  "text": "Case open!",
+  "start": 0.35,
+  "end": 1.297
+ },
+ {
+  "who": "I",
+  "text": "Hey! That's not fair! Otto got more!",
+  "start": 1.697,
+  "end": 4.927
+ },
+ {
+  "who": "O",
+  "text": "I counted eleven acorns. You have ten!",
+  "start": 5.527,
+  "end": 8.582
+ },
+ {
+  "who": "N",
+  "text": "Today's case: counting to ten, one acorn at a time.",
+  "start": 9.382,
+  "end": 13.85
+ },
+ {
+  "who": "N",
+  "text": "It's like a sausage sizzle.",
+  "start": 14.55,
+  "end": 16.819
+ },
+ {
+  "who": "N",
+  "text": "One sausage goes on each bread.",
+  "start": 17.419,
+  "end": 20.347
+ },
+ {
+  "who": "N",
+  "text": "One number goes with each thing.",
+  "start": 20.947,
+  "end": 24.021
+ },
+ {
+  "who": "O",
+  "text": "One, two, three, four, five, six.",
+  "start": 25.021,
+  "end": 30.901
+ },
+ {
+  "who": "O",
+  "text": "Seven, eight, nine, ten, eleven!",
+  "start": 31.201,
+  "end": 35.279
+ },
+ {
+  "who": "I",
+  "text": "Hmm. Something looks funny.",
+  "start": 36.079,
+  "end": 37.823
+ },
+ {
+  "who": "B",
+  "text": "Let's not guess. Let's test.",
+  "start": 38.623,
+  "end": 40.825
+ },
+ {
+  "who": "B",
+  "text": "Can you point to each acorn?",
+  "start": 41.625,
+  "end": 44.262
+ },
+ {
+  "who": "B",
+  "text": "Who has more acorns?",
+  "start": 48.262,
+  "end": 50.053
+ },
+ {
+  "who": "N",
+  "text": "A. Otto has more.",
+  "start": 50.853,
+  "end": 52.894
+ },
+ {
+  "who": "N",
+  "text": "B. They have the same.",
+  "start": 53.494,
+  "end": 55.684
+ },
+ {
+  "who": "N",
+  "text": "Pause and think.",
+  "start": 56.284,
+  "end": 57.797
+ },
+ {
+  "who": "N",
+  "text": "A ten frame has ten boxes.",
+  "start": 62.797,
+  "end": 65.569
+ },
+ {
+  "who": "N",
+  "text": "Move each acorn once. Say one number.",
+  "start": 66.169,
+  "end": 69.794
+ },
+ {
+  "who": "N",
+  "text": "One, two, three, four, five.",
+  "start": 70.594,
+  "end": 74.514
+ },
+ {
+  "who": "N",
+  "text": "Six, seven, eight, nine, ten.",
+  "start": 75.114,
+  "end": 78.71
+ },
+ {
+  "who": "N",
+  "text": "The last number tells how many. Ten!",
+  "start": 79.51,
+  "end": 82.635
+ },
+ {
+  "who": "O",
+  "text": "Oh! I counted one acorn twice!",
+  "start": 83.835,
+  "end": 86.384
+ },
+ {
+  "who": "N",
+  "text": "Both have ten. It's B!",
+  "start": 87.184,
+  "end": 89.406
+ },
+ {
+  "who": "B",
+  "text": "Let's check another way. Make pairs.",
+  "start": 90.206,
+  "end": 93.751
+ },
+ {
+  "who": "N",
+  "text": "Every acorn has a partner.",
+  "start": 94.551,
+  "end": 96.848
+ },
+ {
+  "who": "I",
+  "text": "Ten and ten. The same!",
+  "start": 97.648,
+  "end": 99.823
+ },
+ {
+  "who": "B",
+  "text": "Case solved!",
+  "start": 100.623,
+  "end": 101.719
+ },
+ {
+  "who": "O",
+  "text": "Now let's count your spines, Bramble!",
+  "start": 103.619,
+  "end": 106.102
+ },
+ {
+  "who": "B",
+  "text": "I have about five thousand.",
+  "start": 106.702,
+  "end": 108.949
+ },
+ {
+  "who": "O",
+  "text": "One, two, three... maybe tomorrow!",
+  "start": 109.549,
+  "end": 112.189
+ },
+ {
+  "who": "N",
+  "text": "Say it with me. The last number tells how many.",
+  "start": 113.189,
+  "end": 117.874
+ },
+ {
+  "who": "N",
+  "text": "Try it at home. Count ten pegs into a cup.",
+  "start": 120.074,
+  "end": 124.511
+ },
+ {
+  "who": "N",
+  "text": "Next case: a missing house number.",
+  "start": 125.411,
+  "end": 128.33
+ }
+]

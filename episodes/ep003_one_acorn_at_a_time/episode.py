@@ -34,46 +34,43 @@ LINES = [
     Line("B", "Case open!", gap=0.4),                                    # 0
     Line("I", "Hey! That's not fair! Otto got more!", gap=0.6),          # 1
     Line("O", "I counted eleven acorns. You have ten!", gap=0.8),        # 2
-    Line("N", "Today's case: counting to ten, one acorn at a time.", gap=0.8),  # 3
-    Line("N", "Counting tells us how many.", gap=1.2),                   # 4
-    Line("N", "It's like a sausage sizzle.", gap=0.6),                   # 5
-    Line("N", "One sausage goes on each bread.", gap=0.6),               # 6
-    Line("N", "One number goes with each thing.", gap=1.4),              # 7
-    Line("N", "Watch Otto count again.", gap=0.6),                       # 8
-    Line("O", "One, two, three, four, five, six.", gap=0.3),             # 9
-    Line("O", "Seven, eight, nine, ten, eleven!", gap=0.8),              # 10
-    Line("I", "Hmm. Something looks funny.", gap=0.8),                   # 11
-    Line("B", "Let's not guess. Let's test.", gap=0.8),                  # 12
-    Line("B", "Can you point to each acorn?", gap=5.0),                  # 13
-    Line("B", "Who has more acorns?", gap=0.8),                          # 14
-    Line("N", "A. Otto has more.", gap=0.6),                             # 15
-    Line("N", "B. They have the same.", gap=0.6),                        # 16
-    Line("N", "Pause and think.", gap=5.0),                              # 17
-    Line("N", "A ten frame has ten boxes.", gap=0.8),                    # 18
-    Line("N", "Move each acorn once. Say one number.", gap=0.8),         # 19
-    Line("N", "One, two, three, four, five.", gap=0.6),                  # 20
-    Line("N", "Six, seven, eight, nine, ten.", gap=1.0),                 # 21
-    Line("N", "The last number tells how many. Ten!", gap=1.2),          # 22
-    Line("O", "Oh! I counted one acorn twice!", gap=0.8),                # 23
-    Line("N", "Both have ten. It's B!", gap=0.8),                        # 24
-    Line("B", "Let's check another way. Make pairs.", gap=0.8),          # 25
-    Line("N", "Every acorn has a partner.", gap=0.8),                    # 26
-    Line("I", "Ten and ten. The same!", gap=0.8),                        # 27
-    Line("B", "Case solved!", gap=1.9),                                  # 28
-    Line("O", "Now let's count your spines, Bramble!", gap=0.6),         # 29
-    Line("B", "I have about five thousand.", gap=0.6),                   # 30
-    Line("O", "One, two, three... maybe tomorrow!", gap=1.3),            # 31
-    Line("N", "Remember. The last number tells how many.", gap=0.8),     # 32
-    Line("N", "Say it with me. The last number tells how many.", gap=2.2),  # 33
-    Line("N", "Try it at home. Count ten pegs into a cup.", gap=1.2),    # 34
-    Line("N", "Next case: a missing house number.", gap=0.6),            # 35
+    Line("N", "Today's case: counting to ten, one acorn at a time.", gap=0.7),  # 3
+    Line("N", "It's like a sausage sizzle.", gap=0.6),                   # 4
+    Line("N", "One sausage goes on each bread.", gap=0.6),               # 5
+    Line("N", "One number goes with each thing.", gap=1.0),              # 6
+    Line("O", "One, two, three, four, five, six.", gap=0.3),             # 7
+    Line("O", "Seven, eight, nine, ten, eleven!", gap=0.8),              # 8
+    Line("I", "Hmm. Something looks funny.", gap=0.8),                   # 9
+    Line("B", "Let's not guess. Let's test.", gap=0.8),                  # 10
+    Line("B", "Can you point to each acorn?", gap=4.0),                  # 11
+    Line("B", "Who has more acorns?", gap=0.8),                          # 12
+    Line("N", "A. Otto has more.", gap=0.6),                             # 13
+    Line("N", "B. They have the same.", gap=0.6),                        # 14
+    Line("N", "Pause and think.", gap=5.0),                              # 15
+    Line("N", "A ten frame has ten boxes.", gap=0.6),                    # 16
+    Line("N", "Move each acorn once. Say one number.", gap=0.8),         # 17
+    Line("N", "One, two, three, four, five.", gap=0.6),                  # 18
+    Line("N", "Six, seven, eight, nine, ten.", gap=0.8),                 # 19
+    Line("N", "The last number tells how many. Ten!", gap=1.2),          # 20
+    Line("O", "Oh! I counted one acorn twice!", gap=0.8),                # 21
+    Line("N", "Both have ten. It's B!", gap=0.8),                        # 22
+    Line("B", "Let's check another way. Make pairs.", gap=0.8),          # 23
+    Line("N", "Every acorn has a partner.", gap=0.8),                    # 24
+    Line("I", "Ten and ten. The same!", gap=0.8),                        # 25
+    Line("B", "Case solved!", gap=1.9),                                  # 26
+    Line("O", "Now let's count your spines, Bramble!", gap=0.6),         # 27
+    Line("B", "I have about five thousand.", gap=0.6),                   # 28
+    Line("O", "One, two, three... maybe tomorrow!", gap=1.0),            # 29
+    Line("N", "Say it with me. The last number tells how many.", gap=2.2),  # 30
+    Line("N", "Try it at home. Count ten pegs into a cup.", gap=0.9),    # 31
+    Line("N", "Next case: a missing house number.", gap=0.6),            # 32
 ]
 
-STRIP_HIDDEN = {3, 28}
-CHILD_TURN = 33
-STAMP_LINE = 28
+STRIP_HIDDEN = {3, 26}
+CHILD_TURN = 30
+STAMP_LINE = 26
 OPEN_LINE = 0
-CUT = [(0, 2), (8, 11), (19, 24), (28, 31), (33, 34), (35, 35)]
+CUT = [(0, 2), (7, 8), (19, 20), (22, 22), (26, 29), (30, 30), (32, 32)]
 
 # ---------------------------------------------------------------- geometry
 PILE_C = (275, 1080)
@@ -186,7 +183,7 @@ def bread_sausage(ctx, x, y, drop, a):
     rrect(ctx, x - 105, y - 30, 210, 80, 28, "#C9965A", a)
     rrect(ctx, x - 98, y - 24, 196, 66, 24, "#F6E7C4", a)
     if drop > 0:
-        yy = lerp(y - 140, y - 18, ease(drop))
+        yy = lerp(y - 85, y - 18, ease(drop))
         aa = a * min(1.0, drop * 3)
         rrect(ctx, x - 110, yy - 22, 220, 44, 22, "#9A4E32", aa)
         rrect(ctx, x - 92, yy - 16, 170, 10, 5, "#C27A5C", 0.7 * aa)
@@ -299,7 +296,7 @@ def word_t(ep, i, j, n):
 
 
 def move_t(ep, k):
-    return word_t(ep, 20, k, 5) if k < 5 else word_t(ep, 21, k - 5, 5)
+    return word_t(ep, 18, k, 5) if k < 5 else word_t(ep, 19, k - 5, 5)
 
 
 def arc_move(p0, p1, p, lift=70):
@@ -311,7 +308,7 @@ def otto_pos(ep, T, k):
     t1 = move_t(ep, k) - 0.15
     bx, by = box_c(k)
     in_box = (bx, by + 1.2 * K * NEAR)
-    t2 = ep.s(25) + 0.3 + 0.07 * k
+    t2 = ep.s(23) + 0.3 + 0.07 * k
     if T < t1:
         return OTTO_RING[k]
     if T < t2:
@@ -320,17 +317,17 @@ def otto_pos(ep, T, k):
 
 
 def ivy_pos(ep, T, k):
-    t2 = ep.s(25) + 0.9 + 0.07 * k
+    t2 = ep.s(23) + 0.9 + 0.07 * k
     return arc_move(IVY_GRID[k], (ROW_X[k], ROW_I), prog(T, t2, t2 + 0.7), 40)
 
 
 def otto_count_times(ep):
-    ts = [word_t(ep, 9, j, 6) for j in range(6)] + [word_t(ep, 10, j, 5) for j in range(5)]
+    ts = [word_t(ep, 7, j, 6) for j in range(6)] + [word_t(ep, 8, j, 5) for j in range(5)]
     return ts          # 11 numbers: the 11th lands back on acorn 0
 
 
 def paper_alpha(ep, T):
-    return prog(T, ep.s(18) - 0.5, ep.s(18) + 0.1) * (1 - prog(T, ep.s(25) + 1.4, ep.s(25) + 2.2))
+    return prog(T, ep.s(16) - 0.5, ep.s(16) + 0.1) * (1 - prog(T, ep.s(23) + 1.4, ep.s(23) + 2.2))
 
 
 # ---------------------------------------------------------------- scene
@@ -343,11 +340,11 @@ def scene(ctx, ep, T):
             t0 = move_t(ep, k) + 0.4
             bx, by = box_c(k)
             text(ctx, str(k + 1), bx + 30, by - 30, 22, "#7A8BA0", pa * prog(T, t0, t0 + 0.3))
-        la = prog(T, word_t(ep, 22, 6, 7), word_t(ep, 22, 6, 7) + 0.4) * (1 - prog(T, ep.e(24) + 0.6, ep.e(24) + 1.1))
+        la = prog(T, word_t(ep, 20, 6, 7), word_t(ep, 20, 6, 7) + 0.4) * (1 - prog(T, ep.e(22) + 0.6, ep.e(22) + 1.1))
         text(ctx, "10", 905, 835, 110, OCHRE, la)
     # pair links between the two rows
     for k in range(10):
-        t0 = ep.s(26) + k / 10.0 * (ep.e(26) - ep.s(26))
+        t0 = ep.s(24) + k / 10.0 * (ep.e(24) - ep.s(24))
         a = prog(T, t0, t0 + 0.3)
         if a > 0:
             ctx.set_line_width(7)
@@ -357,7 +354,7 @@ def scene(ctx, ep, T):
             ctx.line_to(ROW_X[k], ROW_I - 48)
             ctx.stroke()
     # acorns
-    last = word_t(ep, 22, 6, 7)
+    last = word_t(ep, 20, 6, 7)
     for k in range(10):
         x, y = ivy_pos(ep, T, k)
         acorn(ctx, x, y)
@@ -365,10 +362,10 @@ def scene(ctx, ep, T):
         x, y = otto_pos(ep, T, k)
         gl = 0.0
         if k == 9:
-            gl = 0.6 * prog(T, last, last + 0.3) * (1 - prog(T, ep.e(22) + 0.8, ep.e(22) + 1.3))
+            gl = 0.6 * prog(T, last, last + 0.3) * (1 - prog(T, ep.e(20) + 0.8, ep.e(20) + 1.3))
         acorn(ctx, x, y, glow=gl)
     # Otto's fast count: a number lands on each acorn, and the 11th lands on acorn 0 again
-    fade = 1 - prog(T, ep.s(18) - 0.6, ep.s(18) - 0.1)
+    fade = 1 - prog(T, ep.s(16) - 0.6, ep.s(16) - 0.1)
     if fade > 0:
         for n, t0 in enumerate(otto_count_times(ep)):
             a = prog(T, t0, t0 + 0.25) * fade
@@ -379,8 +376,8 @@ def scene(ctx, ep, T):
             badge(ctx, x + dx, y - 74, str(n + 1), a, col)
     # funny moment: numbers on Bramble's spines
     for j, (sx, sy) in enumerate(SPINE_TAGS):
-        t0 = word_t(ep, 31, j, 5)
-        a = prog(T, t0, t0 + 0.25) * (1 - prog(T, ep.e(31) + 0.6, ep.e(31) + 1.1))
+        t0 = word_t(ep, 29, j, 5)
+        a = prog(T, t0, t0 + 0.25) * (1 - prog(T, ep.e(29) + 0.6, ep.e(29) + 1.1))
         badge(ctx, sx, sy, str(j + 1), a, r=22)
     rig.squirrel(ctx, OTTO_X, FEET, SQ_S, OCHRE, f=1, seed=2.0)
     rig.bramble(ctx, BR_X, FEET, BR_S, f=1)
@@ -392,23 +389,23 @@ def cues(ep):
     a0 = OTTO_RING[0]
     return [
         ("ring", ep.s(1) - 0.1, ep.e(1) + 0.5, PILE_C[0], PILE_C[1] - 20, 215, 125),
-        ("zoom", ep.s(9) - 0.2, ep.e(10) + 0.5, PILE_C[0], FEET, 1.14),
-        ("lens", ep.s(11) - 0.1, ep.e(11) + 1.1, a0[0] - 27, a0[1] - 74, 330, 520, 150, 1.7),
-        ("ring", ep.s(13) - 0.1, ep.e(13) + 4.4, PILE_C[0], PILE_C[1] - 20, 215, 125),
-        ("ring", ep.s(18) - 0.1, ep.e(18) + 0.5, FRAME_C[0], FRAME_C[1], 270, 140),
-        ("zoom", ep.s(20) - 0.3, ep.e(22) + 0.4, FRAME_C[0], FEET, 1.12),
-        ("ring", ep.s(26) - 0.1, ep.e(27) + 0.4, 540, 1105, 470, 120),
-        ("zoom", ep.s(29) - 0.2, ep.e(31) + 0.5, BR_X, FEET, 1.12),
+        ("zoom", ep.s(7) - 0.2, ep.e(8) + 0.5, PILE_C[0], FEET, 1.14),
+        ("lens", ep.s(9) - 0.1, ep.e(9) + 1.1, a0[0] - 27, a0[1] - 74, 330, 520, 150, 1.7),
+        ("ring", ep.s(11) - 0.1, ep.e(11) + 4.4, PILE_C[0], PILE_C[1] - 20, 215, 125),
+        ("ring", ep.s(16) - 0.1, ep.e(16) + 0.5, FRAME_C[0], FRAME_C[1], 270, 140),
+        ("zoom", ep.s(18) - 0.3, ep.e(20) + 0.4, FRAME_C[0], FEET, 1.12),
+        ("ring", ep.s(24) - 0.1, ep.e(25) + 0.4, 540, 1105, 470, 120),
+        ("zoom", ep.s(27) - 0.2, ep.e(29) + 0.5, BR_X, FEET, 1.12),
     ]
 
 
 def foley(ep):
-    out = [("whoosh", ep.s(3) - 0.3), ("whoosh", ep.s(18) - 0.5), ("whoosh", ep.s(25) + 0.3)]
+    out = [("whoosh", ep.s(3) - 0.3), ("whoosh", ep.s(16) - 0.5), ("whoosh", ep.s(23) + 0.3)]
     for k in range(10):
         out.append(("pop", move_t(ep, k) + 0.4))
     for j in (1, 3, 5):
-        out.append(("pop", word_t(ep, 6, j, 6) + 0.3))
-    out.append(("step", ep.s(28) + 0.5))
+        out.append(("pop", word_t(ep, 5, j, 6) + 0.3))
+    out.append(("step", ep.s(26) + 0.5))
     return out
 
 
@@ -429,36 +426,36 @@ def poses(ep, T):
         O["expr"] = "happy"
     if during(2, 0.1, 0.3):
         O.update(point=(PILE_C[0], PILE_C[1] - 30), amt=ramp(S(2)))
-    if S(9) - 0.3 <= T <= E(10) + 0.4:
-        O.update(expr="happy", point=(PILE_C[0], PILE_C[1] - 30), amt=ramp(S(9) - 0.3))
-    if during(11, 0.2, 0.8):
+    if S(7) - 0.3 <= T <= E(8) + 0.4:
+        O.update(expr="happy", point=(PILE_C[0], PILE_C[1] - 30), amt=ramp(S(7) - 0.3))
+    if during(9, 0.2, 0.8):
         I["expr"] = "think"
         O["expr"] = "think"
-    if S(12) - 0.2 <= T <= E(13) + 4.2:
-        B.update(face=-1 if T < S(13) else 1, expr="think" if T < S(13) else "happy")
-    if S(14) <= T <= S(18):
+    if S(10) - 0.2 <= T <= E(11) + 4.2:
+        B.update(face=-1 if T < S(11) else 1, expr="think" if T < S(11) else "happy")
+    if S(12) <= T <= S(16):
         O["expr"] = I["expr"] = "think"
-    if S(18) - 0.2 <= T <= E(22) + 0.3:
-        B.update(expr="happy" if T > S(22) else None, point=(FRAME_C[0] + 60, FRAME_C[1] + 60), amt=ramp(S(18) - 0.2))
+    if S(16) - 0.2 <= T <= E(20) + 0.3:
+        B.update(expr="happy" if T > S(20) else None, point=(FRAME_C[0] + 60, FRAME_C[1] + 60), amt=ramp(S(16) - 0.2))
         if B["expr"] is None:
             del B["expr"]
-    if during(23, 0.2, 0.8):
+    if during(21, 0.2, 0.8):
         O["expr"] = "surprise"
-        O["scratch"] = prog(T, S(23) + 0.3, S(23) + 0.8) * (1 - prog(T, E(23) + 0.4, E(23) + 0.8))
-    if during(24, 0.2, 0.6):
+        O["scratch"] = prog(T, S(21) + 0.3, S(21) + 0.8) * (1 - prog(T, E(21) + 0.4, E(21) + 0.8))
+    if during(22, 0.2, 0.6):
         I["expr"] = "happy"
-    if S(25) - 0.2 <= T <= E(27) + 0.4:
-        I["expr"] = "happy" if T > S(27) - 0.2 else "think"
-    if T >= S(28) - 0.2:
+    if S(23) - 0.2 <= T <= E(25) + 0.4:
+        I["expr"] = "happy" if T > S(25) - 0.2 else "think"
+    if T >= S(26) - 0.2:
         B["expr"] = O["expr"] = I["expr"] = "happy"
-        hop = (T - S(28)) / 0.55
+        hop = (T - S(26)) / 0.55
         if 0 <= hop <= 1:
             O["jump"] = 42 * math.sin(math.pi * hop)
-    if during(29, 0.1, 0.3):
-        O.update(point=(420, 1470), amt=ramp(S(29)))
-    if during(31, 0.1, 0.9):
-        O["scratch"] = prog(T, word_t(ep, 31, 3, 5) - 0.2, word_t(ep, 31, 3, 5) + 0.3) * \
-            (1 - prog(T, E(31) + 0.5, E(31) + 0.9))
+    if during(27, 0.1, 0.3):
+        O.update(point=(420, 1470), amt=ramp(S(27)))
+    if during(29, 0.1, 0.9):
+        O["scratch"] = prog(T, word_t(ep, 29, 3, 5) - 0.2, word_t(ep, 29, 3, 5) + 0.3) * \
+            (1 - prog(T, E(29) + 0.5, E(29) + 0.9))
     return {"B": B, "O": O, "I": I}
 
 
@@ -515,33 +512,23 @@ def cards(ctx, ep, T):
         text(ctx, "Today's case", 560, 210, 46, "#9C7429", a)
         for k, s_ in enumerate(("Counting to ten,", "one acorn", "at a time")):
             text(ctx, s_, W / 2, 310 + k * 82, 66, INK, a)
-    # counting tells us how many
-    a = window(T, S(4) - 0.2, E(4) + 1.0)
-    if a > 0:
-        card(ctx, 190, 160, 700, 330, a)
-        for j, x in enumerate((370, 540, 710)):
-            t0 = S(4) + 0.25 * j * (E(4) - S(4))
-            aj = a * prog(T, t0, t0 + 0.3)
-            acorn(ctx, x, 360, sc=1.9, a=aj)
-            badge(ctx, x, 230, str(j + 1), aj)
-        text(ctx, "3 acorns", W / 2, 430, 56, INK, a * prog(T, E(4) - 0.4, E(4)))
     # sausage sizzle: one sausage on each bread, one number with each thing
-    a = window(T, S(5) - 0.2, E(7) + 1.2)
+    a = window(T, S(4) - 0.2, E(6) + 1.2)
     if a > 0:
         card(ctx, 70, 140, 940, 420, a)
         text(ctx, "Sausage sizzle", W / 2, 200, 44, "#9C7429", a)
         for j, x in enumerate((250, 540, 830)):
-            drop = prog(T, word_t(ep, 6, 2 * j + 1, 6) - 0.1, word_t(ep, 6, 2 * j + 1, 6) + 0.4)
+            drop = prog(T, word_t(ep, 5, 2 * j + 1, 6) - 0.1, word_t(ep, 5, 2 * j + 1, 6) + 0.4)
             bread_sausage(ctx, x, 345, drop, a)
-            t0 = word_t(ep, 7, 2 * j + 1, 6)
+            t0 = word_t(ep, 6, 2 * j + 1, 6)
             badge(ctx, x, 470, str(j + 1), a * prog(T, t0, t0 + 0.3), r=30)
     # A or B
-    aA = window(T, S(14) - 0.2, E(24) + 1.4)
+    aA = window(T, S(12) - 0.2, E(22) + 1.4)
     if aA > 0:
-        aA2 = aA * prog(T, S(15) - 0.2, S(15) + 0.2)
-        aB = aA * prog(T, S(16) - 0.2, S(16) + 0.2)
-        d = E(24) - S(24)
-        picked = prog(T, S(24) + 0.7 * d, S(24) + 0.7 * d + 0.4)
+        aA2 = aA * prog(T, S(13) - 0.2, S(13) + 0.2)
+        aB = aA * prog(T, S(14) - 0.2, S(14) + 0.2)
+        d = E(22) - S(22)
+        picked = prog(T, S(22) + 0.7 * d, S(22) + 0.7 * d + 0.4)
         # A: Otto has more
         ak = aA2 * (1 - 0.5 * picked)
         card(ctx, 70, 150, 450, 300, aA2)
@@ -562,8 +549,8 @@ def cards(ctx, ep, T):
         text(ctx, "The same", 785, 405, 44, INK, aB)
         if picked > 0:
             tick_box(ctx, 560, 150, 450, 300, picked * aB)
-        g0, g1 = E(17) + 0.2, E(17) + 4.9
-        ra = aA * window(T, S(17), S(18) + 0.3, 0.3, 0.4)
+        g0, g1 = E(15) + 0.2, E(15) + 4.9
+        ra = aA * window(T, S(15), S(16) + 0.3, 0.3, 0.4)
         if ra > 0:
             cx, cy = W / 2, 520
             ellipse(ctx, cx, cy, 52, 52, "#FFFFFF", 0.95 * ra)
@@ -585,12 +572,12 @@ def cards(ctx, ep, T):
                 ctx.line_to(cx + 18, cy - 14)
                 ctx.stroke()
     # recap
-    ra = window(T, S(32) - 0.3, S(35) - 0.1, 0.5, 0.5)
+    ra = window(T, S(30) - 0.3, S(32) - 0.1, 0.5, 0.5)
     if ra > 0:
         card(ctx, 30, 130, 1020, 1010, ra, "#FBF6EC", 1.0)
         rrect(ctx, 300, 160, 480, 110, 50, OCHRE, ra)
         text(ctx, "Remember", W / 2, 215, 62, "#FFFFFF", ra)
-        r1 = ra * prog(T, S(32) + 0.3, S(32) + 0.9)
+        r1 = ra * prog(T, S(30) + 0.3, S(30) + 0.9)
         rrect(ctx, 100, 310, 880, 350, 36, "#FFFFFF", 0.95 * r1)
         bx0, by0, bb = 290, 345, 62
         ctx.push_group()
@@ -602,7 +589,7 @@ def cards(ctx, ep, T):
         text(ctx, "tells how many", W / 2, 608, 54, INK)
         ctx.pop_group_to_source()
         ctx.paint_with_alpha(r1)
-        r2 = ra * prog(T, S(34), S(34) + 0.6)
+        r2 = ra * prog(T, S(31), S(31) + 0.6)
         rrect(ctx, 100, 700, 880, 400, 36, "#FFFFFF", 0.95 * r2)
         text(ctx, "Try it at home:", W / 2, 770, 50, "#9C7429", r2)
         text(ctx, "count ten pegs", W / 2, 850, 56, INK, r2)
@@ -622,7 +609,7 @@ def cards(ctx, ep, T):
         peg(ctx, 745, 968, "#F1D58A", r2, 0.8)
         peg(ctx, 775, 972, "#E9B7A6", r2, 0.8)
     # teaser
-    ta = window(T, S(35) - 0.1, ep.total - 1.0, 0.4, 0.5)
+    ta = window(T, S(32) - 0.1, ep.total - 1.0, 0.4, 0.5)
     if ta > 0:
         card(ctx, 140, 170, 800, 460, ta)
         rrect(ctx, 330, 200, 420, 100, 46, SAGE, ta)
