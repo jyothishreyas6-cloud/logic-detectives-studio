@@ -5,7 +5,7 @@ Logic Detectives Studio video generation
 
 ## How the studio works
 
-Everything needed to make a Logic Detectives episode in the cloud, every two days, with Australian voices.
+Everything needed to make a Logic Detectives episode in the cloud, once a week (Saturday, with a Sunday catch-up), with Australian voices.
 
 - `PRODUCTION_SPEC.md`: the finalised style, voice, layout, engagement and upload rules. Follow it exactly.
 - `engine/kit.py`: the episode kit (timeline from voice files, read-along caption strip, "Case open!" sweep, "Case solved!" stamp, ring, lens and zoom cues, Foley, melody in gaps only, loudness, captions, discovery cut, checks, loop back to frame 1).

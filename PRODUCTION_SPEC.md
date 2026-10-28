@@ -79,3 +79,15 @@ Every episode must have all four. `python3 engine/kit.py EP story` checks them f
 
 ## Quality bar (YouTube kids principles)
 Reward: learning and curiosity, kindness, creativity and play, life skills, showing them the world. Avoid: deceptively educational, hard to follow, sensational, heavily promotional, unclear audio. Check every fact and sum. Every case needs a new setting, problem shape, example, funny moment and reveal (inauthentic-content policy). Teacher review line left blank for Shreyas; never claim teacher review unless filled.
+
+## Lean run (keep usage low, added 28/10/2026)
+Every turn re-sends everything already read, so what a run reads early is paid for again on every later step. The 23/10 run hit the usage limit; these rules keep a weekly episode well inside it.
+- One run at a time: before starting, check `git log origin/main --since="6 hours ago"` for a commit "Episode NNN: run started" and Metricool for this episode's posts. If either exists, stop (or resume, below). Push "Episode NNN: run started [skip ci]" (an empty commit is fine here) once the episode is picked.
+- Resume, never redo: skip every step whose output already exists (episode.py, lines/*.wav, media/epNNN_*/short.mp4, upload_copy.md, Metricool posts).
+- Read little: the kit.py docstring (`sed -n 1,45p engine/kit.py`), `grep -n "^def " engine/*.py` to find helpers, and the previous episode's episode.py. Do not open reference/short1_v14 or whole engine files unless a helper must change.
+- Production order doc: search it for "Next" and read only that row and the one after it; never read the whole table.
+- Write by editing: start episode.py as a copy of the previous episode and change it with targeted edits (LINES, props, scene, cards). Never write a 600-line file from scratch or re-type a file to change a few lines.
+- Look once per pass: one `sheet` image and one `keys` image (up to 8 beats in one picture). Do not Read single full-size frames. Fix, then look again only at the beats you changed.
+- Quiet commands: one Bash call per stage, output piped through `tail`, `git -q`. Wait for voices and renders inside a single Bash loop, not with repeated tool calls.
+- Analytics: one getAnalyticsDataByMetrics call per network with fixed fields (YouTube YTVP02, YTVP17, YTVP06, YTVP08; Instagram IGRE02, IGRE03, IGRE23, IGRE24, IGRE27). Skip it on a Sunday catch-up.
+- Syllabus: reuse the verified link from an earlier upload copy with the same focus area; search only for a new focus area.

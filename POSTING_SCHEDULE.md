@@ -2,14 +2,16 @@
 
 The episode task reads this file every run to pick posting times. The monthly review task updates it from YouTube and Instagram insights (via Metricool). All times are Sydney time (AEST/AEDT, Australia/Sydney).
 
-## Current slots (set 21/10/2026)
+## Current slots (weekly cadence from 28/10/2026)
+
+One episode a week. The episode task runs early on Saturday; a Sunday run at the same time is only a catch-up if Saturday did not finish (it stops at once when this week's posts already exist). At least one YouTube Short and one Instagram Reel go out every week.
 
 | Post | When | Time on a weekday (Mon to Fri) | Time on Sat or Sun |
 |---|---|---|---|
-| YouTube full Short | The day the episode is produced | 4:00 pm | 8:30 am |
-| Instagram Reel (discovery cut) | The next day | 8:00 pm | 9:30 am |
+| YouTube full Short | The day after the episode is produced (Saturday run: Sunday; Sunday catch-up: Monday) | 4:00 pm | 8:30 am |
+| Instagram Reel (discovery cut) | The day after the YouTube Short (Saturday run: Monday; Sunday catch-up: Tuesday) | 8:00 pm | 9:30 am |
 
-Episodes are produced every two days, so YouTube and Instagram alternate and something new goes out every day.
+Posting the day after production gives Shreyas a day to watch the episode before Metricool asks him to publish it.
 
 **No clashes:** at most one YouTube post and one Instagram post per day. Before scheduling, check Metricool's scheduled posts; if that day's slot on that platform is already taken, use the same platform's slot on the next free day.
 
@@ -22,9 +24,10 @@ Episodes are produced every two days, so YouTube and Instagram alternate and som
 
 ## Monthly review rules
 - Review on the 1st of each month with the last 30 days of Metricool insights (views, watch time or plays, reach, by day and hour) plus getBestTimeToPostByNetwork for the coming month.
-- Change a slot only when there is enough data: at least 8 posts on that platform in the window and at least 1,000 total views or plays. Otherwise keep the slots and note "too early".
+- Change a slot only when there is enough data: at least 4 posts on that platform in the window (one a week) and at least 1,000 total views or plays. Otherwise keep the slots and note "too early".
 - Move one slot at a time, by at most 2 hours or one day, so results stay comparable.
 - New slots apply to posts created after the change; already scheduled posts keep their times.
 
 ## Review log
 - 21/10/2026: first schedule, set from Metricool best-time data for this account and published 2026 guidance (Hopper HQ Australia Instagram data; SocialPilot and Shortimize YouTube Shorts timing). No channel insights yet.
+- 28/10/2026: moved to one episode a week (Saturday run, Sunday catch-up). YouTube the day after production, Instagram the day after that. Review threshold lowered to 4 posts per platform to match the weekly cadence.

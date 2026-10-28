@@ -28,6 +28,7 @@ Commands (run from the repo root):
     python3 engine/kit.py EPISODE_DIR audio      -> audio.wav, timings.json, captions_en-AU.srt
     python3 engine/kit.py EPISODE_DIR frames 0 5 12.5 ...   -> stills/ (check them)
     python3 engine/kit.py EPISODE_DIR sheet      -> stills/contact.png (every 4 s)
+    python3 engine/kit.py EPISODE_DIR keys 3 40 66 ...   -> stills/keys.png (key beats in one image)
     python3 engine/kit.py EPISODE_DIR video      -> short.mp4
     python3 engine/kit.py EPISODE_DIR cut        -> cut.mp4, captions_cut_en-AU.srt
     python3 engine/kit.py EPISODE_DIR check      -> stats: wpm, sentence lengths, loop, loudness
@@ -609,6 +610,20 @@ def sheet(ep, step=4.0):
     print(ep.path("stills", "contact.png"))
 
 
+def keyframes(ep, times):
+    """Several moments in ONE small image (540x960 each, up to 4 across): one Read instead of many."""
+    paths = stills(ep, times)
+    from PIL import Image
+    cols = min(4, len(paths))
+    rows = math.ceil(len(paths) / cols)
+    s = Image.new("RGB", (cols * 540, rows * 960), "white")
+    for k, p in enumerate(paths):
+        s.paste(Image.open(p).resize((540, 960)), ((k % cols) * 540, (k // cols) * 960))
+    out = ep.path("stills", "keys.png")
+    s.save(out)
+    print(out)
+
+
 def build_cut(ep):
     XF = 0.4
     segs = []
@@ -762,8 +777,14 @@ def story(ep):
 
 
 def manifest(ep):
+    keep = {}
+    if os.path.exists(ep.path("lines.json")):   # keep "wpm" targets for lines whose text is unchanged
+        keep = {(x["who"], x["text"]): x["wpm"] for x in json.load(open(ep.path("lines.json")))["lines"] if "wpm" in x}
     data = {"lines": [{"i": i, "who": ln.who, "voice": VOICES[ln.who], "text": ln.text}
                       for i, ln in enumerate(ep.lines)]}
+    for x in data["lines"]:
+        if (x["who"], x["text"]) in keep:
+            x["wpm"] = keep[(x["who"], x["text"])]
     json.dump(data, open(ep.path("lines.json"), "w"), indent=1)
     print(ep.path("lines.json"))
 
@@ -785,6 +806,8 @@ def main():
         print("TOTAL", round(ep.total, 2))
     elif mode == "frames":
         print("\n".join(stills(ep, sys.argv[3:])))
+    elif mode == "keys":
+        keyframes(ep, sys.argv[3:])
     elif mode == "sheet":
         sheet(ep, float(sys.argv[3]) if len(sys.argv) > 3 else 4.0)
     elif mode == "video":
