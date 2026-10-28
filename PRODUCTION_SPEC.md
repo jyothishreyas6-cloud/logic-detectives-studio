@@ -2,6 +2,31 @@
 
 Calm, story-led educational cases for NSW children aged about 5 to 10 (Kindergarten to Year 4). YouTube and Instagram only. Owner: Shreyas Jyothi (Sydney). Australian English spelling, dates DD/MM/YYYY, no em dashes anywhere.
 
+## Story spine: context, takeaway, continuity, consistency (added 28/10/2026)
+Every episode must have all four. `python3 engine/kit.py EP story` checks them from the script alone; run it before voicing and fix every FAIL. `manifest` and `check` run it too.
+
+**1. Context (the viewer knows what is going on within about 10 s)**
+- Frame 1 already shows the place and the problem. Name the place in `SETTING` (episode.py) and use it in the upload copy.
+- Lines 1 to 2: Otto or Ivy says the problem as a fairness or feelings hook ("Hey! That's not fair! Otto got more!"). The viewer hears who has the problem and why it matters to them.
+- By line 4: "Today's case: ..." read word for word from the title card.
+- Before the test: explain the word taught ("Half means ...") and tie it to an everyday Australian example ("It's like a sausage sizzle.").
+
+**2. Takeaway (one rule the child can say back)**
+- Exactly one `RULE` per episode: one sentence within the sentence limit (for example "The last number tells how many.").
+- Say the RULE word for word at least three times: first while proving it (before "Case solved!"), then "Remember. <RULE>" and "Say it with me. <RULE>" (2 s child's turn). The Remember card shows the same words.
+- "Try it at home." practises that same rule with things every home has.
+- The upload copy's learning goal and the Instagram caption quote the RULE in the same words.
+
+**3. Continuity (inside the video and across the series)**
+- Inside the video: one setting and one time of day; props stay where they were unless we see them move; characters keep their side of the frame; every count, length or number on screen matches what is said at that moment.
+- Across the series: `CASE_NO` matches the folder number. The last line is "Next case: ..." naming the next row of the production order. The next episode's "Today's case" picks up that teaser's words. If the order changed after a teaser went out, say so in the report.
+- Fixed roles keep the pattern familiar: Otto rushes or makes the mistake, Ivy notices, Bramble tests and asks the viewer, the narrator explains, Pip or Mabel bring clues.
+
+**4. Consistency (every episode feels like the same show)**
+- The fixed beat order, with locked words: "Case open!" → hook → "Today's case: ..." → word explained + everyday example → the attempt or mistake → "Let's not guess. Let's test." → Bramble asks the viewer to point or show (3 to 5 s silence) → A or B read aloud → "Pause and think." (5 s) → test step by step, a reason after each step → reveal ("It's A!" or "It's B!") with a character's "Oh!" → proof a second way → "Case solved!" stamp → funny moment → "Remember. <RULE>" → "Say it with me. <RULE>" → "Try it at home. ..." → "Next case: ..." → loop to frame 1.
+- Same cast looks, scarf colours, voices, fonts, card styles, caption strip, stamp, jingle and colours every time; reuse the engine's drawing code rather than redrawing characters.
+- Same upload copy shape, title pattern and posting slots.
+
 ## Voice and accent
 - Every voice speaks with an **Australian accent**: Google Cloud Text-to-Speech, Chirp 3 HD voices, language en-AU.
 - Cast (first choice, then fallback if the voice is not offered in en-AU): Narrator Sulafat (warm, female; fallback Vindemiatrix, Achernar), Bramble Sadaltager (knowledgeable, male; fallback Schedar, Charon), Otto Puck (upbeat, male; fallback Fenrir), Ivy Leda (youthful, female; fallback Kore, Aoede).

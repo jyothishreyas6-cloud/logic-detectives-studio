@@ -30,6 +30,11 @@ OTTO_X, BR_X, IVY_X = 215, 540, 865
 GREEN = "#6E8460"
 ACORN, ACORN_L, CAP = "#B07A43", "#CE9A5E", "#7A5A3A"
 
+CASE_NO = 3
+RULE = "The last number tells how many."
+SETTING = "the back verandah"
+SENTENCE_LIMIT = 8
+
 LINES = [
     Line("B", "Case open!", gap=0.4),                                    # 0
     Line("I", "Hey! That's not fair! Otto got more!", gap=0.6),          # 1

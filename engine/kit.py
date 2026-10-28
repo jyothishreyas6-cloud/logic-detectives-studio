@@ -2,6 +2,10 @@
 
 An episode is a folder episodes/epNNN_slug/ with episode.py defining:
 
+    CASE_NO = 4                   # episode number (matches the folder epNNN)
+    RULE = "The last number tells how many."   # the ONE takeaway, said word for word 3+ times
+    SETTING = "the back verandah"  # where the case happens (context, upload copy)
+    SENTENCE_LIMIT = 8            # 8 for Kindergarten to Year 2, 10 for Years 3 to 4
     LINES  = [Line("B", "Case open!", gap=0.4), ...]   # gap = silence after the line (s)
     STRIP_HIDDEN = {i, ...}       # lines whose words a card already shows
     CHILD_TURN = i or None        # no music in the gap after this line
@@ -18,6 +22,8 @@ An episode is a folder episodes/epNNN_slug/ with episode.py defining:
 `ep` gives ep.rows[i]["start"/"end"], ep.s(i), ep.e(i), ep.total.
 
 Commands (run from the repo root):
+    python3 engine/kit.py EPISODE_DIR story      -> story spine check (context, takeaway,
+                                                    continuity, consistency); run before voicing
     python3 engine/kit.py EPISODE_DIR manifest   -> lines.json for the voice Action
     python3 engine/kit.py EPISODE_DIR audio      -> audio.wav, timings.json, captions_en-AU.srt
     python3 engine/kit.py EPISODE_DIR frames 0 5 12.5 ...   -> stills/ (check them)
@@ -666,6 +672,95 @@ def check(ep):
         print("loudness LUFS:", m.group(1) if m else "?")
 
 
+LOCKED = ["Case open!", "Today's case:", "Let's not guess. Let's test.", "Pause and think.",
+          "Case solved!", "Remember.", "Say it with me.", "Try it at home.", "Next case:"]
+
+
+def _norm(s):
+    return " ".join(re.findall(r"[a-z0-9']+", s.lower()))
+
+
+def story(ep):
+    """Story spine check (PRODUCTION_SPEC.md): context, takeaway, continuity, consistency.
+
+    Runs from LINES alone, so run it straight after writing the script, before voices.
+    Needs CASE_NO, RULE and SETTING in episode.py. Returns the number of failures."""
+    m, L = ep.m, ep.lines
+    texts = [ln.text for ln in L]
+    fails = []
+
+    def item(group, ok, msg):
+        print(f"  [{'PASS' if ok else 'FAIL'}] {group}: {msg}")
+        if not ok:
+            fails.append(msg)
+
+    def first(prefix, start=0):
+        return next((i for i in range(start, len(L)) if texts[i].startswith(prefix)), None)
+
+    rule = getattr(m, "RULE", "")
+    case_no = getattr(m, "CASE_NO", None)
+    setting = getattr(m, "SETTING", "")
+    limit = getattr(m, "SENTENCE_LIMIT", 8)
+    words = lambda s: re.findall(r"[A-Za-z']+|\d+", s)
+    print("story spine check")
+    # 1. context
+    t_case = first("Today's case:")
+    t_test = first("Let's not guess. Let's test.")
+    item("context", texts[0] == "Case open!", "line 0 is \"Case open!\"")
+    item("context", len(L) > 2 and any(L[i].who in "OI" for i in (1, 2)),
+         "Otto or Ivy states the problem as a fairness or feelings hook in lines 1 to 2")
+    item("context", t_case is not None and t_case <= 4, "\"Today's case: ...\" title by line 4")
+    item("context", bool(setting), f"SETTING named for the upload copy ({setting or 'missing'})")
+    item("context", t_case is not None and t_test is not None and any(
+        re.search(r"\b(like|means)\b", texts[i], re.I) for i in range(t_case, t_test)),
+        "the word taught is explained (\"... means ...\") or tied to an everyday example (\"It's like ...\") before the test")
+    # 2. takeaway
+    n_rule = _norm(rule)
+    item("takeaway", bool(rule) and len(words(rule)) <= limit,
+         f"one RULE sentence within {limit} words: \"{rule}\"")
+    hits = [i for i, t in enumerate(texts) if n_rule and n_rule in _norm(t)]
+    item("takeaway", len(hits) >= 3, f"RULE said word for word at least 3 times (lines {hits})")
+    stamp = getattr(m, "STAMP_LINE", None)
+    item("takeaway", bool(hits) and stamp is not None and hits[0] < stamp,
+         "RULE is first said while proving it, before \"Case solved!\"")
+    r_rem, r_say = first("Remember."), first("Say it with me.")
+    item("takeaway", r_rem is not None and n_rule and n_rule in _norm(texts[r_rem]), "\"Remember. <RULE>\"")
+    item("takeaway", r_say is not None and n_rule and n_rule in _norm(texts[r_say]), "\"Say it with me. <RULE>\"")
+    item("takeaway", getattr(m, "CHILD_TURN", None) == r_say and r_say is not None and L[r_say].gap >= 2.0,
+         "CHILD_TURN is the \"Say it with me\" line with at least 2 s for the child")
+    # 3. continuity
+    folder = os.path.basename(ep.dir)
+    num = int(re.match(r"ep(\d+)", folder).group(1)) if re.match(r"ep(\d+)", folder) else None
+    item("continuity", case_no is not None and case_no == num, f"CASE_NO {case_no} matches the folder {folder}")
+    item("continuity", texts[-1].startswith("Next case:"), "last line is the \"Next case: ...\" teaser")
+    if num:
+        prev = [d for d in sorted(os.listdir(os.path.dirname(ep.dir))) if d.startswith(f"ep{num - 1:03d}_")]
+        pj = os.path.join(os.path.dirname(ep.dir), prev[0], "lines.json") if prev else None
+        if pj and os.path.exists(pj):
+            tease = json.load(open(pj))["lines"][-1]["text"]
+            title = texts[t_case] if t_case is not None else ""
+            stop = {"next", "case", "today's", "a", "the", "to", "at", "of", "and", "one", "time", "is", "are"}
+            shared = (set(_norm(tease).split()) & set(_norm(title).split())) - stop
+            print(f"         last teaser: \"{tease}\" | this title: \"{title}\"")
+            item("continuity", bool(shared), "this case picks up the previous episode's teaser (shared words: "
+                 f"{', '.join(sorted(shared)) or 'none'}); if the order changed, say so in the report")
+    # 4. consistency
+    pos = [first(p) for p in LOCKED]
+    item("consistency", all(p is not None for p in pos),
+         "locked phrases present: " + ", ".join(p for p, i in zip(LOCKED, pos) if i is None) if None in pos
+         else "all locked phrases present")
+    order = [i for i in pos if i is not None]
+    item("consistency", order == sorted(order), "locked phrases in the fixed beat order")
+    t_think = first("Pause and think.")
+    item("consistency", t_think is not None and L[t_think].gap >= 5.0, "5 s silence after \"Pause and think.\"")
+    asks = [i for i in range(len(L)) if L[i].who == "B" and re.search(r"\b(point|show)\b", texts[i], re.I)]
+    item("consistency", bool(asks) and t_think is not None and asks[0] < t_think and L[asks[0]].gap >= 3.0,
+         "Bramble asks the viewer to point or show, before the A or B, then 3 to 5 s silence")
+    item("consistency", stamp is not None and texts[stamp] == "Case solved!", "STAMP_LINE is \"Case solved!\"")
+    print(f"story spine: {len(fails)} to fix" if fails else "story spine: all clear")
+    return len(fails)
+
+
 def manifest(ep):
     data = {"lines": [{"i": i, "who": ln.who, "voice": VOICES[ln.who], "text": ln.text}
                       for i, ln in enumerate(ep.lines)]}
@@ -677,7 +772,11 @@ def main():
     ep = Episode(sys.argv[1])
     mode = sys.argv[2]
     if mode == "manifest":
+        if story(ep):
+            print("manifest written anyway; fix the story spine before voicing")
         return manifest(ep)
+    if mode == "story":
+        sys.exit(1 if story(ep) else 0)
     ep.load_voices()
     if mode == "audio":
         build_audio(ep)
@@ -695,6 +794,7 @@ def main():
         build_cut(ep)
     elif mode == "check":
         check(ep)
+        story(ep)
 
 
 if __name__ == "__main__":

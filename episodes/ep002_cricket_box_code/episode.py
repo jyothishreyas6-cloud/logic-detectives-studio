@@ -26,6 +26,11 @@ FEET = 1690
 OTTO_X, BR_X, IVY_X = 200, 470, 880
 GREEN = "#6E8460"
 
+CASE_NO = 2
+RULE = "Zero holds the place."
+SETTING = "the cricket shed"
+SENTENCE_LIMIT = 10
+
 LINES = [
     Line("B", "Case open!", gap=0.4),                                                    # 0
     Line("O", "Hey! That's not fair! The cricket box is locked!", gap=0.6),              # 1
