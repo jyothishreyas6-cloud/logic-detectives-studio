@@ -1,0 +1,208 @@
+{
+ "lines": [
+  {
+   "i": 0,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case open!"
+  },
+  {
+   "i": 1,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Oh no! Our cabin lost its number!"
+  },
+  {
+   "i": 2,
+   "who": "O",
+   "voice": "otto",
+   "text": "Easy! It's number two hundred!"
+  },
+  {
+   "i": 3,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Today's case: a missing house number."
+  },
+  {
+   "i": 4,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Counting on means saying the next number."
+  },
+  {
+   "i": 5,
+   "who": "N",
+   "voice": "narrator",
+   "text": "It's like a cricket scoreboard."
+  },
+  {
+   "i": 6,
+   "who": "N",
+   "voice": "narrator",
+   "text": "One more run. One more number."
+  },
+  {
+   "i": 7,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Ninety-nine, one hundred, one hundred and one."
+  },
+  {
+   "i": 8,
+   "who": "O",
+   "voice": "otto",
+   "text": "Ninety-nine, one hundred, two hundred!"
+  },
+  {
+   "i": 9,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Hmm. That cabin says one hundred and one."
+  },
+  {
+   "i": 10,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's not guess. Let's test."
+  },
+  {
+   "i": 11,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Can you point to the empty sign?"
+  },
+  {
+   "i": 12,
+   "who": "B",
+   "voice": "bramble",
+   "text": "What number goes there?"
+  },
+  {
+   "i": 13,
+   "who": "N",
+   "voice": "narrator",
+   "text": "A. Two hundred."
+  },
+  {
+   "i": 14,
+   "who": "N",
+   "voice": "narrator",
+   "text": "B. One hundred and two."
+  },
+  {
+   "i": 15,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Pause and think."
+  },
+  {
+   "i": 16,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Let's count on from ninety-nine."
+  },
+  {
+   "i": 17,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Ninety-nine. One hundred."
+  },
+  {
+   "i": 18,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Past one hundred, keep counting by ones."
+  },
+  {
+   "i": 19,
+   "who": "N",
+   "voice": "narrator",
+   "text": "One hundred and one."
+  },
+  {
+   "i": 20,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Then one hundred and two!"
+  },
+  {
+   "i": 21,
+   "who": "O",
+   "voice": "otto",
+   "text": "Oh! I jumped way too far!"
+  },
+  {
+   "i": 22,
+   "who": "N",
+   "voice": "narrator",
+   "text": "It's B! One hundred and two."
+  },
+  {
+   "i": 23,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's check another way. Count back."
+  },
+  {
+   "i": 24,
+   "who": "N",
+   "voice": "narrator",
+   "text": "One hundred and four. One hundred and three."
+  },
+  {
+   "i": 25,
+   "who": "N",
+   "voice": "narrator",
+   "text": "One hundred and two!"
+  },
+  {
+   "i": 26,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Both ways say one hundred and two!"
+  },
+  {
+   "i": 27,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case solved!"
+  },
+  {
+   "i": 28,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Look! A snail is moving in!"
+  },
+  {
+   "i": 29,
+   "who": "O",
+   "voice": "otto",
+   "text": "It brought its own house!"
+  },
+  {
+   "i": 30,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Remember. Past one hundred, keep counting by ones."
+  },
+  {
+   "i": 31,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Say it with me. Past one hundred, keep counting by ones."
+  },
+  {
+   "i": 32,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Try it at home. Read house numbers on a walk."
+  },
+  {
+   "i": 33,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Next case: a witness who needs better words."
+  }
+ ]
+}
