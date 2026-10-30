@@ -1,0 +1,64 @@
+1
+00:00:00,350 --> 00:00:01,699
+BRAMBLE: Case open!
+
+2
+00:00:01,699 --> 00:00:05,014
+IVY: Oh no! Our cabin lost its number!
+
+3
+00:00:05,214 --> 00:00:07,744
+OTTO: Easy! It's number two hundred!
+
+4
+00:00:08,144 --> 00:00:11,399
+OTTO: Ninety-nine, one hundred, two hundred!
+
+5
+00:00:11,799 --> 00:00:15,409
+IVY: Hmm. That cabin says one hundred and one.
+
+6
+00:00:15,809 --> 00:00:18,474
+Ninety-nine. One hundred.
+
+7
+00:00:18,674 --> 00:00:22,352
+Past one hundred, keep counting by ones.
+
+8
+00:00:22,752 --> 00:00:25,015
+One hundred and one.
+
+9
+00:00:25,215 --> 00:00:27,888
+Then one hundred and two!
+
+10
+00:00:28,688 --> 00:00:31,616
+OTTO: Oh! I jumped way too far!
+
+11
+00:00:32,016 --> 00:00:35,052
+It's B! One hundred and two.
+
+12
+00:00:35,452 --> 00:00:36,720
+BRAMBLE: Case solved!
+
+13
+00:00:38,220 --> 00:00:41,078
+IVY: Look! A snail is moving in!
+
+14
+00:00:41,278 --> 00:00:43,721
+OTTO: It brought its own house!
+
+15
+00:00:44,121 --> 00:00:49,335
+Say it with me. Past one hundred, keep counting by ones.
+
+16
+00:00:49,735 --> 00:00:53,817
+Next case: a witness who needs better words.
+

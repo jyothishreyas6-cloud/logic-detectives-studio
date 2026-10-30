@@ -1,0 +1,206 @@
+[
+ {
+  "who": "B",
+  "text": "Case open!",
+  "start": 0.35,
+  "end": 1.299
+ },
+ {
+  "who": "I",
+  "text": "Oh no! Our cabin lost its number!",
+  "start": 1.699,
+  "end": 4.614
+ },
+ {
+  "who": "O",
+  "text": "Easy! It's number two hundred!",
+  "start": 5.214,
+  "end": 7.344
+ },
+ {
+  "who": "N",
+  "text": "Today's case: a missing house number.",
+  "start": 8.144,
+  "end": 11.016
+ },
+ {
+  "who": "N",
+  "text": "Counting on means saying the next number.",
+  "start": 11.716,
+  "end": 14.98
+ },
+ {
+  "who": "N",
+  "text": "It's like a cricket scoreboard.",
+  "start": 15.78,
+  "end": 17.979
+ },
+ {
+  "who": "N",
+  "text": "One more run. One more number.",
+  "start": 18.579,
+  "end": 21.242
+ },
+ {
+  "who": "N",
+  "text": "Ninety-nine, one hundred, one hundred and one.",
+  "start": 21.842,
+  "end": 25.826
+ },
+ {
+  "who": "O",
+  "text": "Ninety-nine, one hundred, two hundred!",
+  "start": 26.826,
+  "end": 29.681
+ },
+ {
+  "who": "I",
+  "text": "Hmm. That cabin says one hundred and one.",
+  "start": 30.481,
+  "end": 33.691
+ },
+ {
+  "who": "B",
+  "text": "Let's not guess. Let's test.",
+  "start": 34.491,
+  "end": 36.681
+ },
+ {
+  "who": "B",
+  "text": "Can you point to the empty sign?",
+  "start": 37.481,
+  "end": 40.325
+ },
+ {
+  "who": "B",
+  "text": "What number goes there?",
+  "start": 44.325,
+  "end": 46.152
+ },
+ {
+  "who": "N",
+  "text": "A. Two hundred.",
+  "start": 46.952,
+  "end": 48.819
+ },
+ {
+  "who": "N",
+  "text": "B. One hundred and two.",
+  "start": 49.419,
+  "end": 51.667
+ },
+ {
+  "who": "N",
+  "text": "Pause and think.",
+  "start": 52.267,
+  "end": 53.663
+ },
+ {
+  "who": "N",
+  "text": "Let's count on from ninety-nine.",
+  "start": 58.663,
+  "end": 61.381
+ },
+ {
+  "who": "N",
+  "text": "Ninety-nine. One hundred.",
+  "start": 61.981,
+  "end": 64.246
+ },
+ {
+  "who": "N",
+  "text": "Past one hundred, keep counting by ones.",
+  "start": 64.846,
+  "end": 68.124
+ },
+ {
+  "who": "N",
+  "text": "One hundred and one.",
+  "start": 68.924,
+  "end": 70.787
+ },
+ {
+  "who": "N",
+  "text": "Then one hundred and two!",
+  "start": 71.387,
+  "end": 73.66
+ },
+ {
+  "who": "O",
+  "text": "Oh! I jumped way too far!",
+  "start": 74.86,
+  "end": 77.388
+ },
+ {
+  "who": "N",
+  "text": "It's B! One hundred and two.",
+  "start": 78.188,
+  "end": 80.824
+ },
+ {
+  "who": "B",
+  "text": "Let's check another way. Count back.",
+  "start": 81.624,
+  "end": 84.219
+ },
+ {
+  "who": "N",
+  "text": "One hundred and four. One hundred and three.",
+  "start": 85.019,
+  "end": 88.75
+ },
+ {
+  "who": "N",
+  "text": "One hundred and two!",
+  "start": 89.35,
+  "end": 91.311
+ },
+ {
+  "who": "I",
+  "text": "Both ways say one hundred and two!",
+  "start": 92.111,
+  "end": 95.01
+ },
+ {
+  "who": "B",
+  "text": "Case solved!",
+  "start": 95.81,
+  "end": 96.678
+ },
+ {
+  "who": "I",
+  "text": "Look! A snail is moving in!",
+  "start": 98.578,
+  "end": 101.036
+ },
+ {
+  "who": "O",
+  "text": "It brought its own house!",
+  "start": 101.636,
+  "end": 103.679
+ },
+ {
+  "who": "N",
+  "text": "Remember. Past one hundred, keep counting by ones.",
+  "start": 104.679,
+  "end": 109.206
+ },
+ {
+  "who": "N",
+  "text": "Say it with me. Past one hundred, keep counting by ones.",
+  "start": 110.106,
+  "end": 114.92
+ },
+ {
+  "who": "N",
+  "text": "Try it at home. Read house numbers on a walk.",
+  "start": 117.12,
+  "end": 121.489
+ },
+ {
+  "who": "N",
+  "text": "Next case: a witness who needs better words.",
+  "start": 122.389,
+  "end": 126.071
+ }
+]
