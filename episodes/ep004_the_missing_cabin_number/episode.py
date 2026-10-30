@@ -321,7 +321,7 @@ def cues(ep):
         ("zoom", ep.s(8) - 0.2, ep.e(9) + 0.5, 300, FEET, 1.12),
         ("ring", ep.s(11) - 0.1, ep.e(11) + 4.4, px, PLATE_Y, 85, 60),
         ("zoom", ep.s(17) - 0.3, ep.e(20) + 0.4, 360, FEET, 1.1),
-        ("ring", ep.s(24) - 0.1, ep.e(25) + 0.4, CAB_X[4], 860, 300, 190),
+        ("ring", ep.s(24) - 0.1, ep.e(25) + 0.4, CAB_X[4], 880, 268, 200),
         ("lens", ep.s(28) - 0.1, ep.e(29) + 0.8, 730, SNAIL_Y - 20, 300, 1000, 140, 1.8),
     ]
 
@@ -351,14 +351,12 @@ def poses(ep, T):
     I = {"face": -1}
     if T < S(3):
         I["expr"] = "sad"
-    if during(1, 0.1, 0.3):
-        I.update(point=plate_pt, amt=ramp(S(1)))
     if during(2, 0.1, 0.3):
         O.update(expr="happy", point=plate_pt, amt=ramp(S(2)))
     if S(8) - 0.3 <= T <= E(8) + 0.4:
         O.update(expr="happy", point=(CAB_X[1], 960), amt=ramp(S(8) - 0.3))
     if during(9, 0.2, 0.8):
-        I.update(expr="think", point=(CAB_X[2], 960), amt=ramp(S(9)))
+        I["expr"] = "think"
         O["expr"] = "think"
     if S(10) - 0.2 <= T <= E(11) + 4.2:
         B.update(expr="think" if T < S(11) else "happy")
@@ -383,7 +381,7 @@ def poses(ep, T):
         if 0 <= hop <= 1:
             O["jump"] = 42 * math.sin(math.pi * hop)
     if during(28, 0.1, 0.3):
-        I.update(expr="surprise", point=(snail_x(ep, T), SNAIL_Y - 10), amt=ramp(S(28)))
+        I["expr"] = "surprise"
     return {"B": B, "O": O, "I": I}
 
 
