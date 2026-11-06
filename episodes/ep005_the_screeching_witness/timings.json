@@ -1,0 +1,194 @@
+[
+ {
+  "who": "B",
+  "text": "Case open!",
+  "start": 0.35,
+  "end": 1.298
+ },
+ {
+  "who": "O",
+  "text": "Hey! That's not fair! My lamington is gone!",
+  "start": 1.698,
+  "end": 4.82
+ },
+ {
+  "who": "I",
+  "text": "Pip saw who took it.",
+  "start": 5.42,
+  "end": 7.241
+ },
+ {
+  "who": "N",
+  "text": "Today's case: a witness who needs better words.",
+  "start": 8.041,
+  "end": 11.591
+ },
+ {
+  "who": "N",
+  "text": "Pip wrote it down. It was big. It was loud.",
+  "start": 12.291,
+  "end": 16.672
+ },
+ {
+  "who": "N",
+  "text": "Big and loud are dull words. They fit lots of things.",
+  "start": 17.472,
+  "end": 22.662
+ },
+ {
+  "who": "N",
+  "text": "A synonym means nearly the same thing.",
+  "start": 23.462,
+  "end": 26.564
+ },
+ {
+  "who": "N",
+  "text": "It's like a sausage sizzle.",
+  "start": 27.364,
+  "end": 29.633
+ },
+ {
+  "who": "N",
+  "text": "Hungry and starving are synonyms. Starving is more exact.",
+  "start": 30.233,
+  "end": 34.365
+ },
+ {
+  "who": "O",
+  "text": "Big and loud? It was the kookaburra!",
+  "start": 35.365,
+  "end": 38.09
+ },
+ {
+  "who": "I",
+  "text": "Hmm. The cockatoo is big and loud too.",
+  "start": 38.89,
+  "end": 42.184
+ },
+ {
+  "who": "B",
+  "text": "Let's not guess. Let's test.",
+  "start": 42.984,
+  "end": 45.187
+ },
+ {
+  "who": "B",
+  "text": "Can you point to the two big birds?",
+  "start": 45.987,
+  "end": 49.143
+ },
+ {
+  "who": "B",
+  "text": "Pip swapped loud for screeching. Which bird screeches?",
+  "start": 53.143,
+  "end": 56.91
+ },
+ {
+  "who": "N",
+  "text": "A. The kookaburra.",
+  "start": 57.71,
+  "end": 59.958
+ },
+ {
+  "who": "N",
+  "text": "B. The cockatoo.",
+  "start": 60.558,
+  "end": 62.551
+ },
+ {
+  "who": "N",
+  "text": "Pause and think.",
+  "start": 63.151,
+  "end": 64.664
+ },
+ {
+  "who": "N",
+  "text": "Swap a dull word for a more exact synonym.",
+  "start": 69.664,
+  "end": 73.574
+ },
+ {
+  "who": "N",
+  "text": "Kookaburras don't screech. They laugh.",
+  "start": 74.374,
+  "end": 77.438
+ },
+ {
+  "who": "N",
+  "text": "Cockatoos screech. Loud and sharp.",
+  "start": 78.238,
+  "end": 80.912
+ },
+ {
+  "who": "N",
+  "text": "It's B! The cockatoo.",
+  "start": 81.712,
+  "end": 83.508
+ },
+ {
+  "who": "O",
+  "text": "Oh! I picked too fast!",
+  "start": 84.108,
+  "end": 86.08
+ },
+ {
+  "who": "B",
+  "text": "Let's check another way. Look closely.",
+  "start": 86.88,
+  "end": 89.465
+ },
+ {
+  "who": "N",
+  "text": "Coconut crumbs on the cockatoo's beak!",
+  "start": 90.265,
+  "end": 92.939
+ },
+ {
+  "who": "I",
+  "text": "Both clues point to the cockatoo!",
+  "start": 93.739,
+  "end": 96.223
+ },
+ {
+  "who": "B",
+  "text": "Case solved!",
+  "start": 97.023,
+  "end": 97.972
+ },
+ {
+  "who": "I",
+  "text": "Listen! The kookaburra is laughing!",
+  "start": 99.872,
+  "end": 102.437
+ },
+ {
+  "who": "O",
+  "text": "It's glad we didn't blame it!",
+  "start": 103.037,
+  "end": 105.24
+ },
+ {
+  "who": "N",
+  "text": "Remember. Swap a dull word for a more exact synonym.",
+  "start": 106.24,
+  "end": 110.816
+ },
+ {
+  "who": "N",
+  "text": "Say it with me. Swap a dull word for a more exact synonym.",
+  "start": 111.716,
+  "end": 117.635
+ },
+ {
+  "who": "N",
+  "text": "Try it at home. Find a better word for nice.",
+  "start": 119.835,
+  "end": 124.196
+ },
+ {
+  "who": "N",
+  "text": "Next case: clapping the syllables in our names.",
+  "start": 125.096,
+  "end": 128.656
+ }
+]

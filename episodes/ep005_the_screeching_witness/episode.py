@@ -37,7 +37,7 @@ BIRD_S = 0.45 * K              # birds about 2 m further back
 TABLE_L, TABLE_R, TABLE_TOP = 330, 770, 1200
 PLATE_X, PLATE_Y = 470, 1196
 GAP_X = 512                    # the empty spot where Otto's lamington was
-PIP_X = 680
+PIP_X = 720
 LAM = 5.5 * K * NEAR           # lamington side (5.5 cm)
 
 CASE_NO = 5
@@ -54,7 +54,7 @@ LINES = [
     Line("N", "Big and loud are dull words. They fit lots of things.", gap=0.8),  # 5
     Line("N", "A synonym means nearly the same thing.", gap=0.8),            # 6
     Line("N", "It's like a sausage sizzle.", gap=0.6),                       # 7
-    Line("N", "Hungry and starving are synonyms. Starving is more exact.", gap=1.2),  # 8
+    Line("N", "Hungry and starving are synonyms. Starving is more exact.", gap=1.0),  # 8
     Line("O", "Big and loud? It was the kookaburra!", gap=0.8),              # 9
     Line("I", "Hmm. The cockatoo is big and loud too.", gap=0.8),            # 10
     Line("B", "Let's not guess. Let's test.", gap=0.8),                      # 11
@@ -63,9 +63,9 @@ LINES = [
     Line("N", "A. The kookaburra.", gap=0.6),                                # 14
     Line("N", "B. The cockatoo.", gap=0.6),                                  # 15
     Line("N", "Pause and think.", gap=5.0),                                  # 16
-    Line("N", "Swap a dull word for a more exact synonym.", gap=1.0),        # 17
+    Line("N", "Swap a dull word for a more exact synonym.", gap=0.8),        # 17
     Line("N", "Kookaburras don't screech. They laugh.", gap=0.8),            # 18
-    Line("N", "Cockatoos screech. Loud and sharp.", gap=1.0),                # 19
+    Line("N", "Cockatoos screech. Loud and sharp.", gap=0.8),                # 19
     Line("N", "It's B! The cockatoo.", gap=0.6),                             # 20
     Line("O", "Oh! I picked too fast!", gap=0.8),                            # 21
     Line("B", "Let's check another way. Look closely.", gap=0.8),            # 22
@@ -544,7 +544,11 @@ def cards(ctx, ep, T):
     if a > 0:
         card(ctx, 70, 140, 940, 420, a)
         text(ctx, "Synonyms", W / 2, 196, 46, "#9C7429", a)
-        sausage_sizzle(ctx, W / 2, 300, a)
+        ctx.save()
+        ctx.translate(W / 2, 315)
+        ctx.scale(1.6, 1.6)
+        sausage_sizzle(ctx, 0, 0, a)
+        ctx.restore()
         b = prog(T, S(8) - 0.1, S(8) + 0.3)
         c = prog(T, S(8) + 0.35 * (E(8) - S(8)), S(8) + 0.35 * (E(8) - S(8)) + 0.3)
         word_chip(ctx, "hungry", 330, 450, a * b, INK, "#F1ECE2")
@@ -566,11 +570,21 @@ def cards(ctx, ep, T):
         card(ctx, 70, 150, 450, 300, aA2)
         ellipse(ctx, 134, 210, 38, 38, OCHRE, ak)
         text(ctx, "A", 134, 212, 48, "#FFFFFF", ak)
-        kookaburra(ctx, 270, 420, 0.24 * K, 1, 0.0, ak)
+        ctx.save()
+        ctx.rectangle(70, 150, 450, 300)
+        ctx.clip()
+        rrect(ctx, 70, 400, 450, 18, 4, "#B0A393", ak)
+        kookaburra(ctx, 270, 402, 0.36 * K, 1, 0.0, ak)
+        ctx.restore()
         card(ctx, 560, 150, 450, 300, aB)
         ellipse(ctx, 624, 210, 38, 38, SAGE, aB)
         text(ctx, "B", 624, 212, 48, "#FFFFFF", aB)
-        cockatoo(ctx, 815, 420, 0.24 * K, -1, 0.0, 0.0, aB)
+        ctx.save()
+        ctx.rectangle(560, 150, 450, 300)
+        ctx.clip()
+        rrect(ctx, 560, 400, 450, 18, 4, "#B0A393", aB)
+        cockatoo(ctx, 815, 402, 0.36 * K, -1, 0.0, 0.0, aB)
+        ctx.restore()
         if picked > 0:
             tick_box(ctx, 560, 150, 450, 300, picked * aB)
         g0, g1 = E(16) + 0.2, E(16) + 4.9

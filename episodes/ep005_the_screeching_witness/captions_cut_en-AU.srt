@@ -1,0 +1,64 @@
+1
+00:00:00,350 --> 00:00:01,698
+BRAMBLE: Case open!
+
+2
+00:00:01,698 --> 00:00:05,220
+OTTO: Hey! That's not fair! My lamington is gone!
+
+3
+00:00:05,420 --> 00:00:07,641
+IVY: Pip saw who took it.
+
+4
+00:00:08,041 --> 00:00:11,166
+OTTO: Big and loud? It was the kookaburra!
+
+5
+00:00:11,566 --> 00:00:15,260
+IVY: Hmm. The cockatoo is big and loud too.
+
+6
+00:00:15,660 --> 00:00:19,827
+BRAMBLE: Pip swapped loud for screeching. Which bird screeches?
+
+7
+00:00:20,227 --> 00:00:24,537
+Swap a dull word for a more exact synonym.
+
+8
+00:00:24,937 --> 00:00:28,401
+Kookaburras don't screech. They laugh.
+
+9
+00:00:28,801 --> 00:00:31,875
+Cockatoos screech. Loud and sharp.
+
+10
+00:00:32,275 --> 00:00:34,471
+It's B! The cockatoo.
+
+11
+00:00:34,671 --> 00:00:37,043
+OTTO: Oh! I picked too fast!
+
+12
+00:00:37,443 --> 00:00:38,792
+BRAMBLE: Case solved!
+
+13
+00:00:40,292 --> 00:00:43,257
+IVY: Listen! The kookaburra is laughing!
+
+14
+00:00:43,457 --> 00:00:46,060
+OTTO: It's glad we didn't blame it!
+
+15
+00:00:46,460 --> 00:00:52,779
+Say it with me. Swap a dull word for a more exact synonym.
+
+16
+00:00:53,179 --> 00:00:57,139
+Next case: clapping the syllables in our names.
+
