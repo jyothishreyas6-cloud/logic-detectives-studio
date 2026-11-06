@@ -1,0 +1,196 @@
+{
+ "lines": [
+  {
+   "i": 0,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case open!"
+  },
+  {
+   "i": 1,
+   "who": "O",
+   "voice": "otto",
+   "text": "Hey! That's not fair! My lamington is gone!"
+  },
+  {
+   "i": 2,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Pip saw who took it."
+  },
+  {
+   "i": 3,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Today's case: a witness who needs better words."
+  },
+  {
+   "i": 4,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Pip wrote it down. It was big. It was loud."
+  },
+  {
+   "i": 5,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Big and loud are dull words. They fit lots of things."
+  },
+  {
+   "i": 6,
+   "who": "N",
+   "voice": "narrator",
+   "text": "A synonym means nearly the same thing."
+  },
+  {
+   "i": 7,
+   "who": "N",
+   "voice": "narrator",
+   "text": "It's like a sausage sizzle."
+  },
+  {
+   "i": 8,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Hungry and starving are synonyms. Starving is more exact."
+  },
+  {
+   "i": 9,
+   "who": "O",
+   "voice": "otto",
+   "text": "Big and loud? It was the kookaburra!"
+  },
+  {
+   "i": 10,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Hmm. The cockatoo is big and loud too."
+  },
+  {
+   "i": 11,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's not guess. Let's test."
+  },
+  {
+   "i": 12,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Can you point to the two big birds?"
+  },
+  {
+   "i": 13,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Pip swapped loud for screeching. Which bird screeches?"
+  },
+  {
+   "i": 14,
+   "who": "N",
+   "voice": "narrator",
+   "text": "A. The kookaburra."
+  },
+  {
+   "i": 15,
+   "who": "N",
+   "voice": "narrator",
+   "text": "B. The cockatoo."
+  },
+  {
+   "i": 16,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Pause and think."
+  },
+  {
+   "i": 17,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Swap a dull word for a more exact synonym."
+  },
+  {
+   "i": 18,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Kookaburras don't screech. They laugh."
+  },
+  {
+   "i": 19,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Cockatoos screech. Loud and sharp."
+  },
+  {
+   "i": 20,
+   "who": "N",
+   "voice": "narrator",
+   "text": "It's B! The cockatoo."
+  },
+  {
+   "i": 21,
+   "who": "O",
+   "voice": "otto",
+   "text": "Oh! I picked too fast!"
+  },
+  {
+   "i": 22,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's check another way. Look closely."
+  },
+  {
+   "i": 23,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Coconut crumbs on the cockatoo's beak!"
+  },
+  {
+   "i": 24,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Both clues point to the cockatoo!"
+  },
+  {
+   "i": 25,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case solved!"
+  },
+  {
+   "i": 26,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Listen! The kookaburra is laughing!"
+  },
+  {
+   "i": 27,
+   "who": "O",
+   "voice": "otto",
+   "text": "It's glad we didn't blame it!"
+  },
+  {
+   "i": 28,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Remember. Swap a dull word for a more exact synonym."
+  },
+  {
+   "i": 29,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Say it with me. Swap a dull word for a more exact synonym."
+  },
+  {
+   "i": 30,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Try it at home. Find a better word for nice."
+  },
+  {
+   "i": 31,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Next case: clapping the syllables in our names."
+  }
+ ]
+}
