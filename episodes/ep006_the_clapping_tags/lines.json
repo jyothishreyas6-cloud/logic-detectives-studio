@@ -1,0 +1,202 @@
+{
+ "lines": [
+  {
+   "i": 0,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case open!"
+  },
+  {
+   "i": 1,
+   "who": "O",
+   "voice": "otto",
+   "text": "Oh no! Which bucket is mine?"
+  },
+  {
+   "i": 2,
+   "who": "I",
+   "voice": "ivy",
+   "text": "The tags have dots, not names."
+  },
+  {
+   "i": 3,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Today's case: clapping the syllables in our names."
+  },
+  {
+   "i": 4,
+   "who": "N",
+   "voice": "narrator",
+   "text": "A syllable is a beat in a word."
+  },
+  {
+   "i": 5,
+   "who": "N",
+   "voice": "narrator",
+   "text": "It's like lamington."
+  },
+  {
+   "i": 6,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Lam-ing-ton."
+  },
+  {
+   "i": 7,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Three claps."
+  },
+  {
+   "i": 8,
+   "who": "O",
+   "voice": "otto",
+   "text": "One dot! O for Otto! Mine!"
+  },
+  {
+   "i": 9,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Hmm. Pip has a bucket too."
+  },
+  {
+   "i": 10,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's not guess. Let's test."
+  },
+  {
+   "i": 11,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Can you show me two claps?"
+  },
+  {
+   "i": 12,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Which tag has Otto's claps?"
+  },
+  {
+   "i": 13,
+   "who": "N",
+   "voice": "narrator",
+   "text": "A. One dot."
+  },
+  {
+   "i": 14,
+   "who": "N",
+   "voice": "narrator",
+   "text": "B. Two dots."
+  },
+  {
+   "i": 15,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Pause and think."
+  },
+  {
+   "i": 16,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Clap once for each syllable."
+  },
+  {
+   "i": 17,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Ot-to."
+  },
+  {
+   "i": 18,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Two claps for Otto."
+  },
+  {
+   "i": 19,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Pip."
+  },
+  {
+   "i": 20,
+   "who": "N",
+   "voice": "narrator",
+   "text": "One clap for Pip."
+  },
+  {
+   "i": 21,
+   "who": "N",
+   "voice": "narrator",
+   "text": "It's B! Two dots."
+  },
+  {
+   "i": 22,
+   "who": "O",
+   "voice": "otto",
+   "text": "Oh! The dots are claps!"
+  },
+  {
+   "i": 23,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's check another way. Flip the tag."
+  },
+  {
+   "i": 24,
+   "who": "N",
+   "voice": "narrator",
+   "text": "The back says Otto!"
+  },
+  {
+   "i": 25,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Both clues match!"
+  },
+  {
+   "i": 26,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case solved!"
+  },
+  {
+   "i": 27,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Now clap Detective Bramble."
+  },
+  {
+   "i": 28,
+   "who": "O",
+   "voice": "otto",
+   "text": "Five claps! My paws are tired!"
+  },
+  {
+   "i": 29,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Remember. Clap once for each syllable."
+  },
+  {
+   "i": 30,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Say it with me. Clap once for each syllable."
+  },
+  {
+   "i": 31,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Try it at home. Clap your own name."
+  },
+  {
+   "i": 32,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Next case: the name on a muddy sign."
+  }
+ ]
+}
