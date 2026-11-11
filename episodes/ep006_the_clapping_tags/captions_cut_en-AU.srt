@@ -1,0 +1,64 @@
+1
+00:00:00,350 --> 00:00:01,699
+BRAMBLE: Case open!
+
+2
+00:00:01,699 --> 00:00:04,413
+OTTO: Oh no! Which bucket is mine?
+
+3
+00:00:04,613 --> 00:00:07,474
+IVY: The tags have dots, not names.
+
+4
+00:00:07,874 --> 00:00:12,103
+Today's case: clapping the syllables in our names.
+
+5
+00:00:12,503 --> 00:00:15,489
+OTTO: One dot! O for Otto! Mine!
+
+6
+00:00:15,889 --> 00:00:18,552
+BRAMBLE: Which tag has Otto's claps?
+
+7
+00:00:18,952 --> 00:00:21,672
+Clap once for each syllable.
+
+8
+00:00:22,072 --> 00:00:23,359
+Ot-to.
+
+9
+00:00:24,659 --> 00:00:27,187
+Two claps for Otto.
+
+10
+00:00:27,587 --> 00:00:29,727
+It's B! Two dots.
+
+11
+00:00:29,927 --> 00:00:32,338
+OTTO: Oh! The dots are claps!
+
+12
+00:00:32,738 --> 00:00:36,833
+BRAMBLE: Let's check another way. Flip the tag.
+
+13
+00:00:37,233 --> 00:00:39,824
+The back says Otto!
+
+14
+00:00:40,224 --> 00:00:41,496
+BRAMBLE: Case solved!
+
+15
+00:00:41,896 --> 00:00:46,263
+Say it with me. Clap once for each syllable.
+
+16
+00:00:46,663 --> 00:00:50,687
+Next case: the name on a muddy sign.
+

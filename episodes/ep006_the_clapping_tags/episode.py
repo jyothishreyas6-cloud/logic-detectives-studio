@@ -80,7 +80,7 @@ STRIP_HIDDEN = {3, 26, 29}
 CHILD_TURN = 30
 STAMP_LINE = 26
 OPEN_LINE = 0
-CUT = [(0, 2), (8, 8), (12, 12), (16, 18), (21, 22), (26, 26), (30, 30), (32, 32)]
+CUT = [(0, 3), (8, 8), (12, 12), (16, 18), (21, 24), (26, 26), (30, 30), (32, 32)]
 
 
 def clap_times(ep, i, n, first=0.3, step=0.5):
@@ -252,9 +252,9 @@ def beach(ctx):
     ctx.curve_to(920, 792 + fo, 1010, 806 + fo, 1100, 800 + fo)
     ctx.stroke()
     # beach umbrella and towel, further back
-    rrect(ctx, 712, 912, 300, 40, 10, "#F4EEE3")
+    rrect(ctx, 790, 912, 270, 40, 10, "#F4EEE3")
     src(ctx, "#C9605A", 0.55)
-    for xx in range(712, 1012, 60):
+    for xx in range(790, 1060, 60):
         ctx.rectangle(xx, 912, 30, 40)
     ctx.fill()
     rrect(ctx, 856, 600, 10, 320, 4, "#B9A98F")
@@ -434,9 +434,9 @@ def cards(ctx, ep, T):
         card(ctx, 70, 140, 940, 420, a)
         text(ctx, "Syllable = a beat in a word", W / 2, 196, 44, "#9C7429", a)
         b = prog(T, S(5) - 0.1, S(5) + 0.3)
-        lamington(ctx, W / 2, 368, a * b, 1.0, 3)
+        lamington(ctx, W / 2, 392, a * b, 1.3, 3)
         if T >= S(6) - 0.2:
-            name_claps(ctx, ("Lam", "ing", "ton"), W / 2, 430, T, cl[6], a * prog(T, S(6) - 0.2, S(6) + 0.1), 46, 210)
+            name_claps(ctx, ("Lam", "ing", "ton"), W / 2, 462, T, cl[6], a * prog(T, S(6) - 0.2, S(6) + 0.1), 46, 210)
     # show me two claps
     a = window(T, S(11) - 0.1, E(11) + 3.9)
     if a > 0:
@@ -502,23 +502,23 @@ def cards(ctx, ep, T):
     # recap
     ra = window(T, S(29) - 0.3, S(32) - 0.1, 0.5, 0.5)
     if ra > 0:
-        card(ctx, 30, 130, 1020, 1010, ra, "#FBF6EC", 1.0)
+        card(ctx, 30, 130, 1020, 900, ra, "#FBF6EC", 1.0)
         rrect(ctx, 300, 160, 480, 110, 50, OCHRE, ra)
         text(ctx, "Remember", W / 2, 215, 62, "#FFFFFF", ra)
         r1 = ra * prog(T, S(29) + 0.3, S(29) + 0.9)
-        rrect(ctx, 100, 310, 880, 350, 36, "#FFFFFF", 0.95 * r1)
+        rrect(ctx, 100, 300, 880, 320, 36, "#FFFFFF", 0.95 * r1)
         ctx.push_group()
-        name_claps(ctx, ("Ot", "to"), W / 2, 390, T, None, 1.0, 46, 150)
-        text(ctx, "Clap once for", W / 2, 540, 56, INK)
-        text(ctx, "each syllable.", W / 2, 608, 56, INK)
+        name_claps(ctx, ("Ot", "to"), W / 2, 372, T, None, 1.0, 46, 150)
+        text(ctx, "Clap once for", W / 2, 506, 56, INK)
+        text(ctx, "each syllable.", W / 2, 574, 56, INK)
         ctx.pop_group_to_source()
         ctx.paint_with_alpha(r1)
         r2 = ra * prog(T, S(31), S(31) + 0.6)
-        rrect(ctx, 100, 700, 880, 400, 36, "#FFFFFF", 0.95 * r2)
-        text(ctx, "Try it at home:", W / 2, 770, 50, "#9C7429", r2)
-        text(ctx, "clap your own name", W / 2, 860, 56, INK, r2)
+        rrect(ctx, 100, 650, 880, 350, 36, "#FFFFFF", 0.95 * r2)
+        text(ctx, "Try it at home:", W / 2, 712, 50, "#9C7429", r2)
+        text(ctx, "clap your own name", W / 2, 796, 56, INK, r2)
         ctx.push_group()
-        name_claps(ctx, ("I", "vy"), W / 2, 970, T, None, 1.0, 44, 150)
+        name_claps(ctx, ("I", "vy"), W / 2, 888, T, None, 1.0, 44, 150)
         ctx.pop_group_to_source()
         ctx.paint_with_alpha(r2)
     # teaser
