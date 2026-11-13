@@ -1,0 +1,219 @@
+{
+ "lines": [
+  {
+   "i": 0,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case open!"
+  },
+  {
+   "i": 1,
+   "who": "O",
+   "voice": "otto",
+   "text": "Oh no! Mud on Mabel's new sign!"
+  },
+  {
+   "i": 2,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Now we can't read the name."
+  },
+  {
+   "i": 3,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Today's case: the name on a muddy sign."
+  },
+  {
+   "i": 4,
+   "who": "N",
+   "voice": "narrator",
+   "text": "A digraph means two letters, one sound."
+  },
+  {
+   "i": 5,
+   "who": "N",
+   "voice": "narrator",
+   "text": "S and h say sh. Like fish.",
+   "say": "S and H say shh. Like fish."
+  },
+  {
+   "i": 6,
+   "who": "N",
+   "voice": "narrator",
+   "text": "C and h say ch. Like chips.",
+   "say": "C and H say chuh. Like chips."
+  },
+  {
+   "i": 7,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Pip wipes the mud away."
+  },
+  {
+   "i": 8,
+   "who": "O",
+   "voice": "otto",
+   "text": "S. H. O. P. Suh-huh-op!",
+   "say": "S. H. O. P. Suh. Huh. Op!"
+  },
+  {
+   "i": 9,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Hmm. That's not a word."
+  },
+  {
+   "i": 10,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's not guess. Let's test."
+  },
+  {
+   "i": 11,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Can you show me the sh sound?",
+   "say": "Can you show me the shh sound?"
+  },
+  {
+   "i": 12,
+   "who": "B",
+   "voice": "bramble",
+   "text": "What does the sign say?"
+  },
+  {
+   "i": 13,
+   "who": "N",
+   "voice": "narrator",
+   "text": "A. Suh-huh-op.",
+   "say": "A. Suh. Huh. Op."
+  },
+  {
+   "i": 14,
+   "who": "N",
+   "voice": "narrator",
+   "text": "B. Shop."
+  },
+  {
+   "i": 15,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Pause and think."
+  },
+  {
+   "i": 16,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Two letters can make one sound."
+  },
+  {
+   "i": 17,
+   "who": "N",
+   "voice": "narrator",
+   "text": "S and h make sh.",
+   "say": "S and H make shh."
+  },
+  {
+   "i": 18,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Sh. Op.",
+   "say": "Shh. Op."
+  },
+  {
+   "i": 19,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Shop!"
+  },
+  {
+   "i": 20,
+   "who": "N",
+   "voice": "narrator",
+   "text": "It's B! Shop."
+  },
+  {
+   "i": 21,
+   "who": "O",
+   "voice": "otto",
+   "text": "Oh! It says Mabel's Shop!"
+  },
+  {
+   "i": 22,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's check another way. Count the sounds."
+  },
+  {
+   "i": 23,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Sh is one sound. One line.",
+   "say": "Shh is one sound. One line."
+  },
+  {
+   "i": 24,
+   "who": "N",
+   "voice": "narrator",
+   "text": "O and p. Two dots."
+  },
+  {
+   "i": 25,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Four letters. Three sounds."
+  },
+  {
+   "i": 26,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Three sounds make shop!"
+  },
+  {
+   "i": 27,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case solved!"
+  },
+  {
+   "i": 28,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Now try ch, Otto.",
+   "say": "Now try chuh, Otto."
+  },
+  {
+   "i": 29,
+   "who": "O",
+   "voice": "otto",
+   "text": "Ch, ch, ch! I sound like a train!",
+   "say": "Chuh, chuh, chuh! I sound like a train!"
+  },
+  {
+   "i": 30,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Remember. Two letters can make one sound."
+  },
+  {
+   "i": 31,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Say it with me. Two letters can make one sound."
+  },
+  {
+   "i": 32,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Try it at home. Hunt for sh words.",
+   "say": "Try it at home. Hunt for shh words."
+  },
+  {
+   "i": 33,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Next case: the till that won't balance."
+  }
+ ]
+}

@@ -70,6 +70,7 @@ class Line:
     text: str
     gap: float = 0.8          # silence after this line
     min_start: float = 0.0    # optional earliest start (s)
+    say: str = ""             # optional spoken form for the voice (e.g. "shh" for "sh"); captions use text
 
 
 # ---------------------------------------------------------------- episode loading
@@ -782,6 +783,9 @@ def manifest(ep):
         keep = {(x["who"], x["text"]): x["wpm"] for x in json.load(open(ep.path("lines.json")))["lines"] if "wpm" in x}
     data = {"lines": [{"i": i, "who": ln.who, "voice": VOICES[ln.who], "text": ln.text}
                       for i, ln in enumerate(ep.lines)]}
+    for x, ln in zip(data["lines"], ep.lines):
+        if ln.say:
+            x["say"] = ln.say
     for x in data["lines"]:
         if (x["who"], x["text"]) in keep:
             x["wpm"] = keep[(x["who"], x["text"])]

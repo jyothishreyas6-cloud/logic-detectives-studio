@@ -116,7 +116,7 @@ def main():
             name, rate = voices[ln["voice"]]
             rate = ln.get("rate", rate)
             out = f"{ep}/lines/l{ln['i']:02d}.wav"
-            synth(ln["text"], name, rate, out)
+            synth(ln.get("say") or ln["text"], name, rate, out)
             before, after = slow_to_target(out, ln["text"], ln["voice"], ln.get("wpm"))
             print(ep, ln["i"], name, f"{before:.0f}->{after:.0f} wpm", ln["text"])
         json.dump({k: v[0] for k, v in voices.items()}, open(f"{ep}/voices_used.json", "w"), indent=1)
