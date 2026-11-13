@@ -33,10 +33,10 @@ SIGN_X, SIGN_T, SIGN_B = 540, 680, 1000   # sign board: 640 px (40 cm) wide, top
 SIGN_W = 40 * K
 POST_B = 1330                  # where the post meets the lane
 BASE = 940                     # baseline of the big letters
-LET = (("S", 392), ("h", 488), ("o", 612), ("p", 716))
+LET = (("S", 394), ("h", 488), ("o", 588), ("p", 688))
 MARK_Y = 974                   # sound buttons under the letters
 MUD = (452, 880)               # middle of the mud splash
-WORD = (556, 880)              # middle of the word
+WORD = (540, 880)              # middle of the word
 PIP_REST = (800, SIGN_T)       # Pip sits on the top edge of the sign
 
 CASE_NO = 7
@@ -149,7 +149,7 @@ def sound_line(ctx, a, glow=0.0):
     if a <= 0:
         return
     w = 1 + 0.12 * glow
-    rrect(ctx, 340 - 8 * glow, MARK_Y - 9 * w, 200 + 16 * glow, 18 * w, 9, OCHRE, a)
+    rrect(ctx, 346 - 8 * glow, MARK_Y - 9 * w, 190 + 16 * glow, 18 * w, 9, OCHRE, a)
 
 
 def sound_dots(ctx, a, t=None, t0=0.0):
@@ -352,7 +352,7 @@ def cues(ep):
         ("zoom", ep.s(8) - 0.2, ep.e(9) + 0.5, 545, 1150, 1.1),
         ("ring", ep.s(12) - 0.1, ep.e(12) + 0.5, WORD[0], WORD[1] - 10, 260, 110),
         ("zoom", ep.s(17) - 0.3, ep.e(20) + 0.4, 540, 1100, 1.1),
-        ("lens", ep.s(23) - 0.3, ep.e(25) + 0.6, 556, MARK_Y - 50, 760, 1190, 140, 1.6),
+        ("lens", ep.s(23) - 0.3, ep.e(25) + 0.6, 441, MARK_Y - 40, 760, 1190, 140, 1.6),
     ]
 
 

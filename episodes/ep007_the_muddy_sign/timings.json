@@ -1,0 +1,206 @@
+[
+ {
+  "who": "B",
+  "text": "Case open!",
+  "start": 0.35,
+  "end": 1.338
+ },
+ {
+  "who": "O",
+  "text": "Oh no! Mud on Mabel's new sign!",
+  "start": 1.738,
+  "end": 4.516
+ },
+ {
+  "who": "I",
+  "text": "Now we can't read the name.",
+  "start": 5.116,
+  "end": 7.652
+ },
+ {
+  "who": "N",
+  "text": "Today's case: the name on a muddy sign.",
+  "start": 8.452,
+  "end": 11.987
+ },
+ {
+  "who": "N",
+  "text": "A digraph means two letters, one sound.",
+  "start": 12.687,
+  "end": 16.306
+ },
+ {
+  "who": "N",
+  "text": "S and h say sh. Like fish.",
+  "start": 17.106,
+  "end": 21.148
+ },
+ {
+  "who": "N",
+  "text": "C and h say ch. Like chips.",
+  "start": 21.948,
+  "end": 25.226
+ },
+ {
+  "who": "N",
+  "text": "Pip wipes the mud away.",
+  "start": 26.226,
+  "end": 28.765
+ },
+ {
+  "who": "O",
+  "text": "S. H. O. P. Suh-huh-op!",
+  "start": 29.565,
+  "end": 32.683
+ },
+ {
+  "who": "I",
+  "text": "Hmm. That's not a word.",
+  "start": 33.483,
+  "end": 35.503
+ },
+ {
+  "who": "B",
+  "text": "Let's not guess. Let's test.",
+  "start": 36.303,
+  "end": 38.542
+ },
+ {
+  "who": "B",
+  "text": "Can you show me the sh sound?",
+  "start": 39.342,
+  "end": 42.113
+ },
+ {
+  "who": "B",
+  "text": "What does the sign say?",
+  "start": 46.113,
+  "end": 48.361
+ },
+ {
+  "who": "N",
+  "text": "A. Suh-huh-op.",
+  "start": 49.161,
+  "end": 51.654
+ },
+ {
+  "who": "N",
+  "text": "B. Shop.",
+  "start": 52.254,
+  "end": 53.981
+ },
+ {
+  "who": "N",
+  "text": "Pause and think.",
+  "start": 54.581,
+  "end": 56.125
+ },
+ {
+  "who": "N",
+  "text": "Two letters can make one sound.",
+  "start": 61.125,
+  "end": 63.835
+ },
+ {
+  "who": "N",
+  "text": "S and h make sh.",
+  "start": 64.635,
+  "end": 67.001
+ },
+ {
+  "who": "N",
+  "text": "Sh. Op.",
+  "start": 67.801,
+  "end": 69.568
+ },
+ {
+  "who": "N",
+  "text": "Shop!",
+  "start": 70.568,
+  "end": 71.224
+ },
+ {
+  "who": "N",
+  "text": "It's B! Shop.",
+  "start": 72.024,
+  "end": 73.642
+ },
+ {
+  "who": "O",
+  "text": "Oh! It says Mabel's Shop!",
+  "start": 74.242,
+  "end": 76.462
+ },
+ {
+  "who": "B",
+  "text": "Let's check another way. Count the sounds.",
+  "start": 77.262,
+  "end": 80.307
+ },
+ {
+  "who": "N",
+  "text": "Sh is one sound. One line.",
+  "start": 81.107,
+  "end": 84.282
+ },
+ {
+  "who": "N",
+  "text": "O and p. Two dots.",
+  "start": 85.082,
+  "end": 87.99
+ },
+ {
+  "who": "N",
+  "text": "Four letters. Three sounds.",
+  "start": 88.79,
+  "end": 91.447
+ },
+ {
+  "who": "I",
+  "text": "Three sounds make shop!",
+  "start": 92.247,
+  "end": 93.885
+ },
+ {
+  "who": "B",
+  "text": "Case solved!",
+  "start": 94.685,
+  "end": 95.635
+ },
+ {
+  "who": "I",
+  "text": "Now try ch, Otto.",
+  "start": 97.535,
+  "end": 99.122
+ },
+ {
+  "who": "O",
+  "text": "Ch, ch, ch! I sound like a train!",
+  "start": 99.922,
+  "end": 103.065
+ },
+ {
+  "who": "N",
+  "text": "Remember. Two letters can make one sound.",
+  "start": 104.065,
+  "end": 107.537
+ },
+ {
+  "who": "N",
+  "text": "Say it with me. Two letters can make one sound.",
+  "start": 108.437,
+  "end": 112.944
+ },
+ {
+  "who": "N",
+  "text": "Try it at home. Hunt for sh words.",
+  "start": 115.144,
+  "end": 118.725
+ },
+ {
+  "who": "N",
+  "text": "Next case: the till that won't balance.",
+  "start": 119.625,
+  "end": 122.962
+ }
+]
