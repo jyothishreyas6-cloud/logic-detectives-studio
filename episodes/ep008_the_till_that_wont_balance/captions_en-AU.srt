@@ -1,0 +1,152 @@
+1
+00:00:00,350 --> 00:00:01,688
+BRAMBLE: Case open!
+
+2
+00:00:01,688 --> 00:00:04,460
+OTTO: Oh no! The till won't balance!
+
+3
+00:00:04,660 --> 00:00:07,952
+IVY: The sheet and the money don't match.
+
+4
+00:00:08,352 --> 00:00:11,821
+Today's case: the till that won't balance.
+
+5
+00:00:12,121 --> 00:00:16,161
+Regroup means swapping ten ones for one ten.
+
+6
+00:00:16,561 --> 00:00:21,363
+Like ten one-dollar coins for a ten-dollar note.
+
+7
+00:00:21,963 --> 00:00:24,980
+The till started with 38 dollars.
+
+8
+00:00:25,180 --> 00:00:29,819
+Then the kiosk sold 27 dollars of icy poles.
+
+9
+00:00:30,219 --> 00:00:34,933
+OTTO: Easy! Eight plus seven is fifteen. I'll write five.
+
+10
+00:00:35,133 --> 00:00:39,229
+OTTO: Three plus two is five. So, 55 dollars!
+
+11
+00:00:39,629 --> 00:00:42,929
+IVY: Hmm. Where did the extra ten go?
+
+12
+00:00:43,329 --> 00:00:46,095
+BRAMBLE: Let's not guess. Let's test.
+
+13
+00:00:46,495 --> 00:00:50,118
+BRAMBLE: Can you point to the one-dollar coins?
+
+14
+00:00:53,718 --> 00:00:56,727
+BRAMBLE: How much should be in the till?
+
+15
+00:00:57,127 --> 00:00:59,363
+A. 55 dollars.
+
+16
+00:00:59,563 --> 00:01:02,055
+B. 65 dollars.
+
+17
+00:01:02,255 --> 00:01:04,167
+Pause and think.
+
+18
+00:01:08,767 --> 00:01:13,216
+Ten ones and one ten are worth the same.
+
+19
+00:01:13,616 --> 00:01:17,928
+Eight coins and seven coins make fifteen coins.
+
+20
+00:01:18,328 --> 00:01:22,550
+Swap ten coins for one ten-dollar note.
+
+21
+00:01:23,150 --> 00:01:27,327
+Now there are six tens and five ones.
+
+22
+00:01:27,727 --> 00:01:29,973
+That's 65 dollars.
+
+23
+00:01:30,373 --> 00:01:32,839
+It's B! 65 dollars.
+
+24
+00:01:33,039 --> 00:01:36,672
+OTTO: Oh! I forgot the ten from the swap!
+
+25
+00:01:37,072 --> 00:01:41,041
+BRAMBLE: Let's check another way. Take the sales away.
+
+26
+00:01:41,441 --> 00:01:47,806
+65 take away 27. Five ones can't lose seven.
+
+27
+00:01:48,206 --> 00:01:52,507
+So swap one ten for ten ones. Fifteen ones.
+
+28
+00:01:52,907 --> 00:01:55,944
+Fifteen take away seven leaves eight.
+
+29
+00:01:56,344 --> 00:02:00,309
+Five tens take away two tens leaves three.
+
+30
+00:02:00,709 --> 00:02:04,734
+38 dollars. Just what the till started with!
+
+31
+00:02:05,134 --> 00:02:07,225
+IVY: Now the till balances!
+
+32
+00:02:07,625 --> 00:02:08,933
+BRAMBLE: Case solved!
+
+33
+00:02:10,433 --> 00:02:13,178
+OTTO: Don't worry. I'll carry the ten!
+
+34
+00:02:13,578 --> 00:02:16,058
+IVY: Not like a surfboard, Otto!
+
+35
+00:02:16,658 --> 00:02:21,447
+Remember. Ten ones and one ten are worth the same.
+
+36
+00:02:21,947 --> 00:02:28,180
+Say it with me. Ten ones and one ten are worth the same.
+
+37
+00:02:29,980 --> 00:02:35,308
+Try it at home. Bundle ten pegs to make one ten.
+
+38
+00:02:35,808 --> 00:02:39,639
+Next case: ladybird dots at a glance.
+

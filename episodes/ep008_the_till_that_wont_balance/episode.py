@@ -53,44 +53,40 @@ LINES = [
     Line("N", "Regroup means swapping ten ones for one ten.", gap=0.8),        # 4
     Line("N", "Like ten one-dollar coins for a ten-dollar note.", gap=1.0),    # 5
     Line("N", "The till started with 38 dollars.", gap=0.6),                   # 6
-    Line("N", "Then the kiosk sold 27 dollars of icy poles.", gap=0.8),        # 7
-    Line("O", "Easy! Eight plus seven is fifteen. I'll write five.", gap=0.6), # 8
-    Line("O", "Three plus two is five. So, 55 dollars!", gap=0.8),             # 9
-    Line("I", "Hmm. Where did the extra ten go?", gap=0.8),                    # 10
+    Line("N", "Then it sold 27 dollars of icy poles.", gap=0.8),               # 7
+    Line("O", "Eight and seven make fifteen. Write the five!", gap=0.6),       # 8
+    Line("O", "Three and two make five. 55 dollars!", gap=0.8),                # 9
+    Line("I", "Hmm. Where did the ten go?", gap=0.8),                          # 10
     Line("B", "Let's not guess. Let's test.", gap=0.8),                        # 11
-    Line("B", "Can you point to the one-dollar coins?", gap=4.0),              # 12
+    Line("B", "Can you point to the one-dollar coins?", gap=3.5),              # 12
     Line("B", "How much should be in the till?", gap=0.8),                     # 13
     Line("N", "A. 55 dollars.", gap=0.6),                                      # 14
     Line("N", "B. 65 dollars.", gap=0.6),                                      # 15
     Line("N", "Pause and think.", gap=5.0),                                    # 16
     Line("N", "Ten ones and one ten are worth the same.", gap=0.8),            # 17
-    Line("N", "Eight coins and seven coins make fifteen coins.", gap=0.8),     # 18
-    Line("N", "Swap ten coins for one ten-dollar note.", gap=1.0),             # 19
+    Line("N", "Eight and seven make fifteen ones.", gap=0.8),                  # 18
+    Line("N", "Swap ten ones for one ten.", gap=1.0),                          # 19
     Line("N", "Now there are six tens and five ones.", gap=0.8),               # 20
-    Line("N", "That's 65 dollars.", gap=0.8),                                  # 21
-    Line("N", "It's B! 65 dollars.", gap=0.6),                                 # 22
-    Line("O", "Oh! I forgot the ten from the swap!", gap=0.8),                 # 23
-    Line("B", "Let's check another way. Take the sales away.", gap=0.8),       # 24
-    Line("N", "65 take away 27. Five ones can't lose seven.", gap=0.8),        # 25
-    Line("N", "So swap one ten for ten ones. Fifteen ones.", gap=0.8),         # 26
-    Line("N", "Fifteen take away seven leaves eight.", gap=0.8),               # 27
-    Line("N", "Five tens take away two tens leaves three.", gap=0.8),          # 28
-    Line("N", "38 dollars. Just what the till started with!", gap=0.8),        # 29
-    Line("I", "Now the till balances!", gap=0.8),                              # 30
-    Line("B", "Case solved!", gap=1.9),                                        # 31
-    Line("O", "Don't worry. I'll carry the ten!", gap=0.8),                    # 32
-    Line("I", "Not like a surfboard, Otto!", gap=1.0),                         # 33
-    Line("N", "Remember. Ten ones and one ten are worth the same.", gap=0.9),  # 34
-    Line("N", "Say it with me. Ten ones and one ten are worth the same.", gap=2.2),  # 35
-    Line("N", "Try it at home. Bundle ten pegs to make one ten.", gap=0.9),    # 36
-    Line("N", "Next case: ladybird dots at a glance.", gap=0.6),               # 37
+    Line("N", "It's B! 65 dollars.", gap=0.6),                                 # 21
+    Line("O", "Oh! I forgot the swapped ten!", gap=0.8),                       # 22
+    Line("B", "Let's check another way.", gap=0.6),                            # 23
+    Line("N", "65 take away 27. Swap a ten for ten ones.", gap=0.8),           # 24
+    Line("N", "Fifteen take away seven is eight. Five take away two is three.", gap=0.8),  # 25
+    Line("I", "38! Now the till balances!", gap=0.8),                          # 26
+    Line("B", "Case solved!", gap=1.9),                                        # 27
+    Line("O", "I'll carry the ten!", gap=0.8),                                 # 28
+    Line("I", "Not like a surfboard, Otto!", gap=1.0),                         # 29
+    Line("N", "Remember. Ten ones and one ten are worth the same.", gap=0.9),  # 30
+    Line("N", "Say it with me. Ten ones and one ten are worth the same.", gap=2.2),  # 31
+    Line("N", "Try it at home. Bundle ten pegs to make one ten.", gap=0.9),    # 32
+    Line("N", "Next case: ladybird dots at a glance.", gap=0.6),               # 33
 ]
 
-STRIP_HIDDEN = {3, 31, 34}
-CHILD_TURN = 35
-STAMP_LINE = 31
+STRIP_HIDDEN = {3, 27, 30}
+CHILD_TURN = 31
+STAMP_LINE = 27
 OPEN_LINE = 0
-CUT = [(0, 3), (8, 10), (17, 23), (31, 31), (35, 35), (37, 37)]
+CUT = [(0, 3), (8, 10), (17, 22), (27, 27), (31, 31), (33, 33)]
 
 
 # ---------------------------------------------------------------- props
@@ -304,7 +300,7 @@ def note_spots(ep, T):
 def carry_ten(ep, T):
     """Otto lifts the top-most note onto his head (lines 32 to 33) and puts it back."""
     S, E = ep.s, ep.e
-    k = ease(prog(T, S(32) + 0.2, S(32) + 0.9)) * (1 - ease(prog(T, E(33) + 0.3, E(33) + 1.0)))
+    k = ease(prog(T, S(28) + 0.2, S(28) + 0.9)) * (1 - ease(prog(T, E(29) + 0.3, E(29) + 1.0)))
     return k
 
 
@@ -312,8 +308,8 @@ def carry_ten(ep, T):
 def scene(ctx, ep, T):
     S, E = ep.s, ep.e
     kiosk(ctx, T, ep)
-    clipboard(ctx, prog(T, S(23), S(23) + 0.5))
-    till(ctx, *TILL, screen="$65" if T >= S(30) else "$ ?")
+    clipboard(ctx, prog(T, S(22), S(22) + 0.5))
+    till(ctx, *TILL, screen="$65" if T >= S(26) else "$ ?")
     mat(ctx)
     lift = carry_ten(ep, T)
     for k, (x, y, a) in enumerate(note_spots(ep, T)):
@@ -336,9 +332,9 @@ def cues(ep):
         ("ring", ep.s(1) - 0.1, ep.e(2) + 0.5, 235, 430, 170, 190),
         ("zoom", ep.s(8) - 0.2, ep.e(10) + 0.5, 420, 1000, 1.1),
         ("ring", ep.s(12) - 0.1, ep.e(12) + 3.8, ONES_X, 900, 210, 190),
-        ("zoom", ep.s(18) - 0.3, ep.e(21) + 0.4, 540, 1000, 1.1),
-        ("ring", ep.s(23) - 0.1, ep.e(23) + 0.5, 235, 420, 170, 190),
-        ("zoom", ep.s(32) - 0.2, ep.e(33) + 0.6, 360, 1350, 1.1),
+        ("zoom", ep.s(18) - 0.3, ep.e(20) + 0.4, 540, 1000, 1.1),
+        ("ring", ep.s(22) - 0.1, ep.e(22) + 0.5, 235, 420, 170, 190),
+        ("zoom", ep.s(28) - 0.2, ep.e(29) + 0.6, 360, 1350, 1.1),
     ]
 
 
@@ -346,10 +342,10 @@ def foley(ep):
     S = ep.s
     out = [("whoosh", S(3) - 0.3), ("whoosh", S(4) - 0.3), ("whoosh", S(14) - 0.3),
            ("pop", S(18) + 0.6), ("whoosh", S(19) + 0.7), ("pop", S(19) + 1.5),
-           ("pop", S(23) + 0.2), ("whoosh", S(25) - 0.3)]
-    out += [("pop", S(i) + 0.3) for i in (26, 27, 28)]
-    out.append(("step", S(31) + 0.5))
-    out.append(("whoosh", S(32) + 0.3))
+           ("pop", S(22) + 0.2), ("whoosh", S(24) - 0.3)]
+    out += [("pop", S(i) + 0.3) for i in (24, 25)]
+    out.append(("step", S(27) + 0.5))
+    out.append(("whoosh", S(28) + 0.3))
     return out
 
 
@@ -384,25 +380,25 @@ def poses(ep, T):
         O["expr"] = I["expr"] = "think"
     if during(17, 0.2, 0.6):
         B["expr"] = "think"
-    if S(18) - 0.1 <= T <= E(21) + 0.4:
+    if S(18) - 0.1 <= T <= E(20) + 0.4:
         B.update(expr="happy", point=(ONES_X - 60, 860), amt=ramp(S(18) - 0.1))
     if during(22, 0.2, 0.3):
         I["expr"] = "happy"
     if during(23, 0.2, 0.8):
         O["expr"] = "surprise"
-        O["scratch"] = prog(T, S(23) + 0.3, S(23) + 0.8) * (1 - prog(T, E(23) + 0.4, E(23) + 0.8))
-    if S(24) - 0.2 <= T <= E(29) + 0.4:
-        B["expr"] = "think" if T < S(29) else "happy"
-        O["expr"] = I["expr"] = "think" if T < S(29) else "happy"
+        O["scratch"] = prog(T, S(22) + 0.3, S(22) + 0.8) * (1 - prog(T, E(22) + 0.4, E(22) + 0.8))
+    if S(23) - 0.2 <= T <= E(26) + 0.4:
+        B["expr"] = "think" if T < S(26) else "happy"
+        O["expr"] = I["expr"] = "think" if T < S(26) else "happy"
     if during(30, 0.2, 0.6):
         I["expr"] = "happy"
-    if T >= S(31) - 0.2:
+    if T >= S(27) - 0.2:
         B["expr"] = O["expr"] = I["expr"] = "happy"
-        hop = (T - S(31)) / 0.55
+        hop = (T - S(27)) / 0.55
         if 0 <= hop <= 1:
             O["jump"] = 42 * math.sin(math.pi * hop)
-    if S(32) <= T <= E(33) + 0.9:
-        O.update(expr="happy", point=(OTTO_X + 60, 1300), amt=ramp(S(32) + 0.2))
+    if S(28) <= T <= E(29) + 0.9:
+        O.update(expr="happy", point=(OTTO_X + 60, 1300), amt=ramp(S(28) + 0.2))
     if during(33, 0.1, 0.5):
         I["expr"] = "surprise"
     return {"B": B, "O": O, "I": I}
@@ -458,9 +454,10 @@ def ten_for_one(ctx, x, y, a, sc=1.0):
 
 def column_sum(ctx, T, ep, a):
     """65 take away 27, regrouping one ten into ten ones."""
-    S = ep.s
     tx, ox = 480, 620
-    r1 = a * prog(T, S(26), S(26) + 0.4)
+    S, E = ep.s, ep.e
+    t1 = S(24) + 0.55 * (E(24) - S(24))
+    r1 = a * prog(T, t1, t1 + 0.4)
     letter(ctx, "6", tx, 330, 84, INK, a)
     letter(ctx, "5", ox, 330, 84, INK, a)
     if r1 > 0:
@@ -476,9 +473,10 @@ def column_sum(ctx, T, ep, a):
     letter(ctx, "2", tx, 430, 84, INK, a)
     letter(ctx, "7", ox, 430, 84, INK, a)
     rrect(ctx, 330, 454, 340, 8, 4, INK, a)
-    letter(ctx, "8", ox, 548, 84, GREEN, a * prog(T, S(27) + 0.3, S(27) + 0.6))
-    letter(ctx, "3", tx, 548, 84, GREEN, a * prog(T, S(28) + 0.3, S(28) + 0.6))
-    letter(ctx, "$", 360, 548, 70, GREEN, a * prog(T, S(29), S(29) + 0.3))
+    letter(ctx, "8", ox, 548, 84, GREEN, a * prog(T, S(25) + 0.3, S(25) + 0.6))
+    t3 = S(25) + 0.55 * (E(25) - S(25))
+    letter(ctx, "3", tx, 548, 84, GREEN, a * prog(T, t3, t3 + 0.3))
+    letter(ctx, "$", 360, 548, 70, GREEN, a * prog(T, S(26), S(26) + 0.3))
 
 
 def cards(ctx, ep, T):
@@ -503,12 +501,12 @@ def cards(ctx, ep, T):
         text(ctx, "10 ones", 345, 500, 40, INK, b)
         text(ctx, "1 ten", 760, 500, 40, INK, b)
     # A or B
-    aA = window(T, S(14) - 0.2, E(22) + 0.6)
+    aA = window(T, S(14) - 0.2, E(21) + 0.6)
     if aA > 0:
         aA2 = aA * prog(T, S(14) - 0.2, S(14) + 0.2)
         aB = aA * prog(T, S(15) - 0.2, S(15) + 0.2)
-        d = E(22) - S(22)
-        picked = prog(T, S(22) + 0.2 * d, S(22) + 0.2 * d + 0.4)
+        d = E(21) - S(21)
+        picked = prog(T, S(21) + 0.2 * d, S(21) + 0.2 * d + 0.4)
         ak = aA2 * (1 - 0.5 * picked)
         card(ctx, 70, 150, 450, 300, aA2)
         ellipse(ctx, 134, 210, 38, 38, OCHRE, ak)
@@ -543,17 +541,17 @@ def cards(ctx, ep, T):
                 ctx.line_to(cx + 18, cy - 14)
                 ctx.stroke()
     # check another way: 65 take away 27
-    a = window(T, S(25) - 0.3, E(29) + 0.8)
+    a = window(T, S(24) - 0.3, E(26) + 0.6)
     if a > 0:
         card(ctx, 250, 150, 580, 450, a)
         column_sum(ctx, T, ep, a)
     # recap
-    ra = window(T, S(34) - 0.3, S(37) - 0.1, 0.5, 0.5)
+    ra = window(T, S(30) - 0.3, S(33) - 0.1, 0.5, 0.5)
     if ra > 0:
         card(ctx, 30, 130, 1020, 900, ra, "#FBF6EC", 1.0)
         rrect(ctx, 300, 160, 480, 110, 50, OCHRE, ra)
         text(ctx, "Remember", W / 2, 215, 62, "#FFFFFF", ra)
-        r1 = ra * prog(T, S(34) + 0.3, S(34) + 0.9)
+        r1 = ra * prog(T, S(30) + 0.3, S(30) + 0.9)
         rrect(ctx, 100, 300, 880, 320, 36, "#FFFFFF", 0.95 * r1)
         ctx.push_group()
         ten_for_one(ctx, W / 2, 390, 1.0, 0.85)
@@ -561,7 +559,7 @@ def cards(ctx, ep, T):
         text(ctx, "are worth the same.", W / 2, 574, 56, INK)
         ctx.pop_group_to_source()
         ctx.paint_with_alpha(r1)
-        r2 = ra * prog(T, S(36), S(36) + 0.6)
+        r2 = ra * prog(T, S(32), S(32) + 0.6)
         rrect(ctx, 100, 650, 880, 350, 36, "#FFFFFF", 0.95 * r2)
         text(ctx, "Try it at home:", W / 2, 712, 50, "#9C7429", r2)
         text(ctx, "bundle ten pegs", W / 2, 790, 56, INK, r2)
@@ -571,7 +569,7 @@ def cards(ctx, ep, T):
         text(ctx, "=", 540, 900, 64, INK, r2)
         word_chip(ctx, "1 ten", 740, 900, r2, INK, "#FBF1DC", 52)
     # teaser
-    ta = window(T, S(37) - 0.1, ep.total - 1.0, 0.4, 0.5)
+    ta = window(T, S(33) - 0.1, ep.total - 1.0, 0.4, 0.5)
     if ta > 0:
         card(ctx, 140, 170, 800, 460, ta)
         rrect(ctx, 330, 200, 420, 100, 46, SAGE, ta)

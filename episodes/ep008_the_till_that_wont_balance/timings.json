@@ -1,0 +1,230 @@
+[
+ {
+  "who": "B",
+  "text": "Case open!",
+  "start": 0.35,
+  "end": 1.288
+ },
+ {
+  "who": "O",
+  "text": "Oh no! The till won't balance!",
+  "start": 1.688,
+  "end": 4.06
+ },
+ {
+  "who": "I",
+  "text": "The sheet and the money don't match.",
+  "start": 4.66,
+  "end": 7.552
+ },
+ {
+  "who": "N",
+  "text": "Today's case: the till that won't balance.",
+  "start": 8.352,
+  "end": 11.421
+ },
+ {
+  "who": "N",
+  "text": "Regroup means swapping ten ones for one ten.",
+  "start": 12.121,
+  "end": 15.761
+ },
+ {
+  "who": "N",
+  "text": "Like ten one-dollar coins for a ten-dollar note.",
+  "start": 16.561,
+  "end": 20.963
+ },
+ {
+  "who": "N",
+  "text": "The till started with 38 dollars.",
+  "start": 21.963,
+  "end": 24.58
+ },
+ {
+  "who": "N",
+  "text": "Then the kiosk sold 27 dollars of icy poles.",
+  "start": 25.18,
+  "end": 29.419
+ },
+ {
+  "who": "O",
+  "text": "Easy! Eight plus seven is fifteen. I'll write five.",
+  "start": 30.219,
+  "end": 34.533
+ },
+ {
+  "who": "O",
+  "text": "Three plus two is five. So, 55 dollars!",
+  "start": 35.133,
+  "end": 38.829
+ },
+ {
+  "who": "I",
+  "text": "Hmm. Where did the extra ten go?",
+  "start": 39.629,
+  "end": 42.529
+ },
+ {
+  "who": "B",
+  "text": "Let's not guess. Let's test.",
+  "start": 43.329,
+  "end": 45.695
+ },
+ {
+  "who": "B",
+  "text": "Can you point to the one-dollar coins?",
+  "start": 46.495,
+  "end": 49.718
+ },
+ {
+  "who": "B",
+  "text": "How much should be in the till?",
+  "start": 53.718,
+  "end": 56.327
+ },
+ {
+  "who": "N",
+  "text": "A. 55 dollars.",
+  "start": 57.127,
+  "end": 58.963
+ },
+ {
+  "who": "N",
+  "text": "B. 65 dollars.",
+  "start": 59.563,
+  "end": 61.655
+ },
+ {
+  "who": "N",
+  "text": "Pause and think.",
+  "start": 62.255,
+  "end": 63.767
+ },
+ {
+  "who": "N",
+  "text": "Ten ones and one ten are worth the same.",
+  "start": 68.767,
+  "end": 72.816
+ },
+ {
+  "who": "N",
+  "text": "Eight coins and seven coins make fifteen coins.",
+  "start": 73.616,
+  "end": 77.528
+ },
+ {
+  "who": "N",
+  "text": "Swap ten coins for one ten-dollar note.",
+  "start": 78.328,
+  "end": 82.15
+ },
+ {
+  "who": "N",
+  "text": "Now there are six tens and five ones.",
+  "start": 83.15,
+  "end": 86.927
+ },
+ {
+  "who": "N",
+  "text": "That's 65 dollars.",
+  "start": 87.727,
+  "end": 89.573
+ },
+ {
+  "who": "N",
+  "text": "It's B! 65 dollars.",
+  "start": 90.373,
+  "end": 92.439
+ },
+ {
+  "who": "O",
+  "text": "Oh! I forgot the ten from the swap!",
+  "start": 93.039,
+  "end": 96.272
+ },
+ {
+  "who": "B",
+  "text": "Let's check another way. Take the sales away.",
+  "start": 97.072,
+  "end": 100.641
+ },
+ {
+  "who": "N",
+  "text": "65 take away 27. Five ones can't lose seven.",
+  "start": 101.441,
+  "end": 107.406
+ },
+ {
+  "who": "N",
+  "text": "So swap one ten for ten ones. Fifteen ones.",
+  "start": 108.206,
+  "end": 112.107
+ },
+ {
+  "who": "N",
+  "text": "Fifteen take away seven leaves eight.",
+  "start": 112.907,
+  "end": 115.544
+ },
+ {
+  "who": "N",
+  "text": "Five tens take away two tens leaves three.",
+  "start": 116.344,
+  "end": 119.909
+ },
+ {
+  "who": "N",
+  "text": "38 dollars. Just what the till started with!",
+  "start": 120.709,
+  "end": 124.334
+ },
+ {
+  "who": "I",
+  "text": "Now the till balances!",
+  "start": 125.134,
+  "end": 126.825
+ },
+ {
+  "who": "B",
+  "text": "Case solved!",
+  "start": 127.625,
+  "end": 128.533
+ },
+ {
+  "who": "O",
+  "text": "Don't worry. I'll carry the ten!",
+  "start": 130.433,
+  "end": 132.778
+ },
+ {
+  "who": "I",
+  "text": "Not like a surfboard, Otto!",
+  "start": 133.578,
+  "end": 135.658
+ },
+ {
+  "who": "N",
+  "text": "Remember. Ten ones and one ten are worth the same.",
+  "start": 136.658,
+  "end": 141.047
+ },
+ {
+  "who": "N",
+  "text": "Say it with me. Ten ones and one ten are worth the same.",
+  "start": 141.947,
+  "end": 147.78
+ },
+ {
+  "who": "N",
+  "text": "Try it at home. Bundle ten pegs to make one ten.",
+  "start": 149.98,
+  "end": 154.908
+ },
+ {
+  "who": "N",
+  "text": "Next case: ladybird dots at a glance.",
+  "start": 155.808,
+  "end": 159.239
+ }
+]

@@ -46,25 +46,25 @@
    "i": 7,
    "who": "N",
    "voice": "narrator",
-   "text": "Then the kiosk sold 27 dollars of icy poles."
+   "text": "Then it sold 27 dollars of icy poles."
   },
   {
    "i": 8,
    "who": "O",
    "voice": "otto",
-   "text": "Easy! Eight plus seven is fifteen. I'll write five."
+   "text": "Eight and seven make fifteen. Write the five!"
   },
   {
    "i": 9,
    "who": "O",
    "voice": "otto",
-   "text": "Three plus two is five. So, 55 dollars!"
+   "text": "Three and two make five. 55 dollars!"
   },
   {
    "i": 10,
    "who": "I",
    "voice": "ivy",
-   "text": "Hmm. Where did the extra ten go?"
+   "text": "Hmm. Where did the ten go?"
   },
   {
    "i": 11,
@@ -112,13 +112,13 @@
    "i": 18,
    "who": "N",
    "voice": "narrator",
-   "text": "Eight coins and seven coins make fifteen coins."
+   "text": "Eight and seven make fifteen ones."
   },
   {
    "i": 19,
    "who": "N",
    "voice": "narrator",
-   "text": "Swap ten coins for one ten-dollar note."
+   "text": "Swap ten ones for one ten."
   },
   {
    "i": 20,
@@ -130,100 +130,76 @@
    "i": 21,
    "who": "N",
    "voice": "narrator",
-   "text": "That's 65 dollars."
-  },
-  {
-   "i": 22,
-   "who": "N",
-   "voice": "narrator",
    "text": "It's B! 65 dollars."
   },
   {
-   "i": 23,
+   "i": 22,
    "who": "O",
    "voice": "otto",
-   "text": "Oh! I forgot the ten from the swap!"
+   "text": "Oh! I forgot the swapped ten!"
+  },
+  {
+   "i": 23,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's check another way."
   },
   {
    "i": 24,
-   "who": "B",
-   "voice": "bramble",
-   "text": "Let's check another way. Take the sales away."
+   "who": "N",
+   "voice": "narrator",
+   "text": "65 take away 27. Swap a ten for ten ones."
   },
   {
    "i": 25,
    "who": "N",
    "voice": "narrator",
-   "text": "65 take away 27. Five ones can't lose seven."
+   "text": "Fifteen take away seven is eight. Five take away two is three."
   },
   {
    "i": 26,
-   "who": "N",
-   "voice": "narrator",
-   "text": "So swap one ten for ten ones. Fifteen ones."
+   "who": "I",
+   "voice": "ivy",
+   "text": "38! Now the till balances!"
   },
   {
    "i": 27,
-   "who": "N",
-   "voice": "narrator",
-   "text": "Fifteen take away seven leaves eight."
-  },
-  {
-   "i": 28,
-   "who": "N",
-   "voice": "narrator",
-   "text": "Five tens take away two tens leaves three."
-  },
-  {
-   "i": 29,
-   "who": "N",
-   "voice": "narrator",
-   "text": "38 dollars. Just what the till started with!"
-  },
-  {
-   "i": 30,
-   "who": "I",
-   "voice": "ivy",
-   "text": "Now the till balances!"
-  },
-  {
-   "i": 31,
    "who": "B",
    "voice": "bramble",
    "text": "Case solved!"
   },
   {
-   "i": 32,
+   "i": 28,
    "who": "O",
    "voice": "otto",
-   "text": "Don't worry. I'll carry the ten!"
+   "text": "I'll carry the ten!"
   },
   {
-   "i": 33,
+   "i": 29,
    "who": "I",
    "voice": "ivy",
    "text": "Not like a surfboard, Otto!"
   },
   {
-   "i": 34,
+   "i": 30,
    "who": "N",
    "voice": "narrator",
    "text": "Remember. Ten ones and one ten are worth the same."
   },
   {
-   "i": 35,
+   "i": 31,
    "who": "N",
    "voice": "narrator",
    "text": "Say it with me. Ten ones and one ten are worth the same."
   },
   {
-   "i": 36,
+   "i": 32,
    "who": "N",
    "voice": "narrator",
    "text": "Try it at home. Bundle ten pegs to make one ten."
   },
   {
-   "i": 37,
+   "i": 33,
    "who": "N",
    "voice": "narrator",
    "text": "Next case: ladybird dots at a glance."
