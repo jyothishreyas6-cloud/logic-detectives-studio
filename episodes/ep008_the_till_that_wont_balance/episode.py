@@ -95,7 +95,7 @@ CUT = [(0, 3), (8, 10), (17, 23), (31, 31), (35, 35), (37, 37)]
 
 # ---------------------------------------------------------------- props
 def letter(ctx, s, x, base, size, col=INK, a=1.0):
-    """One glyph centred on x, sitting on a shared baseline (so h, o and p line up)."""
+    """One glyph centred on x, sitting on a shared baseline (so digits line up)."""
     if a <= 0:
         return
     ctx.select_font_face(R.FONT, cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_BOLD)
@@ -106,96 +106,52 @@ def letter(ctx, s, x, base, size, col=INK, a=1.0):
     ctx.show_text(s)
 
 
-def mud_blob(ctx, x, y, a):
-    for dx, dy, rx, ry, col in ((-70, -10, 112, 70, "#7A5A40"), (40, 20, 92, 60, "#6E5039"),
-                                (-20, 60, 70, 40, "#7A5A40"), (-110, 50, 40, 26, "#6E5039"),
-                                (90, -50, 36, 24, "#7A5A40"), (-60, -40, 30, 16, "#9A7658")):
-        ellipse(ctx, x + dx, y + dy, rx, ry, col, a)
-    for dx, ln in ((-90, 70), (10, 96), (70, 60)):      # drips
-        rrect(ctx, x + dx - 9, y + 40, 18, ln, 9, "#6E5039", a)
-
-
-def sign(ctx, mud=1.0, gold=0.0):
-    """Mabel's stall sign on its post. mud 1 = fully splashed, 0 = wiped clean."""
-    x0 = SIGN_X - SIGN_W / 2
-    rig.soft_shadow(ctx, SIGN_X + 10, POST_B + 4, 70, 12, 0.25)
-    g = cairo.LinearGradient(SIGN_X - 20, 0, SIGN_X + 20, 0)
-    g.add_color_stop_rgb(0, *R.rgb("#9C7A5E"))
-    g.add_color_stop_rgb(1, *R.rgb("#7A5C45"))
-    ctx.set_source(g)
-    ctx.rectangle(SIGN_X - 20, SIGN_B - 10, 40, POST_B - SIGN_B + 10)
-    ctx.fill()
-    rig.soft_shadow(ctx, SIGN_X + 12, SIGN_B + 14, SIGN_W * 0.48, 12, 0.18)
-    rrect(ctx, x0, SIGN_T, SIGN_W, SIGN_B - SIGN_T, 22, "#A98463")
-    rrect(ctx, x0 + 16, SIGN_T + 16, SIGN_W - 32, SIGN_B - SIGN_T - 32, 14, "#F3E6CB")
-    src(ctx, "#E6D3AE", 0.6)
-    for k in range(4):                                   # painted board grain
-        yy = SIGN_T + 70 + k * 72
-        ctx.rectangle(x0 + 30, yy, SIGN_W - 60, 3)
-    ctx.fill()
-    text(ctx, "Mabel's", SIGN_X, SIGN_T + 66, 52, "#6E8460")
-    for j, (s, x) in enumerate(LET):
-        col = INK
-        if j < 2 and gold > 0:
-            col = OCHRE if gold > 0.5 else INK
-        letter(ctx, s, x, BASE, 168, col)
-    if mud > 0:
-        mud_blob(ctx, *MUD, mud)
-
-
-def sound_line(ctx, a, glow=0.0):
+def coin(ctx, x, y, a=1.0, r=COIN_R):
+    """Australian $1 coin (25 mm across), gold coloured."""
     if a <= 0:
         return
-    w = 1 + 0.12 * glow
-    rrect(ctx, 346 - 8 * glow, MARK_Y - 9 * w, 190 + 16 * glow, 18 * w, 9, OCHRE, a)
+    rig.soft_shadow(ctx, x + 2, y + r * 0.8, r * 0.9, r * 0.25, 0.18 * a)
+    ellipse(ctx, x, y, r, r, "#D8B24C", a)
+    ctx.set_line_width(max(1.5, r * 0.12))
+    src(ctx, "#B08A2E", a)
+    ctx.arc(x, y, r * 0.74, 0, 2 * math.pi)
+    ctx.stroke()
+    ellipse(ctx, x - r * 0.3, y - r * 0.35, r * 0.3, r * 0.2, "#FFF3C4", 0.6 * a)
 
 
-def sound_dots(ctx, a, t=None, t0=0.0):
-    for k, (s, x) in enumerate(LET[2:]):
-        b = a if t is None else a * prog(t, t0 + k * 0.45, t0 + k * 0.45 + 0.15)
-        if b > 0:
-            ellipse(ctx, x, MARK_Y, 13, 13, OCHRE, b)
+def note(ctx, x, y, a=1.0, sc=1.0, rot=0.0):
+    """Australian $10 note (137 by 65 mm), blue; (x, y) is its middle."""
+    if a <= 0:
+        return
+    w, h = NOTE_W * sc, NOTE_H * sc
+    ctx.save()
+    ctx.translate(x, y)
+    ctx.rotate(rot)
+    rig.soft_shadow(ctx, 4, h / 2, w * 0.45, 8 * sc, 0.16 * a)
+    rrect(ctx, -w / 2, -h / 2, w, h, 10 * sc, "#6F9FCB", a)
+    rrect(ctx, -w / 2 + 8 * sc, -h / 2 + 8 * sc, w - 16 * sc, h - 16 * sc, 8 * sc, "#9CC0DF", a)
+    ellipse(ctx, 0, 0, 30 * sc, 34 * sc, "#6F9FCB", a)
+    text(ctx, "10", -w / 2 + 40 * sc, -h / 2 + 32 * sc, 28 * sc, "#2F5B86", a)
+    text(ctx, "10", w / 2 - 40 * sc, h / 2 - 30 * sc, 28 * sc, "#2F5B86", a)
+    ctx.restore()
 
 
-def cloth(ctx, x, y, a):
-    rrect(ctx, x - 34, y - 26, 68, 52, 10, "#8FB4C8", a)
-    src(ctx, "#FFFFFF", 0.5 * a)
-    ctx.rectangle(x - 34, y - 6, 68, 6)
-    ctx.rectangle(x - 6, y - 26, 6, 52)
+def mat(ctx):
+    """Place-value counting mat on the counter: Tens on the left, Ones on the right."""
+    rig.soft_shadow(ctx, MAT_X + MAT_W / 2, MAT_Y + MAT_H + 8, MAT_W * 0.5, 16, 0.2)
+    rrect(ctx, MAT_X, MAT_Y, MAT_W, MAT_H, 30, "#EFE8D6")
+    rrect(ctx, MAT_X, MAT_Y, MAT_W, 90, 30, "#E2D6BC")
+    ctx.rectangle(MAT_X, MAT_Y + 60, MAT_W, 30)
+    src(ctx, "#E2D6BC")
     ctx.fill()
+    rrect(ctx, 468, MAT_Y + 14, 6, MAT_H - 28, 3, "#CDBE9F")
+    text(ctx, "Tens", TENS_X, MAT_Y + 46, 46, "#2F5B86")
+    text(ctx, "Ones", ONES_X, MAT_Y + 46, 46, "#9C7429")
 
 
-def fish(ctx, x, y, s, a):
-    ellipse(ctx, x, y, 46 * s, 26 * s, "#8FB4C8", a)
-    src(ctx, "#8FB4C8", a)
-    ctx.move_to(x + 40 * s, y)
-    ctx.line_to(x + 74 * s, y - 24 * s)
-    ctx.line_to(x + 74 * s, y + 24 * s)
-    ctx.close_path()
-    ctx.fill()
-    ellipse(ctx, x - 24 * s, y - 6 * s, 6 * s, 6 * s, INK, a)
-
-
-def chips(ctx, x, y, s, a):
-    src(ctx, "#E9C46A", a)
-    for k, (dx, h) in enumerate(((-26, 70), (-12, 84), (2, 76), (16, 88), (28, 68))):
-        ctx.save()
-        ctx.translate(x + dx * s, y - 20 * s)
-        ctx.rotate((k - 2) * 0.12)
-        ctx.rectangle(-6 * s, -h * s, 12 * s, h * s)
-        ctx.restore()
-    ctx.fill()
-    src(ctx, "#C9605A", a)
-    ctx.move_to(x - 44 * s, y - 34 * s)
-    ctx.line_to(x + 44 * s, y - 34 * s)
-    ctx.line_to(x + 32 * s, y + 34 * s)
-    ctx.line_to(x - 32 * s, y + 34 * s)
-    ctx.close_path()
-    ctx.fill()
-
-
-def till(ctx, x, y, a):
-    """A shop till for the teaser; (x, y) is the middle of its base."""
+def till(ctx, x, y, a=1.0, screen="$ ?"):
+    """A shop till; (x, y) is the middle of its base."""
+    rig.soft_shadow(ctx, x, y + 4, 160, 12, 0.2 * a)
     rrect(ctx, x - 150, y - 60, 300, 60, 12, "#8E7F70", a)        # drawer
     rrect(ctx, x - 20, y - 36, 40, 12, 6, "#C9B9A2", a)
     rrect(ctx, x - 130, y - 170, 260, 110, 18, "#B9A98F", a)       # keys
@@ -203,142 +159,173 @@ def till(ctx, x, y, a):
         for c in range(4):
             rrect(ctx, x - 104 + c * 56, y - 152 + r * 46, 40, 32, 8, "#F4EEE3", a)
     rrect(ctx, x - 80, y - 250, 160, 70, 14, "#5E6B5A", a)          # screen
-    text(ctx, "$ ?", x, y - 214, 40, "#E9F2D8", a)
+    text(ctx, screen, x, y - 214, 40, "#E9F2D8", a)
 
 
-def stall(ctx):
-    """Mabel's honesty stall, further back on the left (about 0.3 scale)."""
-    rig.soft_shadow(ctx, 200, 1252, 190, 10, 0.18)
-    for lx in (40, 360):
-        rrect(ctx, lx, 1120, 14, 130, 4, "#8E6F5E")
-    rrect(ctx, 20, 1100, 360, 26, 8, "#A98463")
-    rrect(ctx, 20, 1124, 360, 8, 4, "#8E6F5E")
-    rrect(ctx, 30, 940, 12, 165, 4, "#8E6F5E")                      # awning posts
-    rrect(ctx, 358, 940, 12, 165, 4, "#8E6F5E")
-    for k in range(6):
-        src(ctx, "#C9605A" if k % 2 == 0 else "#F4EEE3")
-        ctx.rectangle(14 + k * 62, 920, 62, 40)
-        ctx.fill()
-    rrect(ctx, 60, 1062, 144, 40, 8, "#C9B9A2")                     # egg carton
-    for k in range(6):
-        ellipse(ctx, 76 + k * 22, 1062, 9, 11, "#F6EFE2")
-    for k, (dx, dy) in enumerate(((0, 0), (20, 0), (40, 0), (10, -14), (30, -14))):
-        ellipse(ctx, 250 + dx, 1088 + dy, 11, 10, "#E9C46A")         # lemons
-    rrect(ctx, 316, 1070, 40, 32, 6, "#6E8460")                     # honesty box
-    rrect(ctx, 326, 1074, 20, 4, 2, INK)
+def clipboard(ctx, fixed=0.0):
+    """Otto's sum on a clipboard: 38 + 27 = 55, corrected to 65 with a carried 1."""
+    x0, y0, w, h = 90, 200, 290, 380
+    rig.soft_shadow(ctx, x0 + w / 2 + 6, y0 + h + 6, w * 0.45, 10, 0.2)
+    rrect(ctx, x0, y0, w, h, 18, "#A98463")
+    rrect(ctx, x0 + 16, y0 + 30, w - 32, h - 46, 8, "#FBF8F0")
+    rrect(ctx, x0 + w / 2 - 50, y0 - 12, 100, 40, 10, "#9AA3A8")
+    tx, ox = 230, 290                                    # tens and ones columns
+    letter(ctx, "3", tx, 330, 72)
+    letter(ctx, "8", ox, 330, 72)
+    letter(ctx, "+", 160, 420, 66)
+    letter(ctx, "2", tx, 420, 72)
+    letter(ctx, "7", ox, 420, 72)
+    rrect(ctx, 140, 440, 200, 8, 4, INK)
+    letter(ctx, "5", ox, 530, 72)
+    letter(ctx, "5", tx, 530, 72, INK, 1 - fixed)
+    if fixed > 0:
+        letter(ctx, "6", tx, 530, 72, OCHRE, fixed)
+        letter(ctx, "1", tx, 262, 40, OCHRE, fixed)       # the carried ten
+
+
+def ladybird(ctx, x, y, r, a):
+    ellipse(ctx, x - r * 0.95, y, r * 0.42, r * 0.42, INK, a)        # head
+    ellipse(ctx, x, y, r, r * 0.82, "#C9473F", a)
+    ellipse(ctx, x - r * 0.3, y - r * 0.35, r * 0.3, r * 0.16, "#FFFFFF", 0.35 * a)
+    rrect(ctx, x - r, y - 3, 2 * r, 6, 3, INK, a)
+    for dx, dy in ((-0.45, -0.45), (0.1, -0.5), (0.55, -0.3), (-0.4, 0.42), (0.15, 0.5), (0.6, 0.3)):
+        ellipse(ctx, x + dx * r, y + dy * r, r * 0.13, r * 0.13, INK, a)
+
+
+def peg(ctx, x, y, a, rot=0.0):
+    ctx.save()
+    ctx.translate(x, y)
+    ctx.rotate(rot)
+    rrect(ctx, -7, -46, 14, 92, 5, "#C9A57E", a)
+    rrect(ctx, -5, -6, 10, 10, 3, "#8E7F70", a)
+    ctx.restore()
 
 
 # ---------------------------------------------------------------- background
-def lane(ctx):
-    g = cairo.LinearGradient(0, 0, 0, 640)
-    g.add_color_stop_rgb(0, *R.rgb("#C9DCE6"))
-    g.add_color_stop_rgb(1, *R.rgb("#EEF2E6"))
+def kiosk(ctx, T, ep):
+    # kiosk wall and awning
+    rrect(ctx, 0, 0, W, 640, 0, "#E8DCC6")
+    for k in range(9):
+        src(ctx, "#C9605A" if k % 2 == 0 else "#F4EEE3")
+        ctx.rectangle(k * 120, 0, 120, 70)
+        ctx.fill()
+    # window onto the beach
+    wx0, wy0, wx1, wy1 = 40, 96, 1040, 600
+    g = cairo.LinearGradient(0, wy0, 0, 360)
+    g.add_color_stop_rgb(0, *R.rgb("#BFDCEB"))
+    g.add_color_stop_rgb(1, *R.rgb("#E8F3F4"))
     ctx.set_source(g)
-    ctx.rectangle(0, 0, W, 640)
+    ctx.rectangle(wx0, wy0, wx1 - wx0, 270)
     ctx.fill()
     drift = NOW[0] * 5
-    for cx0, cy0, cw in ((260, 160, 120), (820, 260, 150)):
-        cx = (cx0 + drift) % 1500 - 200
-        ellipse(ctx, cx, cy0, cw, cw * 0.34, "#FFFFFF", 0.75)
-        ellipse(ctx, cx + cw * 0.4, cy0 - cw * 0.18, cw * 0.55, cw * 0.3, "#FFFFFF", 0.75)
-    # far hills and paddock
-    src(ctx, "#A9BC92")
-    ctx.move_to(0, 700)
-    ctx.curve_to(260, 560, 520, 640, 760, 600)
-    ctx.curve_to(900, 580, 1000, 620, W, 610)
-    ctx.line_to(W, 900)
-    ctx.line_to(0, 900)
+    for cx0, cy0, cw in ((300, 170, 110), (800, 220, 130)):
+        cx = (cx0 + drift) % 1300 - 100
+        ellipse(ctx, cx, cy0, cw, cw * 0.3, "#FFFFFF", 0.75)
+    src(ctx, "#6FA7BF")
+    ctx.rectangle(wx0, 360, wx1 - wx0, 70)
+    ctx.fill()
+    for k in range(5):                                    # gentle waves
+        xx = (90 + k * 210 + NOW[0] * 12) % 1000 + 40
+        ellipse(ctx, xx, 410, 60, 6, "#FFFFFF", 0.5)
+    src(ctx, "#EAD8B0")
+    ctx.rectangle(wx0, 430, wx1 - wx0, 170)
+    ctx.fill()
+    # beach umbrella and a Norfolk pine
+    rrect(ctx, 597, 380, 6, 150, 3, "#8E7F70")
+    src(ctx, "#E9C46A")
+    ctx.move_to(500, 410)
+    ctx.curve_to(530, 340, 670, 340, 700, 410)
     ctx.close_path()
     ctx.fill()
-    g = cairo.LinearGradient(0, 680, 0, 1160)
-    g.add_color_stop_rgb(0, *R.rgb("#B8C99C"))
-    g.add_color_stop_rgb(1, *R.rgb("#9FB384"))
-    ctx.set_source(g)
-    ctx.move_to(0, 760)
-    ctx.curve_to(300, 700, 700, 740, W, 700)
-    ctx.line_to(W, 1180)
-    ctx.line_to(0, 1180)
-    ctx.close_path()
-    ctx.fill()
-    # wire fence along the paddock
-    ctx.set_line_width(3)
-    src(ctx, "#8E7F70", 0.7)
-    for yy in (1012, 1040):
-        ctx.move_to(0, yy)
-        ctx.line_to(W, yy - 20)
+    rrect(ctx, 952, 180, 12, 260, 4, "#8E6F5E")
+    for k in range(6):
+        wdt = 30 + k * 16
+        ellipse(ctx, 958, 200 + k * 40, wdt, 16, "#5F7F5A", 0.95)
+    # window frame
+    src(ctx, "#A98463")
+    ctx.set_line_width(24)
+    ctx.rectangle(wx0, wy0, wx1 - wx0, wy1 - wy0)
     ctx.stroke()
-    for k in range(9):
-        xx = 20 + k * 130
-        rrect(ctx, xx, 990 - k * 2.4, 10, 80, 3, "#9C7A5E")
-    # gum tree on the right
-    src(ctx, "#D9D2C4")
-    ctx.move_to(950, 1180)
-    ctx.curve_to(960, 900, 940, 700, 990, 520)
-    ctx.line_to(1020, 520)
-    ctx.curve_to(1000, 720, 1010, 940, 1040, 1180)
-    ctx.close_path()
-    ctx.fill()
-    for cx, cy, r in ((930, 470, 110), (1040, 420, 120), (1000, 540, 90)):
-        ellipse(ctx, cx, cy, r, r * 0.7, "#7E9468", 0.95)
-    # dirt lane after rain
-    g = cairo.LinearGradient(0, 1160, 0, 1920)
-    g.add_color_stop_rgb(0, *R.rgb("#CDB48F"))
-    g.add_color_stop_rgb(1, *R.rgb("#B99D78"))
+    # counter top
+    g = cairo.LinearGradient(0, 600, 0, 1920)
+    g.add_color_stop_rgb(0, *R.rgb("#CDAE86"))
+    g.add_color_stop_rgb(1, *R.rgb("#B9966C"))
     ctx.set_source(g)
-    ctx.rectangle(0, 1170, W, 750)
+    ctx.rectangle(0, 600, W, 1320)
     ctx.fill()
-    src(ctx, "#B9A07C")
-    ctx.move_to(0, 1180)
-    ctx.curve_to(400, 1160, 700, 1190, W, 1170)
-    ctx.line_to(W, 1186)
-    ctx.curve_to(700, 1206, 400, 1176, 0, 1196)
-    ctx.close_path()
+    rrect(ctx, 0, 600, W, 22, 0, "#A98463")
+    src(ctx, "#B08C64", 0.5)
+    for k in range(7):
+        ctx.rectangle(0, 700 + k * 170, W, 3)
     ctx.fill()
-    for px, py, rx, ry in ((760, 1300, 110, 22), (320, 1356, 80, 16), (980, 1420, 70, 14)):
-        ellipse(ctx, px, py, rx, ry, "#9FB7C2", 0.85)
-        ellipse(ctx, px - rx * 0.3, py - ry * 0.3, rx * 0.35, ry * 0.3, "#FFFFFF", 0.35)
-    for i in range(16):
-        xb = 30 + (i * 173) % 1020
-        yb = 1440 + (i * 89) % 230
-        ellipse(ctx, xb, yb, 6, 4, "#A88C68", 0.7)
+
+
+# ---------------------------------------------------------------- money on the mat
+def coin_spots(ep, T):
+    """Where each of the 15 coins is (x, y, alpha). Float coins 0..7, sales coins 8..14."""
+    S, E = ep.s, ep.e
+    m = ease(prog(T, S(18) + 0.2, S(18) + 1.4))                 # the two groups join
+    sw = ease(prog(T, S(19) + 0.6, S(19) + 1.6))                 # ten coins go to the tens
+    up = ease(prog(T, S(19) + 1.8, S(19) + 2.4))                 # the last row slides up
+    out = []
+    for j in range(15):
+        if j < 8:
+            r0, c0 = divmod(j, 5)
+            y0 = 790 + r0 * 58
+        else:
+            r0, c0 = divmod(j - 8, 5)
+            y0 = 960 + r0 * 58
+        x0 = ONES_X - 2 * COIN_DX + c0 * COIN_DX
+        r1, c1 = divmod(j, 5)
+        x1 = ONES_X - 2 * 70 + c1 * 70
+        y1 = 800 + r1 * 72
+        x, y = lerp(x0, x1, m), lerp(y0, y1, m)
+        a = 1.0
+        if j < 10:
+            x, y = lerp(x, TENS_X, sw), lerp(y, NOTE_Y0 + 5 * NOTE_DY, sw)
+            a = 1 - prog(T, S(19) + 1.3, S(19) + 1.7)
+        else:
+            y = lerp(y, 800, up)
+        out.append((x, y, a))
+    return out
+
+
+def note_spots(ep, T):
+    S = ep.s
+    m = ease(prog(T, S(18) + 0.2, S(18) + 1.4))
+    out = []
+    for k in range(5):
+        y = NOTE_Y0 + k * NOTE_DY + (40 * (1 - m) if k >= 3 else 0)
+        out.append((TENS_X, y, 1.0))
+    out.append((TENS_X, NOTE_Y0 + 5 * NOTE_DY, prog(T, S(19) + 1.3, S(19) + 1.7)))
+    return out
+
+
+def carry_ten(ep, T):
+    """Otto lifts the top-most note onto his head (lines 32 to 33) and puts it back."""
+    S, E = ep.s, ep.e
+    k = ease(prog(T, S(32) + 0.2, S(32) + 0.9)) * (1 - ease(prog(T, E(33) + 0.3, E(33) + 1.0)))
+    return k
 
 
 # ---------------------------------------------------------------- scene
-def wipe(ep):
-    d = ep.e(7) - ep.s(7)
-    return ep.s(7) + 0.15 * d, ep.e(7) + 0.5
-
-
 def scene(ctx, ep, T):
     S, E = ep.s, ep.e
-    lane(ctx)
-    stall(ctx)
-    w0, w1 = wipe(ep)
-    mud = 1 - prog(T, w0 + 0.3, w1)
-    gold = prog(T, S(17), S(17) + 0.3) * (1 - prog(T, E(20), E(20) + 0.4))
-    sign(ctx, mud, gold)
-    # sound buttons: the line under sh from line 17, the dots from line 24
-    sound_line(ctx, prog(T, S(17) + 0.4, S(17) + 0.7) * (1 - prog(T, ep.total - 1.2, ep.total - 0.6)),
-               max(0.0, 1 - abs(T - S(23) - 0.6) / 0.6))
-    if T >= S(24):
-        sound_dots(ctx, 1 - prog(T, ep.total - 1.2, ep.total - 0.6), T, S(24) + 0.2)
-    # Pip walks along the top of the sign, wipes the mud with a cloth, then walks back
-    go = prog(T, w0 - 0.4, w0)
-    back = prog(T, w1 - 0.2, w1 + 0.4)
-    px = lerp(PIP_REST[0], MUD[0] + 40, ease(go) * (1 - ease(back)))
-    f = -1 if go > 0 and back < 1 else 1
-    if w0 <= T <= w1:
-        k = (T - w0) / (w1 - w0)
-        cx = MUD[0] - 60 + 120 * (0.5 + 0.5 * math.sin(k * 6 * math.pi))
-        cy = MUD[1] - 50 + 100 * k
-        ctx.set_line_width(5)
-        src(ctx, "#A8A29A")
-        ctx.move_to(px - 20, SIGN_T - 20)
-        ctx.line_to(cx, cy - 20)
-        ctx.stroke()
-        cloth(ctx, cx, cy, 1.0)
-    R.mouse(ctx, px, SIGN_T, 1.3, f)
+    kiosk(ctx, T, ep)
+    clipboard(ctx, prog(T, S(23), S(23) + 0.5))
+    till(ctx, *TILL, screen="$65" if T >= S(30) else "$ ?")
+    mat(ctx)
+    lift = carry_ten(ep, T)
+    for k, (x, y, a) in enumerate(note_spots(ep, T)):
+        if k == 5 and lift > 0.05:
+            continue
+        note(ctx, x, y, a)
+    for x, y, a in coin_spots(ep, T):
+        coin(ctx, x, y, a)
     rig.squirrel(ctx, OTTO_X, FEET, SQ_S, OCHRE, f=1, seed=2.0)
+    if lift > 0.05:                                       # the note sits on Otto's head
+        x, y, a = note_spots(ep, T)[5]
+        note(ctx, lerp(x, OTTO_X + 10, lift), lerp(y, 1322, lift), a, 1.0, -0.08 * lift)
     rig.bramble(ctx, BR_X, FEET, BR_S, f=1)
     rig.squirrel(ctx, IVY_X, FEET, SQ_S, SAGE, f=-1, seed=0.7)
 
@@ -346,20 +333,23 @@ def scene(ctx, ep, T):
 # ---------------------------------------------------------------- cues, poses, foley
 def cues(ep):
     return [
-        ("ring", ep.s(1) - 0.1, ep.e(2) + 0.5, MUD[0], MUD[1] + 10, 200, 120),
-        ("zoom", ep.s(8) - 0.2, ep.e(9) + 0.5, 545, 1150, 1.1),
-        ("ring", ep.s(12) - 0.1, ep.e(12) + 0.5, WORD[0], WORD[1] - 10, 260, 110),
-        ("zoom", ep.s(17) - 0.3, ep.e(20) + 0.4, 540, 1100, 1.1),
-        ("lens", ep.s(23) - 0.3, ep.e(25) + 0.6, 441, MARK_Y - 40, 760, 1190, 140, 1.6),
+        ("ring", ep.s(1) - 0.1, ep.e(2) + 0.5, 235, 430, 170, 190),
+        ("zoom", ep.s(8) - 0.2, ep.e(10) + 0.5, 420, 1000, 1.1),
+        ("ring", ep.s(12) - 0.1, ep.e(12) + 3.8, ONES_X, 900, 210, 190),
+        ("zoom", ep.s(18) - 0.3, ep.e(21) + 0.4, 540, 1000, 1.1),
+        ("ring", ep.s(23) - 0.1, ep.e(23) + 0.5, 235, 420, 170, 190),
+        ("zoom", ep.s(32) - 0.2, ep.e(33) + 0.6, 360, 1350, 1.1),
     ]
 
 
 def foley(ep):
-    w0, w1 = wipe(ep)
-    out = [("whoosh", ep.s(3) - 0.3), ("whoosh", ep.s(4) - 0.3), ("whoosh", w0 + 0.2),
-           ("whoosh", ep.s(13) - 0.3), ("pop", ep.s(17) + 0.5)]
-    out += [("pop", ep.s(24) + 0.2 + k * 0.45) for k in range(2)]
-    out.append(("step", ep.s(27) + 0.5))
+    S = ep.s
+    out = [("whoosh", S(3) - 0.3), ("whoosh", S(4) - 0.3), ("whoosh", S(14) - 0.3),
+           ("pop", S(18) + 0.6), ("whoosh", S(19) + 0.7), ("pop", S(19) + 1.5),
+           ("pop", S(23) + 0.2), ("whoosh", S(25) - 0.3)]
+    out += [("pop", S(i) + 0.3) for i in (26, 27, 28)]
+    out.append(("step", S(31) + 0.5))
+    out.append(("whoosh", S(32) + 0.3))
     return out
 
 
@@ -372,45 +362,49 @@ def poses(ep, T):
     def ramp(t0):
         return prog(T, t0, t0 + 0.5)
 
-    sh = (440, 900)
     B = {"face": 1}
     O = {"face": 1}
     I = {"face": -1}
     if T < S(3):
         O["expr"] = "sad"
     if during(1, 0.1, 0.3):
-        O.update(point=MUD, amt=ramp(S(1)))
+        O.update(point=(CLIP[0], 520), amt=ramp(S(1)))
     if during(2, 0.1, 0.4):
-        I.update(expr="think", point=MUD, amt=ramp(S(2)))
-    if during(8, 0.3, 0.4):
-        O.update(expr="happy", point=WORD, amt=ramp(S(8) - 0.3))
-    if during(9, 0.2, 0.8):
-        I.update(expr="think", point=WORD, amt=ramp(S(9) - 0.2))
+        I.update(expr="think", point=COINS, amt=ramp(S(2)))
+    if S(8) - 0.3 <= T <= E(9) + 0.4:
+        O.update(expr="happy", point=(CLIP[0], 520), amt=ramp(S(8) - 0.3))
+    if during(10, 0.2, 0.8):
+        I.update(expr="think", point=COINS, amt=ramp(S(10) - 0.2))
         O["expr"] = "think"
-    if S(10) - 0.2 <= T <= E(11) + 3.8:
-        B["expr"] = "think" if T < S(11) else "happy"
-    if S(12) <= T <= S(16):
+    if S(11) - 0.2 <= T <= E(12) + 3.8:
+        B["expr"] = "think" if T < S(12) else "happy"
+    if S(12) - 0.1 <= T <= E(12) + 3.6:
+        B.update(point=COINS, amt=ramp(S(12) - 0.1))
+    if S(13) <= T <= S(17):
         O["expr"] = I["expr"] = "think"
-    if S(16) - 0.2 <= T <= E(16) + 0.6:
+    if during(17, 0.2, 0.6):
         B["expr"] = "think"
-    if S(17) - 0.1 <= T <= E(19) + 0.4:
-        B.update(expr="happy", point=sh, amt=ramp(S(17) - 0.1))
-    if during(20, 0.2, 0.3):
+    if S(18) - 0.1 <= T <= E(21) + 0.4:
+        B.update(expr="happy", point=(ONES_X - 60, 860), amt=ramp(S(18) - 0.1))
+    if during(22, 0.2, 0.3):
         I["expr"] = "happy"
-    if during(21, 0.2, 0.8):
+    if during(23, 0.2, 0.8):
         O["expr"] = "surprise"
-        O["scratch"] = prog(T, S(21) + 0.3, S(21) + 0.8) * (1 - prog(T, E(21) + 0.4, E(21) + 0.8))
-    if S(22) - 0.2 <= T <= E(25) + 0.4:
-        B.update(expr="think", point=(WORD[0], MARK_Y - 30), amt=ramp(S(22) - 0.2))
-    if during(26, 0.2, 0.6):
+        O["scratch"] = prog(T, S(23) + 0.3, S(23) + 0.8) * (1 - prog(T, E(23) + 0.4, E(23) + 0.8))
+    if S(24) - 0.2 <= T <= E(29) + 0.4:
+        B["expr"] = "think" if T < S(29) else "happy"
+        O["expr"] = I["expr"] = "think" if T < S(29) else "happy"
+    if during(30, 0.2, 0.6):
         I["expr"] = "happy"
-    if T >= S(27) - 0.2:
+    if T >= S(31) - 0.2:
         B["expr"] = O["expr"] = I["expr"] = "happy"
-        hop = (T - S(27)) / 0.55
+        hop = (T - S(31)) / 0.55
         if 0 <= hop <= 1:
             O["jump"] = 42 * math.sin(math.pi * hop)
-    if during(29, 0.1, 0.5):
-        O["expr"] = "surprise"
+    if S(32) <= T <= E(33) + 0.9:
+        O.update(expr="happy", point=(OTTO_X + 60, 1300), amt=ramp(S(32) + 0.2))
+    if during(33, 0.1, 0.5):
+        I["expr"] = "surprise"
     return {"B": B, "O": O, "I": I}
 
 
@@ -453,10 +447,38 @@ def tick_box(ctx, x0, y0, w, h, pk):
 
 
 
-def sh_mark(ctx, x, y, a, size=96):
-    """The digraph 'sh' with its sound-button line underneath."""
-    text(ctx, "sh", x, y, size, INK, a)
-    rrect(ctx, x - 0.62 * size, y + 0.62 * size, 1.24 * size, 14, 7, OCHRE, a)
+def ten_for_one(ctx, x, y, a, sc=1.0):
+    """Ten $1 coins = one $10 note (the regroup picture); (x, y) is the middle."""
+    for k in range(10):
+        r, c = divmod(k, 5)
+        coin(ctx, x - 250 * sc + c * 46 * sc, y - 23 * sc + r * 46 * sc, a, COIN_R * sc)
+    text(ctx, "=", x + 20 * sc, y, 64 * sc, INK, a)
+    note(ctx, x + 200 * sc, y, a, 0.95 * sc)
+
+
+def column_sum(ctx, T, ep, a):
+    """65 take away 27, regrouping one ten into ten ones."""
+    S = ep.s
+    tx, ox = 480, 620
+    r1 = a * prog(T, S(26), S(26) + 0.4)
+    letter(ctx, "6", tx, 330, 84, INK, a)
+    letter(ctx, "5", ox, 330, 84, INK, a)
+    if r1 > 0:
+        ctx.set_line_width(7)
+        src(ctx, OCHRE, r1)
+        for x in (tx, ox):
+            ctx.move_to(x - 30, 320)
+            ctx.line_to(x + 30, 270)
+        ctx.stroke()
+        letter(ctx, "5", tx, 240, 46, OCHRE, r1)
+        letter(ctx, "15", ox, 240, 46, OCHRE, r1)
+    letter(ctx, "−", 360, 430, 80, INK, a)
+    letter(ctx, "2", tx, 430, 84, INK, a)
+    letter(ctx, "7", ox, 430, 84, INK, a)
+    rrect(ctx, 330, 454, 340, 8, 4, INK, a)
+    letter(ctx, "8", ox, 548, 84, GREEN, a * prog(T, S(27) + 0.3, S(27) + 0.6))
+    letter(ctx, "3", tx, 548, 84, GREEN, a * prog(T, S(28) + 0.3, S(28) + 0.6))
+    letter(ctx, "$", 360, 548, 70, GREEN, a * prog(T, S(29), S(29) + 0.3))
 
 
 def cards(ctx, ep, T):
@@ -468,52 +490,38 @@ def cards(ctx, ep, T):
         rrect(ctx, 120, 184, 60, 46, 8, OCHRE, a)
         rrect(ctx, 120, 176, 28, 14, 5, OCHRE, a)
         text(ctx, "Today's case", 560, 210, 46, "#9C7429", a)
-        for k, s_ in enumerate(("The name on", "a muddy sign")):
+        for k, s_ in enumerate(("The till that", "won't balance")):
             text(ctx, s_, W / 2, 330 + k * 92, 68, INK, a)
-    # a digraph: two letters, one sound (sh like fish, ch like chips)
-    a = window(T, S(4) - 0.2, E(6) + 0.9)
+    # regroup: swap ten ones for one ten
+    a = window(T, S(4) - 0.2, E(5) + 0.9)
     if a > 0:
         card(ctx, 70, 140, 940, 420, a)
-        text(ctx, "Digraph = two letters, one sound", W / 2, 196, 42, "#9C7429", a)
-        for k, (dg, word, i) in enumerate((("sh", "fish", 5), ("ch", "chips", 6))):
-            b = a * prog(T, S(i) - 0.2, S(i) + 0.2)
-            if b <= 0:
-                continue
-            y = 318 + k * 136
-            word_chip(ctx, dg, 250, y, b, INK, "#FBF1DC", 64)
-            text(ctx, "like", 440, y, 44, "#9C7429", b)
-            if k == 0:
-                fish(ctx, 610, y, 1.0, b)
-            else:
-                chips(ctx, 610, y + 20, 0.8, b)
-            text(ctx, word, 830, y, 56, INK, b)
-    # show me the sh sound
-    a = window(T, S(11) - 0.1, E(11) + 3.9)
-    if a > 0:
-        card(ctx, 290, 170, 500, 300, a)
-        ph = (T - S(11)) * 1.0
-        pulse = 1 + 0.10 * max(0.0, math.sin(2 * math.pi * ph)) ** 4
-        sh_mark(ctx, W / 2, 300, a, 110 * pulse)
+        text(ctx, "Regroup = swap", W / 2, 206, 50, "#9C7429", a)
+        text(ctx, "ten ones for one ten", W / 2, 268, 50, "#9C7429", a)
+        b = a * prog(T, S(5) - 0.2, S(5) + 0.3)
+        ten_for_one(ctx, W / 2, 400, b)
+        text(ctx, "10 ones", 345, 500, 40, INK, b)
+        text(ctx, "1 ten", 760, 500, 40, INK, b)
     # A or B
-    aA = window(T, S(13) - 0.2, E(20) + 1.4)
+    aA = window(T, S(14) - 0.2, E(22) + 0.6)
     if aA > 0:
-        aA2 = aA * prog(T, S(13) - 0.2, S(13) + 0.2)
-        aB = aA * prog(T, S(14) - 0.2, S(14) + 0.2)
-        d = E(20) - S(20)
-        picked = prog(T, S(20) + 0.2 * d, S(20) + 0.2 * d + 0.4)
+        aA2 = aA * prog(T, S(14) - 0.2, S(14) + 0.2)
+        aB = aA * prog(T, S(15) - 0.2, S(15) + 0.2)
+        d = E(22) - S(22)
+        picked = prog(T, S(22) + 0.2 * d, S(22) + 0.2 * d + 0.4)
         ak = aA2 * (1 - 0.5 * picked)
         card(ctx, 70, 150, 450, 300, aA2)
         ellipse(ctx, 134, 210, 38, 38, OCHRE, ak)
         text(ctx, "A", 134, 212, 48, "#FFFFFF", ak)
-        text(ctx, "Suh-huh-op", 295, 320, 54, INK, ak)
+        text(ctx, "$55", 295, 320, 84, INK, ak)
         card(ctx, 560, 150, 450, 300, aB)
         ellipse(ctx, 624, 210, 38, 38, SAGE, aB)
         text(ctx, "B", 624, 212, 48, "#FFFFFF", aB)
-        text(ctx, "Shop", 785, 320, 70, INK, aB)
+        text(ctx, "$65", 785, 320, 84, INK, aB)
         if picked > 0:
             tick_box(ctx, 560, 150, 450, 300, picked * aB)
-        g0, g1 = E(15) + 0.2, E(15) + 4.9
-        ra = aA * window(T, S(15), S(16) + 0.3, 0.3, 0.4)
+        g0, g1 = E(16) + 0.2, E(16) + 4.9
+        ra = aA * window(T, S(16), S(17) + 0.3, 0.3, 0.4)
         if ra > 0:
             cx, cy = W / 2, 520
             ellipse(ctx, cx, cy, 52, 52, "#FFFFFF", 0.95 * ra)
@@ -534,44 +542,39 @@ def cards(ctx, ep, T):
                 ctx.line_to(cx - 4, cy + 12)
                 ctx.line_to(cx + 18, cy - 14)
                 ctx.stroke()
-    # four letters, three sounds
-    a = window(T, S(25) - 0.2, E(26) + 0.8)
+    # check another way: 65 take away 27
+    a = window(T, S(25) - 0.3, E(29) + 0.8)
     if a > 0:
-        card(ctx, 150, 190, 780, 240, a)
-        word_chip(ctx, "4 letters", 345, 310, a, INK, "#FBF1DC", 52)
-        word_chip(ctx, "3 sounds", 735, 310, a * prog(T, S(25) + 0.6, S(25) + 0.9), INK, "#FBF1DC", 52)
-    # ch, ch, ch: Otto the train
-    a = window(T, S(29) - 0.1, E(29) + 0.6, 0.3, 0.4)
-    if a > 0:
-        card(ctx, 150, 210, 780, 220, a)
-        for k in range(3):
-            b = a * prog(T, S(29) + k * 0.35, S(29) + k * 0.35 + 0.15)
-            word_chip(ctx, "ch", 340 + k * 200, 320, b, INK, "#FBF1DC", 60)
+        card(ctx, 250, 150, 580, 450, a)
+        column_sum(ctx, T, ep, a)
     # recap
-    ra = window(T, S(30) - 0.3, S(33) - 0.1, 0.5, 0.5)
+    ra = window(T, S(34) - 0.3, S(37) - 0.1, 0.5, 0.5)
     if ra > 0:
         card(ctx, 30, 130, 1020, 900, ra, "#FBF6EC", 1.0)
         rrect(ctx, 300, 160, 480, 110, 50, OCHRE, ra)
         text(ctx, "Remember", W / 2, 215, 62, "#FFFFFF", ra)
-        r1 = ra * prog(T, S(30) + 0.3, S(30) + 0.9)
+        r1 = ra * prog(T, S(34) + 0.3, S(34) + 0.9)
         rrect(ctx, 100, 300, 880, 320, 36, "#FFFFFF", 0.95 * r1)
         ctx.push_group()
-        sh_mark(ctx, W / 2, 380, 1.0, 88)
-        text(ctx, "Two letters can", W / 2, 506, 56, INK)
-        text(ctx, "make one sound.", W / 2, 574, 56, INK)
+        ten_for_one(ctx, W / 2, 390, 1.0, 0.85)
+        text(ctx, "Ten ones and one ten", W / 2, 506, 56, INK)
+        text(ctx, "are worth the same.", W / 2, 574, 56, INK)
         ctx.pop_group_to_source()
         ctx.paint_with_alpha(r1)
-        r2 = ra * prog(T, S(32), S(32) + 0.6)
+        r2 = ra * prog(T, S(36), S(36) + 0.6)
         rrect(ctx, 100, 650, 880, 350, 36, "#FFFFFF", 0.95 * r2)
         text(ctx, "Try it at home:", W / 2, 712, 50, "#9C7429", r2)
-        text(ctx, "hunt for sh words", W / 2, 796, 56, INK, r2)
-        for k, w_ in enumerate(("shoe", "shell", "brush")):
-            word_chip(ctx, w_, 270 + k * 270, 900, r2, INK, "#FBF1DC", 46)
+        text(ctx, "bundle ten pegs", W / 2, 790, 56, INK, r2)
+        for k in range(10):
+            peg(ctx, 300 + k * 14, 900, r2, (k - 4.5) * 0.03)
+        rrect(ctx, 286, 892, 154, 14, 7, "#C9605A", r2)
+        text(ctx, "=", 540, 900, 64, INK, r2)
+        word_chip(ctx, "1 ten", 740, 900, r2, INK, "#FBF1DC", 52)
     # teaser
-    ta = window(T, S(33) - 0.1, ep.total - 1.0, 0.4, 0.5)
+    ta = window(T, S(37) - 0.1, ep.total - 1.0, 0.4, 0.5)
     if ta > 0:
         card(ctx, 140, 170, 800, 460, ta)
         rrect(ctx, 330, 200, 420, 100, 46, SAGE, ta)
         text(ctx, "Next case", W / 2, 250, 54, "#FFFFFF", ta)
-        till(ctx, W / 2, 555, ta)
-        text(ctx, "The till that won't balance", W / 2, 600, 42, INK, ta)
+        ladybird(ctx, W / 2, 430, 90, ta)
+        text(ctx, "Ladybird dots at a glance", W / 2, 580, 44, INK, ta)
