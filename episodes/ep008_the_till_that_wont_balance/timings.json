@@ -43,188 +43,164 @@
  },
  {
   "who": "N",
-  "text": "Then the kiosk sold 27 dollars of icy poles.",
+  "text": "Then it sold 27 dollars of icy poles.",
   "start": 25.18,
-  "end": 29.419
+  "end": 28.764
  },
  {
   "who": "O",
-  "text": "Easy! Eight plus seven is fifteen. I'll write five.",
-  "start": 30.219,
-  "end": 34.533
+  "text": "Eight and seven make fifteen. Write the five!",
+  "start": 29.564,
+  "end": 33.693
  },
  {
   "who": "O",
-  "text": "Three plus two is five. So, 55 dollars!",
-  "start": 35.133,
-  "end": 38.829
+  "text": "Three and two make five. 55 dollars!",
+  "start": 34.293,
+  "end": 37.251
  },
  {
   "who": "I",
-  "text": "Hmm. Where did the extra ten go?",
-  "start": 39.629,
-  "end": 42.529
+  "text": "Hmm. Where did the ten go?",
+  "start": 38.051,
+  "end": 40.646
  },
  {
   "who": "B",
   "text": "Let's not guess. Let's test.",
-  "start": 43.329,
-  "end": 45.695
+  "start": 41.446,
+  "end": 43.812
  },
  {
   "who": "B",
   "text": "Can you point to the one-dollar coins?",
-  "start": 46.495,
-  "end": 49.718
+  "start": 44.612,
+  "end": 47.835
  },
  {
   "who": "B",
   "text": "How much should be in the till?",
-  "start": 53.718,
-  "end": 56.327
+  "start": 51.335,
+  "end": 53.944
  },
  {
   "who": "N",
   "text": "A. 55 dollars.",
-  "start": 57.127,
-  "end": 58.963
+  "start": 54.744,
+  "end": 56.58
  },
  {
   "who": "N",
   "text": "B. 65 dollars.",
-  "start": 59.563,
-  "end": 61.655
+  "start": 57.18,
+  "end": 59.272
  },
  {
   "who": "N",
   "text": "Pause and think.",
-  "start": 62.255,
-  "end": 63.767
+  "start": 59.872,
+  "end": 61.384
  },
  {
   "who": "N",
   "text": "Ten ones and one ten are worth the same.",
-  "start": 68.767,
-  "end": 72.816
+  "start": 66.384,
+  "end": 70.433
  },
  {
   "who": "N",
-  "text": "Eight coins and seven coins make fifteen coins.",
-  "start": 73.616,
-  "end": 77.528
+  "text": "Eight and seven make fifteen ones.",
+  "start": 71.233,
+  "end": 73.968
  },
  {
   "who": "N",
-  "text": "Swap ten coins for one ten-dollar note.",
-  "start": 78.328,
-  "end": 82.15
+  "text": "Swap ten ones for one ten.",
+  "start": 74.768,
+  "end": 77.461
  },
  {
   "who": "N",
   "text": "Now there are six tens and five ones.",
-  "start": 83.15,
-  "end": 86.927
- },
- {
-  "who": "N",
-  "text": "That's 65 dollars.",
-  "start": 87.727,
-  "end": 89.573
+  "start": 78.461,
+  "end": 82.238
  },
  {
   "who": "N",
   "text": "It's B! 65 dollars.",
-  "start": 90.373,
-  "end": 92.439
+  "start": 83.038,
+  "end": 85.104
  },
  {
   "who": "O",
-  "text": "Oh! I forgot the ten from the swap!",
-  "start": 93.039,
-  "end": 96.272
+  "text": "Oh! I forgot the swapped ten!",
+  "start": 85.704,
+  "end": 88.357
  },
  {
   "who": "B",
-  "text": "Let's check another way. Take the sales away.",
-  "start": 97.072,
-  "end": 100.641
+  "text": "Let's check another way.",
+  "start": 89.157,
+  "end": 91.064
  },
  {
   "who": "N",
-  "text": "65 take away 27. Five ones can't lose seven.",
-  "start": 101.441,
-  "end": 107.406
+  "text": "65 take away 27. Swap a ten for ten ones.",
+  "start": 91.664,
+  "end": 96.741
  },
  {
   "who": "N",
-  "text": "So swap one ten for ten ones. Fifteen ones.",
-  "start": 108.206,
-  "end": 112.107
- },
- {
-  "who": "N",
-  "text": "Fifteen take away seven leaves eight.",
-  "start": 112.907,
-  "end": 115.544
- },
- {
-  "who": "N",
-  "text": "Five tens take away two tens leaves three.",
-  "start": 116.344,
-  "end": 119.909
- },
- {
-  "who": "N",
-  "text": "38 dollars. Just what the till started with!",
-  "start": 120.709,
-  "end": 124.334
+  "text": "Fifteen take away seven is eight. Five take away two is three.",
+  "start": 97.541,
+  "end": 102.853
  },
  {
   "who": "I",
-  "text": "Now the till balances!",
-  "start": 125.134,
-  "end": 126.825
+  "text": "38! Now the till balances!",
+  "start": 103.653,
+  "end": 106.132
  },
  {
   "who": "B",
   "text": "Case solved!",
-  "start": 127.625,
-  "end": 128.533
+  "start": 106.932,
+  "end": 107.84
  },
  {
   "who": "O",
-  "text": "Don't worry. I'll carry the ten!",
-  "start": 130.433,
-  "end": 132.778
+  "text": "I'll carry the ten!",
+  "start": 109.74,
+  "end": 111.338
  },
  {
   "who": "I",
   "text": "Not like a surfboard, Otto!",
-  "start": 133.578,
-  "end": 135.658
+  "start": 112.138,
+  "end": 114.218
  },
  {
   "who": "N",
   "text": "Remember. Ten ones and one ten are worth the same.",
-  "start": 136.658,
-  "end": 141.047
+  "start": 115.218,
+  "end": 119.607
  },
  {
   "who": "N",
   "text": "Say it with me. Ten ones and one ten are worth the same.",
-  "start": 141.947,
-  "end": 147.78
+  "start": 120.507,
+  "end": 126.34
  },
  {
   "who": "N",
   "text": "Try it at home. Bundle ten pegs to make one ten.",
-  "start": 149.98,
-  "end": 154.908
+  "start": 128.54,
+  "end": 133.468
  },
  {
   "who": "N",
   "text": "Next case: ladybird dots at a glance.",
-  "start": 155.808,
-  "end": 159.239
+  "start": 134.368,
+  "end": 137.799
  }
 ]

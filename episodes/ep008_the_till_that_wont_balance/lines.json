@@ -10,79 +10,92 @@
    "i": 1,
    "who": "O",
    "voice": "otto",
-   "text": "Oh no! The till won't balance!"
+   "text": "Oh no! The till won't balance!",
+   "wpm": 158
   },
   {
    "i": 2,
    "who": "I",
    "voice": "ivy",
-   "text": "The sheet and the money don't match."
+   "text": "The sheet and the money don't match.",
+   "wpm": 158
   },
   {
    "i": 3,
    "who": "N",
    "voice": "narrator",
-   "text": "Today's case: the till that won't balance."
+   "text": "Today's case: the till that won't balance.",
+   "wpm": 158
   },
   {
    "i": 4,
    "who": "N",
    "voice": "narrator",
-   "text": "Regroup means swapping ten ones for one ten."
+   "text": "Regroup means swapping ten ones for one ten.",
+   "wpm": 158
   },
   {
    "i": 5,
    "who": "N",
    "voice": "narrator",
-   "text": "Like ten one-dollar coins for a ten-dollar note."
+   "text": "Like ten one-dollar coins for a ten-dollar note.",
+   "wpm": 158
   },
   {
    "i": 6,
    "who": "N",
    "voice": "narrator",
-   "text": "The till started with 38 dollars."
+   "text": "The till started with 38 dollars.",
+   "wpm": 158
   },
   {
    "i": 7,
    "who": "N",
    "voice": "narrator",
-   "text": "Then it sold 27 dollars of icy poles."
+   "text": "Then it sold 27 dollars of icy poles.",
+   "wpm": 158
   },
   {
    "i": 8,
    "who": "O",
    "voice": "otto",
-   "text": "Eight and seven make fifteen. Write the five!"
+   "text": "Eight and seven make fifteen. Write the five!",
+   "wpm": 158
   },
   {
    "i": 9,
    "who": "O",
    "voice": "otto",
-   "text": "Three and two make five. 55 dollars!"
+   "text": "Three and two make five. 55 dollars!",
+   "wpm": 158
   },
   {
    "i": 10,
    "who": "I",
    "voice": "ivy",
-   "text": "Hmm. Where did the ten go?"
+   "text": "Hmm. Where did the ten go?",
+   "wpm": 158
   },
   {
    "i": 11,
    "who": "B",
    "voice": "bramble",
-   "text": "Let's not guess. Let's test."
+   "text": "Let's not guess. Let's test.",
+   "wpm": 158
   },
   {
    "i": 12,
    "who": "B",
    "voice": "bramble",
-   "text": "Can you point to the one-dollar coins?"
+   "text": "Can you point to the one-dollar coins?",
+   "wpm": 158
   },
   {
    "i": 13,
    "who": "B",
    "voice": "bramble",
-   "text": "How much should be in the till?"
+   "text": "How much should be in the till?",
+   "wpm": 158
   },
   {
    "i": 14,
@@ -106,61 +119,71 @@
    "i": 17,
    "who": "N",
    "voice": "narrator",
-   "text": "Ten ones and one ten are worth the same."
+   "text": "Ten ones and one ten are worth the same.",
+   "wpm": 158
   },
   {
    "i": 18,
    "who": "N",
    "voice": "narrator",
-   "text": "Eight and seven make fifteen ones."
+   "text": "Eight and seven make fifteen ones.",
+   "wpm": 158
   },
   {
    "i": 19,
    "who": "N",
    "voice": "narrator",
-   "text": "Swap ten ones for one ten."
+   "text": "Swap ten ones for one ten.",
+   "wpm": 158
   },
   {
    "i": 20,
    "who": "N",
    "voice": "narrator",
-   "text": "Now there are six tens and five ones."
+   "text": "Now there are six tens and five ones.",
+   "wpm": 158
   },
   {
    "i": 21,
    "who": "N",
    "voice": "narrator",
-   "text": "It's B! 65 dollars."
+   "text": "It's B! 65 dollars.",
+   "wpm": 158
   },
   {
    "i": 22,
    "who": "O",
    "voice": "otto",
-   "text": "Oh! I forgot the swapped ten!"
+   "text": "Oh! I forgot the swapped ten!",
+   "wpm": 158
   },
   {
    "i": 23,
    "who": "B",
    "voice": "bramble",
-   "text": "Let's check another way."
+   "text": "Let's check another way.",
+   "wpm": 158
   },
   {
    "i": 24,
    "who": "N",
    "voice": "narrator",
-   "text": "65 take away 27. Swap a ten for ten ones."
+   "text": "65 take away 27. Swap a ten for ten ones.",
+   "wpm": 158
   },
   {
    "i": 25,
    "who": "N",
    "voice": "narrator",
-   "text": "Fifteen take away seven is eight. Five take away two is three."
+   "text": "Fifteen take away seven is eight. Five take away two is three.",
+   "wpm": 158
   },
   {
    "i": 26,
    "who": "I",
    "voice": "ivy",
-   "text": "38! Now the till balances!"
+   "text": "38! Now the till balances!",
+   "wpm": 158
   },
   {
    "i": 27,
@@ -172,37 +195,43 @@
    "i": 28,
    "who": "O",
    "voice": "otto",
-   "text": "I'll carry the ten!"
+   "text": "I'll carry the ten!",
+   "wpm": 158
   },
   {
    "i": 29,
    "who": "I",
    "voice": "ivy",
-   "text": "Not like a surfboard, Otto!"
+   "text": "Not like a surfboard, Otto!",
+   "wpm": 158
   },
   {
    "i": 30,
    "who": "N",
    "voice": "narrator",
-   "text": "Remember. Ten ones and one ten are worth the same."
+   "text": "Remember. Ten ones and one ten are worth the same.",
+   "wpm": 158
   },
   {
    "i": 31,
    "who": "N",
    "voice": "narrator",
-   "text": "Say it with me. Ten ones and one ten are worth the same."
+   "text": "Say it with me. Ten ones and one ten are worth the same.",
+   "wpm": 158
   },
   {
    "i": 32,
    "who": "N",
    "voice": "narrator",
-   "text": "Try it at home. Bundle ten pegs to make one ten."
+   "text": "Try it at home. Bundle ten pegs to make one ten.",
+   "wpm": 158
   },
   {
    "i": 33,
    "who": "N",
    "voice": "narrator",
-   "text": "Next case: ladybird dots at a glance."
+   "text": "Next case: ladybird dots at a glance.",
+   "wpm": 158
   }
  ]
 }
