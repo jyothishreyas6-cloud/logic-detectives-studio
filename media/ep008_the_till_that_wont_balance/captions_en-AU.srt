@@ -1,0 +1,136 @@
+1
+00:00:00,350 --> 00:00:01,688
+BRAMBLE: Case open!
+
+2
+00:00:01,688 --> 00:00:04,545
+OTTO: Oh no! The till won't balance!
+
+3
+00:00:04,745 --> 00:00:07,766
+IVY: The sheet and the money don't match.
+
+4
+00:00:08,166 --> 00:00:11,322
+Today's case: the till that won't balance.
+
+5
+00:00:11,622 --> 00:00:15,097
+Regroup means swapping ten ones for one ten.
+
+6
+00:00:15,497 --> 00:00:19,607
+Like ten one-dollar coins for a ten-dollar note.
+
+7
+00:00:20,207 --> 00:00:22,901
+The till started with 38 dollars.
+
+8
+00:00:23,101 --> 00:00:26,763
+Then it sold 27 dollars of icy poles.
+
+9
+00:00:27,163 --> 00:00:30,622
+OTTO: Eight and seven make fifteen. Write the five!
+
+10
+00:00:30,822 --> 00:00:34,478
+OTTO: Three and two make five. 55 dollars!
+
+11
+00:00:34,878 --> 00:00:37,512
+IVY: Hmm. Where did the ten go?
+
+12
+00:00:37,912 --> 00:00:40,205
+BRAMBLE: Let's not guess. Let's test.
+
+13
+00:00:40,605 --> 00:00:43,989
+BRAMBLE: Can you point to the one-dollar coins?
+
+14
+00:00:47,089 --> 00:00:50,009
+BRAMBLE: How much should be in the till?
+
+15
+00:00:50,409 --> 00:00:52,645
+A. 55 dollars.
+
+16
+00:00:52,845 --> 00:00:55,337
+B. 65 dollars.
+
+17
+00:00:55,537 --> 00:00:57,449
+Pause and think.
+
+18
+00:01:02,049 --> 00:01:05,831
+Ten ones and one ten are worth the same.
+
+19
+00:01:06,231 --> 00:01:08,967
+Eight and seven make fifteen ones.
+
+20
+00:01:09,367 --> 00:01:11,912
+Swap ten ones for one ten.
+
+21
+00:01:12,512 --> 00:01:15,881
+Now there are six tens and five ones.
+
+22
+00:01:16,281 --> 00:01:18,508
+It's B! 65 dollars.
+
+23
+00:01:18,708 --> 00:01:21,320
+OTTO: Oh! I forgot the swapped ten!
+
+24
+00:01:21,720 --> 00:01:23,601
+BRAMBLE: Let's check another way.
+
+25
+00:01:23,801 --> 00:01:28,939
+65 take away 27. Swap a ten for ten ones.
+
+26
+00:01:29,339 --> 00:01:34,062
+Fifteen take away seven is eight. Five take away two is three.
+
+27
+00:01:34,462 --> 00:01:37,334
+IVY: 38! Now the till balances!
+
+28
+00:01:37,734 --> 00:01:39,042
+BRAMBLE: Case solved!
+
+29
+00:01:40,542 --> 00:01:42,359
+OTTO: I'll carry the ten!
+
+30
+00:01:42,759 --> 00:01:44,938
+IVY: Not like a surfboard, Otto!
+
+31
+00:01:45,538 --> 00:01:49,530
+Remember. Ten ones and one ten are worth the same.
+
+32
+00:01:50,030 --> 00:01:55,062
+Say it with me. Ten ones and one ten are worth the same.
+
+33
+00:01:56,862 --> 00:02:01,290
+Try it at home. Bundle ten pegs to make one ten.
+
+34
+00:02:01,790 --> 00:02:05,082
+Next case: ladybird dots at a glance.
+

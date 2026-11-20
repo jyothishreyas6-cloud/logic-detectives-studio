@@ -321,7 +321,7 @@ def scene(ctx, ep, T):
     rig.squirrel(ctx, OTTO_X, FEET, SQ_S, OCHRE, f=1, seed=2.0)
     if lift > 0.05:                                       # the note sits on Otto's head
         x, y, a = note_spots(ep, T)[5]
-        note(ctx, lerp(x, OTTO_X + 10, lift), lerp(y, 1322, lift), a, 1.0, -0.08 * lift)
+        note(ctx, lerp(x, OTTO_X + 10, lift), lerp(y, 1370, lift), a, 1.0, -0.08 * lift)
     rig.bramble(ctx, BR_X, FEET, BR_S, f=1)
     rig.squirrel(ctx, IVY_X, FEET, SQ_S, SAGE, f=-1, seed=0.7)
 
@@ -398,7 +398,7 @@ def poses(ep, T):
         if 0 <= hop <= 1:
             O["jump"] = 42 * math.sin(math.pi * hop)
     if S(28) <= T <= E(29) + 0.9:
-        O.update(expr="happy", point=(OTTO_X + 60, 1300), amt=ramp(S(28) + 0.2))
+        O.update(expr="happy", point=(OTTO_X + 110, 1330), amt=ramp(S(28) + 0.2))
     if during(33, 0.1, 0.5):
         I["expr"] = "surprise"
     return {"B": B, "O": O, "I": I}
@@ -543,7 +543,7 @@ def cards(ctx, ep, T):
     # check another way: 65 take away 27
     a = window(T, S(24) - 0.3, E(26) + 0.6)
     if a > 0:
-        card(ctx, 250, 150, 580, 450, a)
+        card(ctx, 70, 140, 940, 470, a)
         column_sum(ctx, T, ep, a)
     # recap
     ra = window(T, S(30) - 0.3, S(33) - 0.1, 0.5, 0.5)

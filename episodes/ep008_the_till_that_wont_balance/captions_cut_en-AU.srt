@@ -1,0 +1,64 @@
+1
+00:00:00,350 --> 00:00:01,688
+BRAMBLE: Case open!
+
+2
+00:00:01,688 --> 00:00:04,545
+OTTO: Oh no! The till won't balance!
+
+3
+00:00:04,745 --> 00:00:07,766
+IVY: The sheet and the money don't match.
+
+4
+00:00:08,166 --> 00:00:11,322
+Today's case: the till that won't balance.
+
+5
+00:00:11,722 --> 00:00:15,181
+OTTO: Eight and seven make fifteen. Write the five!
+
+6
+00:00:15,381 --> 00:00:19,037
+OTTO: Three and two make five. 55 dollars!
+
+7
+00:00:19,437 --> 00:00:22,071
+IVY: Hmm. Where did the ten go?
+
+8
+00:00:22,471 --> 00:00:26,253
+Ten ones and one ten are worth the same.
+
+9
+00:00:26,653 --> 00:00:29,389
+Eight and seven make fifteen ones.
+
+10
+00:00:29,789 --> 00:00:32,334
+Swap ten ones for one ten.
+
+11
+00:00:32,934 --> 00:00:36,303
+Now there are six tens and five ones.
+
+12
+00:00:36,703 --> 00:00:38,930
+It's B! 65 dollars.
+
+13
+00:00:39,130 --> 00:00:41,742
+OTTO: Oh! I forgot the swapped ten!
+
+14
+00:00:42,142 --> 00:00:43,450
+BRAMBLE: Case solved!
+
+15
+00:00:43,850 --> 00:00:48,882
+Say it with me. Ten ones and one ten are worth the same.
+
+16
+00:00:49,282 --> 00:00:52,574
+Next case: ladybird dots at a glance.
+
