@@ -1,0 +1,64 @@
+1
+00:00:00,350 --> 00:00:01,629
+BRAMBLE: Case open!
+
+2
+00:00:01,629 --> 00:00:05,831
+OTTO: Hey! That's not fair! Ivy didn't count!
+
+3
+00:00:06,031 --> 00:00:09,728
+IVY: I didn't need to. I just saw it.
+
+4
+00:00:10,028 --> 00:00:13,866
+Today's case: ladybird dots at a glance.
+
+5
+00:00:14,266 --> 00:00:19,848
+OTTO: I'll count. One, two, three, four, five!
+
+6
+00:00:20,048 --> 00:00:23,343
+IVY: Hmm. I saw four at a glance.
+
+7
+00:00:23,543 --> 00:00:25,611
+OTTO: Four? You guessed!
+
+8
+00:00:26,011 --> 00:00:29,498
+You can see small groups without counting.
+
+9
+00:00:30,098 --> 00:00:32,840
+Two dots on this wing.
+
+10
+00:00:33,240 --> 00:00:35,912
+Two dots on that wing.
+
+11
+00:00:36,312 --> 00:00:39,251
+Two and two make four.
+
+12
+00:00:39,851 --> 00:00:41,995
+It's B! Four dots.
+
+13
+00:00:42,195 --> 00:00:45,372
+OTTO: Oh! I touched one dot twice!
+
+14
+00:00:45,772 --> 00:00:47,086
+BRAMBLE: Case solved!
+
+15
+00:00:47,486 --> 00:00:53,640
+Say it with me. You can see small groups without counting.
+
+16
+00:00:54,040 --> 00:00:57,112
+Next case: the shuffled clue cards.
+

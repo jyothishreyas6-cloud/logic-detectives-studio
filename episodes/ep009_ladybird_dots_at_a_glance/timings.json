@@ -1,0 +1,206 @@
+[
+ {
+  "who": "B",
+  "text": "Case open!",
+  "start": 0.35,
+  "end": 1.229
+ },
+ {
+  "who": "O",
+  "text": "Hey! That's not fair! Ivy didn't count!",
+  "start": 1.629,
+  "end": 5.431
+ },
+ {
+  "who": "I",
+  "text": "I didn't need to. I just saw it.",
+  "start": 6.031,
+  "end": 9.328
+ },
+ {
+  "who": "N",
+  "text": "Today's case: ladybird dots at a glance.",
+  "start": 10.028,
+  "end": 13.466
+ },
+ {
+  "who": "N",
+  "text": "At a glance means one quick look.",
+  "start": 14.166,
+  "end": 17.177
+ },
+ {
+  "who": "N",
+  "text": "Like the dots on a dice.",
+  "start": 17.877,
+  "end": 20.623
+ },
+ {
+  "who": "N",
+  "text": "Mabel painted this ladybird stepping stone.",
+  "start": 21.623,
+  "end": 24.735
+ },
+ {
+  "who": "N",
+  "text": "How many dots does it have?",
+  "start": 25.335,
+  "end": 28.028
+ },
+ {
+  "who": "O",
+  "text": "I'll count. One, two, three, four, five!",
+  "start": 28.828,
+  "end": 34.01
+ },
+ {
+  "who": "I",
+  "text": "Hmm. I saw four at a glance.",
+  "start": 34.61,
+  "end": 37.505
+ },
+ {
+  "who": "O",
+  "text": "Four? You guessed!",
+  "start": 38.105,
+  "end": 39.773
+ },
+ {
+  "who": "B",
+  "text": "Let's not guess. Let's test.",
+  "start": 40.573,
+  "end": 43.117
+ },
+ {
+  "who": "B",
+  "text": "Can you point to the dots?",
+  "start": 43.917,
+  "end": 46.242
+ },
+ {
+  "who": "B",
+  "text": "How many dots? Take a quick look.",
+  "start": 49.742,
+  "end": 52.865
+ },
+ {
+  "who": "N",
+  "text": "A. Five dots.",
+  "start": 53.665,
+  "end": 55.588
+ },
+ {
+  "who": "N",
+  "text": "B. Four dots.",
+  "start": 56.188,
+  "end": 58.703
+ },
+ {
+  "who": "N",
+  "text": "Pause and think.",
+  "start": 59.303,
+  "end": 60.928
+ },
+ {
+  "who": "N",
+  "text": "You can see small groups without counting.",
+  "start": 65.928,
+  "end": 69.015
+ },
+ {
+  "who": "N",
+  "text": "Two dots on this wing.",
+  "start": 70.015,
+  "end": 72.357
+ },
+ {
+  "who": "N",
+  "text": "Two dots on that wing.",
+  "start": 73.157,
+  "end": 75.429
+ },
+ {
+  "who": "N",
+  "text": "Two and two make four.",
+  "start": 76.229,
+  "end": 78.768
+ },
+ {
+  "who": "N",
+  "text": "It's B! Four dots.",
+  "start": 79.768,
+  "end": 81.512
+ },
+ {
+  "who": "O",
+  "text": "Oh! I touched one dot twice!",
+  "start": 82.112,
+  "end": 84.889
+ },
+ {
+  "who": "B",
+  "text": "Let's check another way.",
+  "start": 85.689,
+  "end": 87.54
+ },
+ {
+  "who": "N",
+  "text": "Touch each dot only once.",
+  "start": 88.14,
+  "end": 90.454
+ },
+ {
+  "who": "N",
+  "text": "One, two, three, four.",
+  "start": 91.054,
+  "end": 94.549
+ },
+ {
+  "who": "I",
+  "text": "Four! Same as my quick look!",
+  "start": 95.349,
+  "end": 97.865
+ },
+ {
+  "who": "B",
+  "text": "Case solved!",
+  "start": 98.665,
+  "end": 99.579
+ },
+ {
+  "who": "O",
+  "text": "Hello, tiny ladybird! Can you count?",
+  "start": 101.479,
+  "end": 104.104
+ },
+ {
+  "who": "I",
+  "text": "Ladybirds can't count, Otto!",
+  "start": 104.704,
+  "end": 106.45
+ },
+ {
+  "who": "N",
+  "text": "Remember. You can see small groups without counting.",
+  "start": 107.25,
+  "end": 111.001
+ },
+ {
+  "who": "N",
+  "text": "Say it with me. You can see small groups without counting.",
+  "start": 111.901,
+  "end": 117.655
+ },
+ {
+  "who": "N",
+  "text": "Try it at home. Roll a dice. Say the number fast!",
+  "start": 119.855,
+  "end": 124.801
+ },
+ {
+  "who": "N",
+  "text": "Next case: the shuffled clue cards.",
+  "start": 125.701,
+  "end": 128.373
+ }
+]

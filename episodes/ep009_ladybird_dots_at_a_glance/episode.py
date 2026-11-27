@@ -37,7 +37,7 @@ DOTS = [(460, 970), (468, 1080), (620, 970), (612, 1080)]   # two dots on each w
 OTTO_TAPS = [0, 1, 2, 3, 0]    # Otto's count: he touches the first dot again
 TAP_BADGE = [(388, 970), (396, 1080), (692, 970), (684, 1080)]
 FIFTH_BADGE = (430, 898)       # where Otto's "5" sits (above the first dot)
-NOSE = (OTTO_X + 52, 1446)     # tip of Otto's nose (he faces right)
+NOSE = (OTTO_X + 70, 1476)     # tip of Otto's nose (he faces right)
 
 CASE_NO = 9
 RULE = "You can see small groups without counting."
@@ -47,9 +47,9 @@ SENTENCE_LIMIT = 8
 LINES = [
     Line("B", "Case open!", gap=0.4),                                          # 0
     Line("O", "Hey! That's not fair! Ivy didn't count!", gap=0.6),             # 1
-    Line("I", "I didn't need to. I just saw it.", gap=0.8),                    # 2
+    Line("I", "I didn't need to. I just saw it.", gap=0.7),                    # 2
     Line("N", "Today's case: ladybird dots at a glance.", gap=0.7),            # 3
-    Line("N", "At a glance means one quick look.", gap=0.8),                   # 4
+    Line("N", "At a glance means one quick look.", gap=0.7),                   # 4
     Line("N", "Like the dots on a dice.", gap=1.0),                            # 5
     Line("N", "Mabel painted this ladybird stepping stone.", gap=0.6),         # 6
     Line("N", "How many dots does it have?", gap=0.8),                         # 7
@@ -65,7 +65,7 @@ LINES = [
     Line("N", "You can see small groups without counting.", gap=1.0),          # 17
     Line("N", "Two dots on this wing.", gap=0.8),                              # 18
     Line("N", "Two dots on that wing.", gap=0.8),                              # 19
-    Line("N", "Two and two make four.", gap=1.2),                              # 20
+    Line("N", "Two and two make four.", gap=1.0),                              # 20
     Line("N", "It's B! Four dots.", gap=0.6),                                  # 21
     Line("O", "Oh! I touched one dot twice!", gap=0.8),                        # 22
     Line("B", "Let's check another way.", gap=0.6),                            # 23
@@ -74,7 +74,7 @@ LINES = [
     Line("I", "Four! Same as my quick look!", gap=0.8),                        # 26
     Line("B", "Case solved!", gap=1.9),                                        # 27
     Line("O", "Hello, tiny ladybird! Can you count?", gap=0.6),                # 28
-    Line("I", "Ladybirds can't count, Otto!", gap=1.0),                        # 29
+    Line("I", "Ladybirds can't count, Otto!", gap=0.8),                        # 29
     Line("N", "Remember. You can see small groups without counting.", gap=0.9),  # 30
     Line("N", "Say it with me. You can see small groups without counting.", gap=2.2),  # 31
     Line("N", "Try it at home. Roll a dice. Say the number fast!", gap=0.9),   # 32
@@ -143,7 +143,7 @@ def painted_ladybird(ctx, cx, cy, sc=1.0, a=1.0):
         ellipse(ctx, cx + dx * sc, cy + dy * sc, 32 * sc, 32 * sc, INK, a)
 
 
-def tiny_ladybird(ctx, x, y, a=1.0, r=9):
+def tiny_ladybird(ctx, x, y, a=1.0, r=10):
     """A real ladybird (drawn about 1 cm, a little nearer the camera)."""
     if a <= 0:
         return
@@ -340,13 +340,13 @@ def poses(ep, T):
     if S(11) - 0.2 <= T <= E(12) + 3.8:
         B["expr"] = "think" if T < S(12) else "happy"
     if S(12) - 0.1 <= T <= E(12) + 3.6:
-        B.update(point=(610, 1150), amt=ramp(S(12) - 0.1))
+        B.update(point=(700, 1080), amt=ramp(S(12) - 0.1))
     if S(13) <= T <= S(17):
         O["expr"] = I["expr"] = "think"
     if during(17, 0.2, 0.6):
         B["expr"] = "think"
     if S(18) - 0.1 <= T <= E(20) + 0.4:
-        B.update(expr="happy", point=(610, 1150), amt=ramp(S(18) - 0.1))
+        B.update(expr="happy", point=(700, 1080), amt=ramp(S(18) - 0.1))
     if during(21, 0.2, 0.3):
         I["expr"] = "happy"
     if during(22, 0.2, 0.8):
