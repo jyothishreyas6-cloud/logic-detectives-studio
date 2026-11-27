@@ -1,0 +1,241 @@
+{
+ "lines": [
+  {
+   "i": 0,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case open!"
+  },
+  {
+   "i": 1,
+   "who": "O",
+   "voice": "otto",
+   "text": "Hey! That's not fair! Ivy didn't count!",
+   "wpm": 145
+  },
+  {
+   "i": 2,
+   "who": "I",
+   "voice": "ivy",
+   "text": "I didn't need to. I just saw it.",
+   "wpm": 145
+  },
+  {
+   "i": 3,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Today's case: ladybird dots at a glance.",
+   "wpm": 145
+  },
+  {
+   "i": 4,
+   "who": "N",
+   "voice": "narrator",
+   "text": "At a glance means one quick look.",
+   "wpm": 145
+  },
+  {
+   "i": 5,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Like the dots on a dice.",
+   "wpm": 145
+  },
+  {
+   "i": 6,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Mabel painted this ladybird stepping stone.",
+   "wpm": 145
+  },
+  {
+   "i": 7,
+   "who": "N",
+   "voice": "narrator",
+   "text": "How many dots does it have?",
+   "wpm": 145
+  },
+  {
+   "i": 8,
+   "who": "O",
+   "voice": "otto",
+   "text": "I'll count. One, two, three, four, five!",
+   "wpm": 145
+  },
+  {
+   "i": 9,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Hmm. I saw four at a glance.",
+   "wpm": 145
+  },
+  {
+   "i": 10,
+   "who": "O",
+   "voice": "otto",
+   "text": "Four? You guessed!",
+   "wpm": 145
+  },
+  {
+   "i": 11,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's not guess. Let's test.",
+   "wpm": 145
+  },
+  {
+   "i": 12,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Can you point to the dots?",
+   "wpm": 145
+  },
+  {
+   "i": 13,
+   "who": "B",
+   "voice": "bramble",
+   "text": "How many dots? Take a quick look.",
+   "wpm": 145
+  },
+  {
+   "i": 14,
+   "who": "N",
+   "voice": "narrator",
+   "text": "A. Five dots.",
+   "wpm": 145
+  },
+  {
+   "i": 15,
+   "who": "N",
+   "voice": "narrator",
+   "text": "B. Four dots.",
+   "wpm": 145
+  },
+  {
+   "i": 16,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Pause and think.",
+   "wpm": 145
+  },
+  {
+   "i": 17,
+   "who": "N",
+   "voice": "narrator",
+   "text": "You can see small groups without counting.",
+   "wpm": 145
+  },
+  {
+   "i": 18,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Two dots on this wing.",
+   "wpm": 145
+  },
+  {
+   "i": 19,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Two dots on that wing.",
+   "wpm": 145
+  },
+  {
+   "i": 20,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Two and two make four.",
+   "wpm": 145
+  },
+  {
+   "i": 21,
+   "who": "N",
+   "voice": "narrator",
+   "text": "It's B! Four dots.",
+   "wpm": 145
+  },
+  {
+   "i": 22,
+   "who": "O",
+   "voice": "otto",
+   "text": "Oh! I touched one dot twice!",
+   "wpm": 145
+  },
+  {
+   "i": 23,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Let's check another way.",
+   "wpm": 145
+  },
+  {
+   "i": 24,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Touch each dot only once.",
+   "wpm": 145
+  },
+  {
+   "i": 25,
+   "who": "N",
+   "voice": "narrator",
+   "text": "One, two, three, four.",
+   "wpm": 145
+  },
+  {
+   "i": 26,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Four! Same as my quick look!",
+   "wpm": 145
+  },
+  {
+   "i": 27,
+   "who": "B",
+   "voice": "bramble",
+   "text": "Case solved!",
+   "wpm": 145
+  },
+  {
+   "i": 28,
+   "who": "O",
+   "voice": "otto",
+   "text": "Hello, tiny ladybird! Can you count?",
+   "wpm": 145
+  },
+  {
+   "i": 29,
+   "who": "I",
+   "voice": "ivy",
+   "text": "Ladybirds can't count, Otto!",
+   "wpm": 145
+  },
+  {
+   "i": 30,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Remember. You can see small groups without counting.",
+   "wpm": 145
+  },
+  {
+   "i": 31,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Say it with me. You can see small groups without counting.",
+   "wpm": 145
+  },
+  {
+   "i": 32,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Try it at home. Roll a dice. Say the number fast!",
+   "wpm": 145
+  },
+  {
+   "i": 33,
+   "who": "N",
+   "voice": "narrator",
+   "text": "Next case: the shuffled clue cards.",
+   "wpm": 145
+  }
+ ]
+}
